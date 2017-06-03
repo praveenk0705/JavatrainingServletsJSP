@@ -1,0 +1,71 @@
+package com.jlcindia.struts1;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts.action.ActionError;
+import org.apache.struts.action.ActionErrors;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+
+public class LoginForm extends ActionForm {
+	private String username;
+	private String password;
+	
+	static{
+		System.out.println("S.B LoginForm");
+	}
+	public LoginForm(){
+		System.out.println("D.C LoginForm");
+	}
+	
+	public String getUsername() {
+		System.out.println("getUname LoginForm");
+		return username;
+	}
+	public void setUsername(String username) {
+		System.out.println("setUname LoginForm");
+		this.username = username;
+	}
+	public String getPassword() {
+		System.out.println("getPw LoginForm");
+		return password;
+	}
+	public void setPassword(String password) {
+		System.out.println("setPw LoginForm");
+		this.password = password;
+	}
+	@Override
+	public ActionErrors validate(ActionMapping mapping,
+			HttpServletRequest request) {
+		System.out.println("validate() LoginForm");
+		ActionErrors errors=new ActionErrors();
+		if(username==null||username.length()==0){
+			ActionError error=new ActionError("errors.username.required");
+			errors.add("username",error);
+		}else if (username.length()<5) {
+			errors.add("username",new ActionError("errors.username.min"));
+		}else if (username.length()>10) {
+			errors.add("username",new ActionError("errors.username.max"));
+		}
+		
+		if(password==null||password.length()==0){
+			ActionError error=new ActionError("errors.password.required");
+			errors.add("password",error);
+		}else if (password.length()<6) {
+			errors.add("password",new ActionError("errors.password.min"));
+		}else if (password.length()>9) {
+			errors.add("password",new ActionError("errors.password.max"));
+		}
+		return errors;
+	}
+	
+
+	public void reset(ActionMapping mapping, HttpServletRequest request) {
+		System.out.println("reset() LoginForm");
+		
+		this.username=null;
+		this.password=null;
+	}
+	
+
+}

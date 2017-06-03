@@ -1,0 +1,26 @@
+package com.shubham.jsf1;
+
+import javax.faces.context.FacesContext;
+
+public class ECDemoBean {
+	static {
+		System.out.println("-----ECDemoBean S.B.------");
+	}
+
+	String str = "Shubham Learning Center";
+
+	public ECDemoBean() {
+		System.out.println("=======ECDemoBean 0-args=======");
+		FacesContext fc = FacesContext.getCurrentInstance();
+	}
+
+	public String getStr() {
+		System.out.println("\ngetStr()");
+		return str;
+	}
+
+	public void setStr(String str) {
+		System.out.println("setStr()");
+		this.str = str;
+	}
+}

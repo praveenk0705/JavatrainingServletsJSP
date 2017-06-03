@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Lab9</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>search</servlet-name>
+  <servlet-class>com.jlcindia.servlets.SearchBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>viewdetails</servlet-name>
+  <servlet-class>com.jlcindia.servlets.BookDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>addcart</servlet-name>
+  <servlet-class>com.jlcindia.servlets.AddToCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>showcart</servlet-name>
+  <servlet-class>com.jlcindia.servlets.ShowCartServlet</servlet-class>
+  </servlet><servlet>
+  <servlet-name>removecart</servlet-name>
+  <servlet-class>com.jlcindia.servlets.RemoveFromCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>search</servlet-name>
+  <url-pattern>/searchbooks.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>viewdetails</servlet-name>
+  <url-pattern>/viewdetails.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>addcart</servlet-name>
+  <url-pattern>/addcart.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>showcart</servlet-name>
+  <url-pattern>/showcart.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>removecart</servlet-name>
+  <url-pattern>/removecart.jlc</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,10 @@
+package com.shubham.jsf1;
+
+public class StudentBean {
+private String bid;
+
+public String searchStudentBySid(){
+	
+	return "search";
+}
+}

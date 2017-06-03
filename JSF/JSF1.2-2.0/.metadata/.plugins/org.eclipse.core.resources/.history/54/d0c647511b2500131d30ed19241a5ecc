@@ -1,0 +1,53 @@
+package com.shubham.jsf1;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+
+public class BIDConverter implements Converter {
+	static {
+		System.out.println("\n-----BIDConverter < S.B >------");
+	}
+
+	public BIDConverter() {
+		System.out.println("\n======BIDConverter 0-args======:\n" + this);
+	}
+
+	public Object getAsObject(FacesContext fc, UIComponent component,
+			String value) {
+		System.out.println("\n******BIDConverter getAsObject() Started*******");
+		System.out.println("Component :" + component.getId());
+		System.out.println(component.getParent());
+		System.out.println("Value :" + value);
+
+		String bid = "";
+		String msg = component.getId();
+		FacesMessage message = new FacesMessage();
+
+		int id = 0;
+		try {
+			if (value == null || value.length() == 0) {
+
+			}
+		}
+
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("******BIDConverter getAsObject() Completed*******");
+		return new ArrayList();
+	}
+
+	public String getAsString(FacesContext fc, UIComponent component,
+			Object value) {
+		System.out.println("\n******BIDConverter getAsString() Started*******");
+		System.out.println("Component :" + component.getId());
+		System.out.println(component.getParent());
+		System.out.println("Value :" + value);
+
+		System.out.println("******BIDConverter getAsString() Completed*******");
+		return "SHU-";
+	}
+}

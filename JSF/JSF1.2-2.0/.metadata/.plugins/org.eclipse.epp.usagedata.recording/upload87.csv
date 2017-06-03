@@ -1,0 +1,301 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108245007
+error,log,,,"Edit Model already disposed",1380108245194
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108245194
+error,log,,,"Edit Model already disposed",1380108245397
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108245412
+error,log,,,"Edit Model already disposed",1380108245521
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108245537
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108247035
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108247799
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1380108298967
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1380108299310
+error,log,,,"Edit Model already disposed",1380108300215
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108300278
+error,log,,,"Edit Model already disposed",1380108300683
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108300683
+error,log,,,"Edit Model already disposed",1380108300980
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108300980
+error,log,,,"Edit Model already disposed",1380108301245
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108301245
+error,log,,,"Edit Model already disposed",1380108301416
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108301432
+error,log,,,"Edit Model already disposed",1380108301604
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108301604
+error,log,,,"Edit Model already disposed",1380108304146
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108304146
+error,log,,,"Edit Model already disposed",1380108304380
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108304380
+error,log,,,"Edit Model already disposed",1380108304583
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108304583
+error,log,,,"Edit Model already disposed",1380108304770
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108304770
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108325113
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108328139
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.lineStart",1380108332741
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1380108333506
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1380108334332
+error,log,,,"Edit Model already disposed",1380108335175
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108335222
+error,log,,,"Edit Model already disposed",1380108335846
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108335846
+error,log,,,"Edit Model already disposed",1380108336142
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108336158
+error,log,,,"Edit Model already disposed",1380108337234
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108337234
+error,log,,,"Edit Model already disposed",1380108337515
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108337515
+error,log,,,"Edit Model already disposed",1380108337733
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108337733
+error,log,,,"Edit Model already disposed",1380108337936
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108337936
+error,log,,,"Edit Model already disposed",1380108338092
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108338092
+error,log,,,"Edit Model already disposed",1380108338279
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108338279
+error,log,,,"Edit Model already disposed",1380108338451
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108338451
+error,log,,,"Edit Model already disposed",1380108338607
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108338607
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108346500
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108373847
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1380108376780
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108378559
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108381616
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.create.getter.setter",1380108381741
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108389510
+error,log,,,"Edit Model already disposed",1380108392630
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108392723
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1380108396577
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1380108398527
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineEnd",1380108402848
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.lineStart",1380108404345
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1380108405344
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1380108407231
+error,log,,,"Edit Model already disposed",1380108408089
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108408121
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1380108410570
+error,log,,,"Edit Model already disposed",1380108411303
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108411381
+error,log,,,"Edit Model already disposed",1380108420523
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108420616
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.format",1380108420866
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.format",1380108421162
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.format",1380108421349
+error,log,,,"Edit Model already disposed",1380108421693
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108421724
+error,log,,,"Edit Model already disposed",1380108421895
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108421895
+error,log,,,"Edit Model already disposed",1380108422083
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108422083
+error,log,,,"Edit Model already disposed",1380108422223
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108422239
+error,log,,,"Edit Model already disposed",1380108422395
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108422395
+error,log,,,"Edit Model already disposed",1380108422535
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108422551
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1380108423736
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108425234
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108426248
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108443080
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108444562
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108448119
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108450568
+error,log,,,"Edit Model already disposed",1380108453501
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108453532
+error,log,,,"Edit Model already disposed",1380108454437
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108454453
+error,log,,,"Edit Model already disposed",1380108454702
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108454702
+error,log,,,"Edit Model already disposed",1380108454889
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108454889
+error,log,,,"Edit Model already disposed",1380108455045
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108455045
+error,log,,,"Edit Model already disposed",1380108455217
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108455217
+error,log,,,"Edit Model already disposed",1380108455373
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108455373
+error,log,,,"Edit Model already disposed",1380108455513
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108455513
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108463501
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108468883
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108472049
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108483952
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108487416
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1380108491986
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108493515
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1380108496432
+error,log,,,"Edit Model already disposed",1380108497509
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108497571
+error,log,,,"Edit Model already disposed",1380108498008
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108498024
+error,log,,,"Edit Model already disposed",1380108498304
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108498304
+error,log,,,"Edit Model already disposed",1380108498523
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108498523
+error,log,,,"Edit Model already disposed",1380108498679
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108498694
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1380108499240
+error,log,,,"Edit Model already disposed",1380108499896
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108499942
+error,log,,,"Edit Model already disposed",1380108500145
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108500145
+error,log,,,"Edit Model already disposed",1380108500364
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108500364
+error,log,,,"Edit Model already disposed",1380108500551
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108500566
+error,log,,,"Edit Model already disposed",1380108500738
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108500754
+error,log,,,"Edit Model already disposed",1380108500894
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108500910
+error,log,,,"Edit Model already disposed",1380108513218
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108513343
+error,log,,,"Edit Model already disposed",1380108513702
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108513717
+error,log,,,"Edit Model already disposed",1380108514060
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108514076
+error,log,,,"Edit Model already disposed",1380108514294
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108514310
+error,log,,,"Edit Model already disposed",1380108514482
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108514497
+error,log,,,"Edit Model already disposed",1380108514653
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108514669
+error,log,,,"Edit Model already disposed",1380108514825
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108514825
+error,log,,,"Edit Model already disposed",1380108514965
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108514965
+error,log,,,"Edit Model already disposed",1380108515106
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108515121
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1380108517134
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108518506
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108519318
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1380108520503
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108524013
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108526010
+error,log,,,"Edit Model already disposed",1380108526041
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108526119
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108530082
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.launchShortcut.run",1380108530097
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1380108532360
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108533516
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108533516
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108533562
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108548757
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108548772
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108570737
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1380108583108
+activated,editor,org.eclipse.jst.jsf.facesconfig.ui,1.2.2.v201103292152,"org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor",1380108584606
+error,log,,,"Edit Model already disposed",1380108595775
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108595885
+error,log,,,"Edit Model already disposed",1380108596056
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108596056
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108597398
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108602936
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1380108607678
+error,log,,,"Edit Model already disposed",1380108619191
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108619222
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.format",1380108619519
+error,log,,,"Edit Model already disposed",1380108619877
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108619909
+error,log,,,"Edit Model already disposed",1380108620111
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108620127
+error,log,,,"Edit Model already disposed",1380108620283
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108620283
+error,log,,,"Edit Model already disposed",1380108620657
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108620657
+error,log,,,"Edit Model already disposed",1380108620876
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108620876
+activated,editor,org.eclipse.jst.jsf.facesconfig.ui,1.2.2.v201103292152,"org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor",1380108622217
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1380108623450
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1380108625649
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1380108627569
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108629020
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108630128
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108630143
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108630221
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1380108630221
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1380108631750
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108634652
+activated,editor,org.eclipse.jst.jsf.facesconfig.ui,1.2.2.v201103292152,"org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor",1380108635447
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108638084
+error,log,,,"Edit Model already disposed",1380108643216
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108643247
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108644480
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1380108686397
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.refresh",1380108689657
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108694088
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108695242
+error,log,,,"Edit Model already disposed",1380108695258
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108695351
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108698643
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.launchShortcut.run",1380108698658
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1380108700125
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108701436
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108701474
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108703363
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108710392
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108711527
+activated,editor,org.eclipse.jst.jsf.facesconfig.ui,1.2.2.v201103292152,"org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor",1380108713498
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1380108755458
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1380108755616
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1380108755798
+error,log,,,"Edit Model already disposed",1380108757717
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108757724
+error,log,,,"Edit Model already disposed",1380108758140
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108758147
+error,log,,,"Edit Model already disposed",1380108759282
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108759288
+error,log,,,"Edit Model already disposed",1380108759596
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108759604
+error,log,,,"Edit Model already disposed",1380108759810
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108759817
+error,log,,,"Edit Model already disposed",1380108760017
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108760025
+error,log,,,"Edit Model already disposed",1380108760192
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108760198
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108780253
+activated,editor,org.eclipse.jst.jsf.facesconfig.ui,1.2.2.v201103292152,"org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor",1380108785546
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1380108817628
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108819890
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108821263
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108821278
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108821372
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1380108821388
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108824398
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108826551
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1380108847767
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1380108850934
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108852525
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1380108855973
+error,log,,,"Edit Model already disposed",1380108858516
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108858594
+error,log,,,"Edit Model already disposed",1380108860107
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108860122
+error,log,,,"Edit Model already disposed",1380108860622
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108860637
+error,log,,,"Edit Model already disposed",1380108861027
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108861027
+error,log,,,"Edit Model already disposed",1380108861355
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108861355
+error,log,,,"Edit Model already disposed",1380108861604
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108861604
+error,log,,,"Edit Model already disposed",1380108861823
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108861838
+error,log,,,"Edit Model already disposed",1380108862010
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108862010
+error,log,,,"Edit Model already disposed",1380108862166
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108862166
+error,log,,,"Edit Model already disposed",1380108862353
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108862353
+error,log,,,"Edit Model already disposed",1380108862540
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108862540
+error,log,,,"Edit Model already disposed",1380108862696
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.saveAll",1380108862696
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1380108889450
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108890652
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1380108891978
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108894162
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1380108895144
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108896392
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1380108959105
+opened,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1380108963176

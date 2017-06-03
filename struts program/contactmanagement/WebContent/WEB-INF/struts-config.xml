@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+<form-beans>
+<form-bean name="contactForm" type="org.apache.struts.action.DynaActionForm">
+<form-property name="uname" type="java.lang.String"/>
+<form-property name="password" type="java.lang.String"/>
+</form-bean>
+</form-beans>
+<global-forwards>
+<forward name="success" path="/home.jsp"/>
+
+</global-forwards>
+<action-mappings>
+<action path="/AddContact" name="contactForm" type="com.sk.AddContactAction"/>
+<action path="/UpdateContact" name="contactForm" type="com.sk.UpdateContactAction"/>
+
+</action-mappings>
+
+</struts-config>
+

@@ -1,0 +1,126 @@
+SQL*Plus: Release 10.2.0.1.0 - Beta on Thu Oct 11 19:29:50 2012
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+SQL> conn
+Enter user-name: system/manager
+Connected.
+SQL> create table sa_plan(id varchar2(20),pname varchar2(20),pamount number(20),
+pdetail varchar2(20));
+
+Table created.
+
+SQL> insert into sa_plan values('&id','&pname',&pamount,'&pdetail');
+Enter value for id: 1
+Enter value for pname: sant
+Enter value for pamount: 40000
+Enter value for pdetail: yes
+old   1: insert into sa_plan values('&id','&pname',&pamount,'&pdetail')
+new   1: insert into sa_plan values('1','sant',40000,'yes')
+
+1 row created.
+
+SQL> /
+Enter value for id: 2
+Enter value for pname: ram
+Enter value for pamount: 50000
+Enter value for pdetail: yes
+old   1: insert into sa_plan values('&id','&pname',&pamount,'&pdetail')
+new   1: insert into sa_plan values('2','ram',50000,'yes')
+
+1 row created.
+
+SQL> /3
+Enter value for id: 3
+Enter value for pname: raj
+Enter value for pamount: 80000
+Enter value for pdetail: yes
+old   1: insert into sa_plan values('&id','&pname',&pamount,'&pdetail')
+new   1: insert into sa_plan values('3','raj',80000,'yes')
+
+1 row created.
+
+SQL> /
+Enter value for id: 4
+Enter value for pname: rajesh
+Enter value for pamount: 87000
+Enter value for pdetail: yes
+old   1: insert into sa_plan values('&id','&pname',&pamount,'&pdetail')
+new   1: insert into sa_plan values('4','rajesh',87000  ,'yes')
+
+1 row created.
+
+SQL> /
+Enter value for id: 5
+Enter value for pname: robin
+Enter value for pamount: 60000
+Enter value for pdetail: no
+old   1: insert into sa_plan values('&id','&pname',&pamount,'&pdetail')
+new   1: insert into sa_plan values('5','robin',60000,'no')
+
+1 row created.
+
+SQL> select * from sa_plan;
+
+ID                   PNAME                   PAMOUNT PDETAIL
+-------------------- -------------------- ---------- --------------------
+1                    sant                      40000 yes
+2                    ram                       50000 yes
+3                    raj                       80000 yes
+4                    rajesh                    87000 yes
+5                    robin                     60000 no
+
+SQL> alter table sa_plan add column status varchar2(20);
+alter table sa_plan add column status varchar2(20)
+                        *
+ERROR at line 1:
+ORA-00904: : invalid identifier
+
+
+SQL> alter table sa_plan add status varchar2(20);
+
+Table altered.
+
+SQL> desc sa_plan;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+
+ ID                                                 VARCHAR2(20)
+ PNAME                                              VARCHAR2(20)
+ PAMOUNT                                            NUMBER(20)
+ PDETAIL                                            VARCHAR2(20)
+ STATUS                                             VARCHAR2(20)
+
+SQL> alter table sa_plan add address varchar2(20);
+
+Table altered.
+
+SQL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+Lab9:
+Output
+
+-----BIDConverter < S.B >------
+
+======BIDConverter 0-args======:
+com.shubham.jsf1.BIDConverter@b30913
+
+------StudentBean < S.B > --------
+
+=======StudentBean 0-args======
+getBid() :null
+getSid() :null
+getAmount() :0.0
+getPaymentDate() :null
+
+======BIDConverter 0-args======:
+com.shubham.jsf1.BIDConverter@da2cef
+
+******BIDConverter getAsObject() Started*******
+Component :batchId
+Value :55
+******BIDConverter getAsObject() Completed*******
+getBid() :null
+
+******SIDConverter getAsObject() Started*******
+Component :studentId
+Value :21
+******SIDConverter getAsObject() Completed*******
+getSid() :null
+getAmount() :0.0
+getPaymentDate() :null
+setBid() :B-55
+setSid() :SHU-21
+setAmount() :7896.0
+setPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+
+******register() Started******
+Bid :B-55
+Sid:SHU-21
+An]mount :7896.0
+Payment date:Thu Aug 11 00:00:00 IST 1988
+******register() Completed******
+
+======BIDConverter 0-args======:
+com.shubham.jsf1.BIDConverter@1474ea
+getBid() :B-55
+
+******BIDConverter getAsString() Started*******
+Component :j_id_jsp_1393917586_3
+Value :B-55
+55
+******BIDConverter getAsString() Completed*******
+getSid() :SHU-21
+
+******SIDConverter getAsString() Started*******
+Component :j_id_jsp_1393917586_5
+Value :SHU-21
+21
+******SIDConverter getAsString() Completed*******
+getAmount() :7896.0
+getAmount() :7896.0
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988
+getPaymentDate() :Thu Aug 11 00:00:00 IST 1988

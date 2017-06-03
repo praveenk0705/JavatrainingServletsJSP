@@ -1,0 +1,33 @@
+package com.shubham.jsf1;
+
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.servlet.*;
+
+public class ECDemoBean {
+	static {
+		System.out.println("-----ECDemoBean S.B.------");
+	}
+
+	String str = "Shubham Learning Center";
+
+	public ECDemoBean() {
+		System.out.println("=======ECDemoBean 0-args=======");
+
+		FacesContext fc = FacesContext.getCurrentInstance();
+		ExternalContext ec=fc.getExternalContext();
+		
+		ServletContext sc=(ServletContext)ec.getContext();
+		sc.setAttribute("Country1", "HINDUSTAN");
+	}
+
+	public String getStr() {
+		System.out.println("\ngetStr()");
+		return str;
+	}
+
+	public void setStr(String str) {
+		System.out.println("setStr()");
+		this.str = str;
+	}
+}

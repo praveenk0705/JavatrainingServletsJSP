@@ -1,0 +1,28 @@
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<f:view>
+
+<html>
+<body><center>
+<h2>Shubham Learning Center</h2>
+
+<h:form>
+<h:outputText value="Please Enter Student Information"/>
+<h:panelGrid id="studentFeeInfo" columns="3" border="1" bgcolor="pink">
+
+<h:outputText value="Batch Id"/> 
+<h:inputText id="batchId" label="Btach ID" value="#{studentBean.bid}"
+ 			  required="true" size="25" style="color:blue;font-style:bold">
+<f:converter converterId="bidconverter"/>
+<f:validator validatorId="bId"/> 			  			  
+</h:inputText>
+<h:message for="batchId"/>
+
+</h:panelGrid>
+<center><h:commandButton id="submit" value="Add Fee" action="#{studentBean.register}"/></center>
+</h:form>
+
+</center></body>
+</html>
+
+</f:view>

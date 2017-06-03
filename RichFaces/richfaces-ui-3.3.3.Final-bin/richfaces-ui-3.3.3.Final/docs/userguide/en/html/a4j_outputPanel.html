@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>6.4.3.  &lt; a4j:outputPanel &gt; available since 3.0.0</title><link rel="stylesheet" href="css/html.css" type="text/css"/><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"/><meta xmlns="" http-equiv="content-type" content="text/html; charset=UTF-8"/><link xmlns="" rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/><link rel="start" href="index.html" title="RichFaces Developer Guide"/><link rel="up" href="ajaxOutput.html" title="6.4. Ajax Output"/><link rel="prev" href="a4j_mediaOutput.html" title="6.4.2.  &lt; a4j:mediaOutput &gt; available since 3.0.0"/><link rel="next" href="ajaxMiscellaneous.html" title="6.5. Ajax Miscellaneous"/><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.cookie.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/toggle.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script></head><body><div xmlns="" id="overlay"> </div><div xmlns="" class="time_out_div" id="timeOutDiv"> </div><div xmlns="" id="feedback-maincontainer"><h3 id="feedback-header">
+			Create new RichFaces Documentation Jira issue
+			<a href="javascript:void(0);" onclick="hidePopup('feedback-maincontainer', 'feedback-mailform', 'feedback-iFrame','feedback-submit', 'feedback-maincontainer');" id="feedback-close"><img src="images/close_org.png" class="feedback-images"/></a></h3><iframe id="feedback-iFrame" name="feedback-iFrame"> </iframe><form onsubmit="return validate_form()" id="feedback-mailform" method="post" action="https://jira.jboss.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310341&amp;issuetype=3" target="feedback-iFrame"><input type="hidden" id="priority" name="priority" value="3"/><input type="hidden" id="components" name="components" value="12311170"/><input type="hidden" id="versions" name="versions" value="12312451"/><input type="hidden" id="customfield_12310031" name="customfield_12310031" value="Documentation (Ref Guide, User Guide, etc.)"/><label for="summary">Summary</label><input type="text" id="feedback-summary" name="feedback-summary" title="Summarize the subject of the issue in a few words" maxlength="255" onKeyDown="countLeft('feedback-summary', 'left', 255);" onKeyUp="countLeft('feedback-summary', 'left', 255);"/><div id="summary-helper-left" class="feedback-helper"><span id="left">255</span> characters left
+			</div><div class="clear"> </div><label for="feedback-description">Description</label><textarea id="feedback-description" name="feedback-description" title="Provide more details about the issue" onKeyDown="countLeft('feedback-description', 'none', 500);" onKeyUp="countLeft('feedback-description', 'none', 500);"> </textarea><div class="clear"> </div><label for="feedback-environment">Environment</label><textarea id="feedback-environment" name="feedback-environment" title="Describe your environment"> </textarea></form><div id="guide_words">This will launch the RichFaces Jira page - to complete your feedback please login if needed, and submit the Jira.</div><input type="button" id="feedback-submit" value="Proceed to Jira" name="submit" class="feedback-formbutton" title="Proceed to create new issue" onclick="fillForm('feedback-mailform'); submitForm('feedback-mailform', 'feedback-iFrame', 'feedback-submit', 'feedback-maincontainer');"/></div><div xmlns="" id="feedback-wrapper"><a id="feedback-link" onclick="showPopup('feedback-maincontainer');"><img src="images/feedback_logo.png" class="feedback-images" onload="init('feedback-summary', 'feedback-description');"/></a></div><p id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="a4j_mediaOutput.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ajaxMiscellaneous.html"><strong>Next</strong></a></li></ul><div class="section" lang="en-US"><div class="titlepage"><div><div><h3 class="title"><a id="a4j_outputPanel"/>6.4.3. 
+				&lt;
+				a4j:outputPanel
+				&gt;
+				<span class="since">
+         <sup> available since <span class="version">3.0.0</span>
+         </sup>
+      </span>
+   </h3></div></div></div><a xmlns="" href="javascript:void(0);" id="expand_collapse">expand all</a><div xmlns="" class="toc"><dl xmlns="http://www.w3.org/1999/xhtml"><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_outputPanel.html#d0e10525">6.4.3.1. Description</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_outputPanel.html#d0e10534">6.4.3.2. Details of Usage</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_outputPanel.html#d0e10718">6.4.3.3. Reference Data</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_outputPanel.html#d0e10762">6.4.3.4. Relevant Resources Links</a></span></dt></dl></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e10525"/>6.4.3.1. Description</h4></div></div></div><p>The component is used for components grouping in the Ajax output area, which offers several additional output opportunities such as inserting of non-present in tree components, saving of transient elements after Ajax request and some others.</p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e10534"/>6.4.3.2. Details of Usage</h4></div></div></div><p>
+                  The <span class="bold"><strong>
+            <span class="property">&lt;a4j:outputPanel&gt;</span>
+         </strong></span> component is used when one or more components should be always updated. 
+                  The component job is similar to that the <span class="emphasis"><em>
+            <span class="property">"reRender"</span>
+         </em></span> attribute does, but instead of specifying a comma separated list of components it wraps the components to be updated. 
+                  This could be useful in cases when some components aren't rendered during the primary non-ajax response.
+            </p><p>
+                  <span class="bold"><strong>Example:</strong></span>
+            </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">reRender</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;mypanel&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;mypanel&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">rendered</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{not&nbsp;empty&nbsp;foo.bar}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>
+                  By default the <span class="bold"><strong>
+            <span class="property">&lt;a4j:outputPanel&gt;</span>
+         </strong></span> is rendered as opening and closing HTML <span class="bold"><strong>
+            <span class="property">&lt;span&gt;</span>
+         </strong></span> tags and functions as container. 
+                  With the help of the <span class="emphasis"><em>
+            <span class="property">"layout"</span>
+         </em></span> attribute this output way could be set to any of three variants: 
+            </p><div class="itemizedlist"><ul><li><p>"inline" (default)</p></li><li><p>"block"</p></li><li><p>"none"</p></li></ul></div><p>
+                  If <code class="code">layout="block"</code> is set, the component is rendered as a pair of opening and closing <span class="bold"><strong>
+            <span class="property">&lt;div&gt;</span>
+         </strong></span> tags. 
+                  In this case it is possible to apply available for <span class="bold"><strong>
+            <span class="property">&lt;div&gt;</span>
+         </strong></span> elements style attributes.
+                  <code class="code">layout ="none"</code> helps to avoid an unnecessary tag around a context that is rendered or not according to the <span class="emphasis"><em>
+            <span class="property">"rendered"</span>
+         </em></span> attribute value. 
+                  In case an inner context isn't rendered the <span class="bold"><strong>
+            <span class="property">&lt;a4j:outputPanel&gt;</span>
+         </strong></span> is rendered in a <span class="bold"><strong>
+            <span class="property">&lt;span&gt;</span>
+         </strong></span> tags with ID equal to ID of a child component and <code class="code">display:none</code> style. 
+                  If a child component is rendered, <span class="bold"><strong>
+            <span class="property">&lt;a4j:outputPanel&gt;</span>
+         </strong></span> doesn't present at all in a final code.
+            </p><p>
+                  <span class="bold"><strong>Example:</strong></span>
+            </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">reRender</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;mypanel&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">layout</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;none&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;mypanel&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">rendered</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{not&nbsp;empty&nbsp;foo.bar}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>
+                  As you see, the code is very similar to the one shown above, but <span class="emphasis"><em>
+            <span class="property">"reRender "</span>
+         </em></span> attribute refers directly to the updating panelGrid and not to the framing outputPanel, 
+                  and it's more semantically correct.
+            </p><p>
+                  The <span class="bold"><strong>
+            <span class="property">&lt;a4j:outputPanel&gt;</span>
+         </strong></span> allows to update a part of a page basing on its own flag. 
+                  The flag is defined by the <span class="emphasis"><em>
+            <span class="property">"ajaxRendered"</span>
+         </em></span> attribute. 
+                  The flag is commonly used when a part of a page must be updated or can be updated on any response.
+            </p><p>
+                  <span class="bold"><strong>Example:</strong></span>
+            </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">ajaxRendered</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:messages</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>
+		      The <span class="bold"><strong>
+            <span class="property">&lt;a4j:outPanel&gt;</span>
+         </strong></span> should be used for non-JSF component part framing, which is to be updated on Ajax response, as RichFaces specifies the list of updating areas as a list of an existing JSF component.
+		</p><p> On default non-JSF context isn't saved in a component tree, but is rendered
+			anew every time. To accelerate the processing speed and Ajax response input speed,
+			RichFaces saves non-JSF context in a component tree on default. This option could be
+			canceled by <span class="emphasis"><em>
+				        <span class="property">"keepTransient"</span>
+			      </em></span> attribute that cancels transient flag forced setting for child components.
+			This flag setting keeps the current value set by child components. </p><div xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="note"><h2>Note:</h2><p> In JSF 1.1 implementation and lower, where non-JSF context should be framed with
+				the <span class="bold"><strong>
+					          <span class="property">&lt;f:verbatim&gt;</span>
+				        </strong></span> component, <span class="bold"><strong>
+					          <span class="property">&lt;a4j:outputPanel&gt;</span>
+				        </strong></span> doesn't improve this JSF implementation option in any way, so
+				you still have to use this tag where it's necessary without RichFaces
+				usage. </p></div><p> RichFaces allows setting Ajax responses rendering directly basing on component tree
+			nodes without referring to the JSP (XHTML) page code. It could be defined by <span class="emphasis"><em>
+				        <span class="property">"selfRendered"</span>
+			      </em></span> attribute setting to "true" on <span class="bold"><strong>
+				        <span class="property">&lt;a4j:region&gt;</span>
+			      </strong></span> and could help considerably speed up a response output. However, if a
+			transient flag is kept as it is, this rapid processing could cause missing of transient
+			components that present on view and don't come into a component tree. Hence,
+			for any particular case you could choose a way for you application optimization: speed
+			up processing or redundant memory for keeping tree part earlier defined a transient.
+		</p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e10718"/>6.4.3.3. Reference Data</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../tlddoc/index.htmla4j/outputPanel.html">Table of 
+							&lt;a4j:outputPanel&gt; 
+							 attributes</a>.
+						</p><div class="table"><a id="d0e10726"/><p class="title"><b>Table 6.24. Component Identification Parameters</b></p><div class="table-contents"><table summary="Component Identification Parameters" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>component-type</td><td>org.ajax4jsf.OutputPanel</td></tr><tr><td>component-family</td><td>javax.faces.Panel</td></tr><tr><td>component-type</td><td>org.ajax4jsf.ajax.OutputPanel</td></tr><tr><td>component-class</td><td> org.ajax4jsf.component.html.HtmlAjaxOutputPanel </td></tr><tr><td>renderer-type</td><td> org.ajax4jsf.components.AjaxOutputPanelRenderer </td></tr></tbody></table></div></div><br class="table-break"/></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e10762"/>6.4.3.4. Relevant Resources Links</h4></div></div></div><p>
+	            Visit <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://livedemo.exadel.com/richfaces-demo/richfaces/outputPanel.jsf?c=outputPanel">OutputPanel page</a> at RichFaces Livedemo for examples of component usage and their sources.
+	      </p><p>
+	            Useful articles:
+	      </p><div class="itemizedlist"><ul><li><p>
+                                                search the <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.jboss.org/index.html?module=bb&amp;op=viewforum&amp;f=26">RichFaces Users Forum</a> for some additional information on component usage;
+                                          </p></li></ul></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="a4j_mediaOutput.html"><strong>Prev</strong>6.4.2. 
+				&lt;
+				a4j:mediaOutput
+				&gt;
+				
+    ...</a></li><li class="up"><a accesskey="u" href="#"><strong>Top of page</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Front page</strong></a></li><li class="next"><a accesskey="n" href="ajaxMiscellaneous.html"><strong>Next</strong>6.5. Ajax Miscellaneous</a></li></ul></body></html>

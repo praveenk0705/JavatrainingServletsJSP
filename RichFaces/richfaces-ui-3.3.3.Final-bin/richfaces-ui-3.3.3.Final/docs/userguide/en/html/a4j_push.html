@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>6.1.10.  &lt; a4j:push &gt; available since 3.0.0</title><link rel="stylesheet" href="css/html.css" type="text/css"/><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"/><meta xmlns="" http-equiv="content-type" content="text/html; charset=UTF-8"/><link xmlns="" rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/><link rel="start" href="index.html" title="RichFaces Developer Guide"/><link rel="up" href="ajaxSupport.html" title="6.1. Ajax Support"/><link rel="prev" href="a4j_poll.html" title="6.1.9.  &lt; a4j:poll &gt; available since 3.0.0"/><link rel="next" href="a4j_queue.html" title="6.1.11.  &lt; a4j:queue &gt; available since 3.3.0"/><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.cookie.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/toggle.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script></head><body><div xmlns="" id="overlay"> </div><div xmlns="" class="time_out_div" id="timeOutDiv"> </div><div xmlns="" id="feedback-maincontainer"><h3 id="feedback-header">
+			Create new RichFaces Documentation Jira issue
+			<a href="javascript:void(0);" onclick="hidePopup('feedback-maincontainer', 'feedback-mailform', 'feedback-iFrame','feedback-submit', 'feedback-maincontainer');" id="feedback-close"><img src="images/close_org.png" class="feedback-images"/></a></h3><iframe id="feedback-iFrame" name="feedback-iFrame"> </iframe><form onsubmit="return validate_form()" id="feedback-mailform" method="post" action="https://jira.jboss.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310341&amp;issuetype=3" target="feedback-iFrame"><input type="hidden" id="priority" name="priority" value="3"/><input type="hidden" id="components" name="components" value="12311170"/><input type="hidden" id="versions" name="versions" value="12312451"/><input type="hidden" id="customfield_12310031" name="customfield_12310031" value="Documentation (Ref Guide, User Guide, etc.)"/><label for="summary">Summary</label><input type="text" id="feedback-summary" name="feedback-summary" title="Summarize the subject of the issue in a few words" maxlength="255" onKeyDown="countLeft('feedback-summary', 'left', 255);" onKeyUp="countLeft('feedback-summary', 'left', 255);"/><div id="summary-helper-left" class="feedback-helper"><span id="left">255</span> characters left
+			</div><div class="clear"> </div><label for="feedback-description">Description</label><textarea id="feedback-description" name="feedback-description" title="Provide more details about the issue" onKeyDown="countLeft('feedback-description', 'none', 500);" onKeyUp="countLeft('feedback-description', 'none', 500);"> </textarea><div class="clear"> </div><label for="feedback-environment">Environment</label><textarea id="feedback-environment" name="feedback-environment" title="Describe your environment"> </textarea></form><div id="guide_words">This will launch the RichFaces Jira page - to complete your feedback please login if needed, and submit the Jira.</div><input type="button" id="feedback-submit" value="Proceed to Jira" name="submit" class="feedback-formbutton" title="Proceed to create new issue" onclick="fillForm('feedback-mailform'); submitForm('feedback-mailform', 'feedback-iFrame', 'feedback-submit', 'feedback-maincontainer');"/></div><div xmlns="" id="feedback-wrapper"><a id="feedback-link" onclick="showPopup('feedback-maincontainer');"><img src="images/feedback_logo.png" class="feedback-images" onload="init('feedback-summary', 'feedback-description');"/></a></div><p id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="a4j_poll.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="a4j_queue.html"><strong>Next</strong></a></li></ul><div class="section" lang="en-US"><div class="titlepage"><div><div><h3 class="title"><a id="a4j_push"/>6.1.10. 
+				&lt;
+				a4j:push
+				&gt;
+				<span class="since">
+         <sup> available since <span class="version">3.0.0</span>
+         </sup>
+      </span>
+   </h3></div></div></div><a xmlns="" href="javascript:void(0);" id="expand_collapse">expand all</a><div xmlns="" class="toc"><dl xmlns="http://www.w3.org/1999/xhtml"><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_push.html#d0e8354">6.1.10.1. Description</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_push.html#d0e8392">6.1.10.2. Details of Usage</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_push.html#d0e8504">6.1.10.3. Reference Data</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_push.html#d0e8543">6.1.10.4. Relevant Resources Links</a></span></dt></dl></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8354"/>6.1.10.1. Description</h4></div></div></div><p>The <span class="bold"><strong>
+            <span class="property">&lt;a4j:push&gt;</span>
+         </strong></span>periodically perform Ajax request to server, to simulate 'push' data.</p><p>The main difference between <span class="bold"><strong>
+            <span class="property">&lt;a4j:push&gt;</span>
+         </strong></span> and <span class="bold"><strong>
+            <span class="property">&lt;a4j:poll&gt;</span>
+         </strong></span> components is that <span class="bold"><strong>
+            <span class="property">&lt;a4j:push&gt;</span>
+         </strong></span> 
+        makes request to minimal code only (not to JSF tree) in order to check the presence of messages in the queue. 
+        If the message exists the complete request is performed. The component doesn't poll registered beans 
+        but registers <code class="code">EventListener</code> which receives messages about events.</p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8392"/>6.1.10.2. Details of Usage</h4></div></div></div><p>The <span class="bold"><strong>
+                                        <span class="property">&lt;a4j:push&gt;</span>
+                              </strong></span> implements reverse Ajax technique. </p><p>The bean, for example, could be subscribed to Java Messaging Service
+                                        (<a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://java.sun.com/products/jms/">JMS</a>)
+                              topic or it could be implemented as Message Driven Bean (MDB) in order
+                              to send a message to the <span class="bold"><strong>
+                                        <span class="property">&lt;a4j:push&gt;</span>
+                              </strong></span> component about an event presence. In the presence of the
+                              event some action occurs.</p><p>Thus, a work paradigm with the <span class="bold"><strong>
+                                        <span class="property">&lt;a4j:push&gt;</span>
+                              </strong></span> component corresponds to an anisochronous model, but not
+                              to pools as for <span class="bold"><strong>
+                                        <span class="property">&lt;a4j:poll&gt;</span>
+                              </strong></span>
+                              <a href="">component</a>. See the simplest example below:</p><p>
+                              <span class="bold"><strong>Example:</strong></span>
+                    </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="JAVA"><!-- <br/> --><span class="java_separator">...</span>
+<!--  --><br/><span class="java_keyword">class</span><span class="java_plain">&nbsp;</span><span class="java_type">MyPushEventListener</span><span class="java_plain">&nbsp;</span><span class="java_keyword">implements</span><span class="java_plain">&nbsp;</span><span class="java_type">PushEventListener</span><span class="java_plain">&nbsp;</span><span class="java_separator">{</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_keyword">public</span><span class="java_plain">&nbsp;</span><span class="java_type">void</span><span class="java_plain">&nbsp;onEvent</span><span class="java_separator">(</span><span class="java_type">EventObject</span><span class="java_plain">&nbsp;evt</span><span class="java_separator">)</span><span class="java_plain">&nbsp;</span><span class="java_separator">{</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">println</span><span class="java_separator">(</span><span class="java_plain">evt</span><span class="java_separator">.</span><span class="java_plain">getSource</span><span class="java_separator">());</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_operator">//</span><span class="java_type">Some</span><span class="java_plain">&nbsp;action</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_separator">}</span>
+<!--  --><br/><span class="java_separator">}</span><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<!--  --><br/><span class="java_separator">...</span></pre><p>Code for <code class="code">EventListener</code> registration in the bean is placed
+                              below:</p><p>
+                              <span class="bold"><strong>Example:</strong></span>
+                    </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="JAVA"><!-- <br/> --><span class="java_separator">...</span>
+<!--  --><br/><span class="java_keyword">public</span><span class="java_plain">&nbsp;</span><span class="java_type">void</span><span class="java_plain">&nbsp;addListener</span><span class="java_separator">(</span><span class="java_type">EventListener</span><span class="java_plain">&nbsp;listener</span><span class="java_separator">)</span><span class="java_plain">&nbsp;</span><span class="java_separator">{</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_keyword">synchronized</span><span class="java_plain">&nbsp;</span><span class="java_separator">(</span><span class="java_plain">listener</span><span class="java_separator">)</span><span class="java_plain">&nbsp;</span><span class="java_separator">{</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_keyword">if</span><span class="java_plain">&nbsp;</span><span class="java_separator">(</span><span class="java_keyword">this</span><span class="java_separator">.</span><span class="java_plain">listener&nbsp;</span><span class="java_operator">!=</span><span class="java_plain">&nbsp;listener</span><span class="java_separator">)</span><span class="java_plain">&nbsp;</span><span class="java_separator">{</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_keyword">this</span><span class="java_separator">.</span><span class="java_plain">listener&nbsp;</span><span class="java_operator">=</span><span class="java_plain">&nbsp;</span><span class="java_separator">(</span><span class="java_type">PushEventListener</span><span class="java_separator">)</span><span class="java_plain">&nbsp;listener</span><span class="java_separator">;</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_separator">}</span>
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_separator">}</span>
+<!--  --><br/><span class="java_separator">}</span>
+<!--  --><br/><span class="java_separator">...</span></pre><p>A page code for this example is placed below.</p><p>
+                              <span class="bold"><strong>Example:</strong></span>
+                    </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:status</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">startText</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;in&nbsp;progress&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">stopText</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;done&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:region</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:push</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">reRender</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;msg&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">eventProducer</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{pushBean.addListener}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">interval</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;2000&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:region</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;msg&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{pushBean.date}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:convertDateTime</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;time&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:outputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:outputPanel</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:commandButton</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Push!!&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">action</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{pushBean.push}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">ajaxSingle</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>The example shows how date is updated on a page in compliance with data
+                              taken from a server. In the example <span class="emphasis"><em>
+                                        <span class="property">"interval"</span>
+                              </em></span> attribute has value "2000". This
+                              attribute defines an interval in milliseconds between the previous
+                              response and the next request. Default value is set to
+                              "1000" milliseconds (1 second). It's
+                              possible to set value equal to "0". In this case
+                              connection is permanent. </p><p>The <span class="emphasis"><em>
+                                        <span class="property">"timeout"</span>
+                              </em></span> attribute defines response waiting time in milliseconds.
+                              If a response isn't received during this period a connection
+                              is aborted and the next request is sent. Default value for <span class="emphasis"><em>
+                                        <span class="property">"timeout"</span>
+                              </em></span> attribute isn't set. Usage of <span class="emphasis"><em>
+                                        <span class="property">"interval"</span>
+                              </em></span> and <span class="emphasis"><em>
+                                        <span class="property">"timeout"</span>
+                              </em></span> attributes gives an opportunity to set short polls of
+                              queue state or long connections.</p><div xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="note"><h2>Note:</h2><p> The form around the <span class="bold"><strong>
+                                                  <span class="property">&lt;a4j:push&gt;</span>
+                                        </strong></span> component is required.</p></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8504"/>6.1.10.3. Reference Data</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../tlddoc/index.htmla4j/push.html">Table of 
+							&lt;a4j:push&gt; 
+							 attributes</a>.
+						</p><div class="table"><a id="d0e8512"/><p class="title"><b>Table 6.10. Component Identification Parameters </b></p><div class="table-contents"><table summary="Component Identification Parameters " border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>component-type</td><td>org.ajax4jsf.Push</td></tr><tr><td>component-family</td><td>org.ajax4jsf.components.AjaxPush</td></tr><tr><td>component-class</td><td>org.ajax4jsf.component.html.AjaxPush</td></tr><tr><td>renderer-type</td><td>org.ajax4jsf.components.AjaxPushRenderer</td></tr></tbody></table></div></div><br class="table-break"/></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8543"/>6.1.10.4. Relevant Resources Links</h4></div></div></div><p>
+                              <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://livedemo.exadel.com/richfaces-demo/richfaces/push.jsf?c=push">On RichFaces LiveDemo page </a> you can found some additional information for
+                                        <span class="bold"><strong>
+                                        <span class="property">&lt;a4j:push&gt;</span>
+                              </strong></span> component usage. </p><p>
+                    	Refer to <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.jboss.org/community/wiki/SimpleIRCWidgetwitha4jpush"> Simple IRC Widget with &lt;a4j:push&gt;</a> article to find out real-world usage of the <span class="bold"><strong><span class="property">&lt;a4j:push&gt;</span></strong></span> component.</p></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="a4j_poll.html"><strong>Prev</strong>6.1.9. 
+				&lt;
+				a4j:poll
+				&gt;
+				
+          a...</a></li><li class="up"><a accesskey="u" href="#"><strong>Top of page</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Front page</strong></a></li><li class="next"><a accesskey="n" href="a4j_queue.html"><strong>Next</strong>6.1.11. 
+				&lt;
+				a4j:queue
+				&gt;
+				
+         ...</a></li></ul></body></html>

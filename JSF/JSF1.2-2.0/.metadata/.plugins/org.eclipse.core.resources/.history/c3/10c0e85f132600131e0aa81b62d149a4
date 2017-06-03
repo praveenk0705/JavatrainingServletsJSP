@@ -1,0 +1,18 @@
+package com.shubham.jsf1;
+
+public class StudentBean {
+	private String sid;
+
+	public String searchStudentBySid() {
+
+		return "search";
+	}
+
+	public String getSid() {
+		return sid;
+	}
+
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
+}

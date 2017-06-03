@@ -1,0 +1,12 @@
+package com.shubham.jsf1;
+
+public class ECDemoBean {
+	static {
+		System.out.println("-----ECDemoBean S.B.------");
+	}
+	
+	String str="Shubham Learning Center";
+	public ECDemoBean() {
+		System.out.println("=======ECDemoBean 0-args=======");
+	}
+}

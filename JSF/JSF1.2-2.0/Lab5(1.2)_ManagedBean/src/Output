@@ -1,0 +1,50 @@
+-------StudentBean S.B.------
+======StudentBean 0-args======
+setDob() :10-10-10
+setAge() :99
+
+------CourseBean------
+======CourseBean 0-args======
+setCid() :101
+setCname() :JSF2.0
+setDuration() :3
+setCost() :3000.5
+getCost() :3000.5
+setFee() :3000.5
+setCourses() :JDBC
+getRefs() :null
+setRefs() :{aaa=1111, ccc=333, bbb=222}
+setCourse()
+******myInit()*******
+getFirstname()
+getLastname()
+getFirstname()
+getLastname()
+setFirstname()
+setLastname()
+
+*****show() Stareted*****
+
+*****show() Completed*****
+getFirstname()
+getLastname()
+getEmail()
+getPhone()
+getDob() :10-10-10
+getFee() :3000.5
+getAge() :99
+getCourses() :JDBC
+getCourses() :JDBC
+getCourses() :JDBC
+getRefs() :{aaa=1111, ccc=333, bbb=222}
+getAddress()
+getAddress()
+getCourse()
+getCname() :JSF2.0
+getCourse()
+getCost() :3000.5
+Sep 17, 2013 10:33:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading this Context has started
+
+******destroy()******
+Sep 17, 2013 10:33:45 PM org.apache.catalina.core.StandardContext addApplicationListener

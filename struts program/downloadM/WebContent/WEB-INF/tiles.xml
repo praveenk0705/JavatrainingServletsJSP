@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" >
+
+<tiles-definitions>
+<definition name="BaseDef1" path="/JLCLayout1.jsp">
+<put name="HEADER" value="header.jsp"/>
+<put name="BODY" value=""/>
+<put name="FOOTER" value="footer.jsp"/>
+</definition>
+<definition name="BaseDef2" path="/JLCLayout2.jsp">
+<put name="HEADER" value="header.jsp"/>
+<put name="LMENU" value="adminmenu.jsp"/>
+<put name="BODY" value=""/>
+<put name="FOOTER" value="footer.jsp"/>
+</definition>
+<definition name="LoginDef" extends="BaseDef1">
+<put name="BODY" value="login.jsp"/>
+</definition>
+<definition name="RegisterDef" extends="BaseDef1">
+<put name="BODY" value="registerhome.jsp"/>
+</definition>
+<definition name="downloadDef" extends="BaseDef1">
+<put name="BODY" value="download.jsp"/>
+</definition>
+<definition name="adminDef" extends="BaseDef2">
+<put name="BODY" value="upload.jsp"/>
+</definition>
+<definition name="showdownloadDef" extends="BaseDef2">
+<put name="BODY" value="showdownload.jsp"/>
+</definition>
+
+</tiles-definitions>

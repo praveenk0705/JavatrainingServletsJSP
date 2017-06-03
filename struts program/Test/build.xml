@@ -1,0 +1,78 @@
+<project name="Lab6" default="start">
+<property name="srcdir" value="src"/>
+<property name="libdir" value="lib"/>
+<property name="tlddir" value="tlds"/>
+<property name="bindir" value="bin"/>
+<property name="destdir" value="dest"/>
+<property name="javadir" value="${srcdir}/java"/>
+<property name="resdir" value="${javadir}/resources"/>
+<property name="webdir" value="${srcdir}/web"/>
+<property name="imgdir" value="${webdir}/images"/>
+<property name="appdir" value="${bindir}/webpro"/>
+<property name="webinfdir" value="${appdir}/WEB-INF"/>
+<property name="classesdir" value="${webinfdir}/classes"/>
+<property name="deploydir" value="D:\Tomcat 6.0\webapps"/>
+
+<path id="myclasspath">
+<fileset dir="${libdir}" includes="*.jar"/>
+</path>
+
+<target name="cleanup">
+<echo message="Deleting Folders"/>
+<delete dir="${bindir}"/>
+<delete dir="${destdir}"/>
+</target>
+
+<target name="create">
+<echo message="Creating Folders"/>
+<mkdir dir="${destdir}"/>
+<mkdir dir="${classesdir}"/>
+<mkdir dir="${appdir}/images"/>
+<mkdir dir="${classesdir}/resources"/>
+<mkdir dir="${webinfdir}/lib"/>
+</target>
+
+<target name="copy">
+<echo message="Copying jsp and html files"/>
+<copy todir="${appdir}">
+<fileset dir="${webdir}" includes="*.jsp,*.html"/>
+</copy>
+<echo message="Copying xml files"/>
+<copy todir="${webinfdir}">
+<fileset dir="${webdir}" includes="*.xml"/>
+</copy>
+<echo message="Copying images files"/>
+<copy todir="${appdir}/images">
+<fileset dir="${imgdir}" includes="*.*"/>
+</copy>
+<echo message="Copying tld files"/>
+<copy todir="${webinfdir}">
+<fileset dir="${tlddir}" includes="*.tld"/>
+</copy>
+<echo message="Copying jars files"/>
+<copy todir="${webinfdir}/lib">
+<fileset dir="${libdir}" includes="*.jar"/>
+</copy>
+</target>
+
+<target name="compile">
+<echo message="Compiling java Classes"/>
+<javac srcdir="${javadir}" destdir="${classesdir}" classpathref="myclasspath"/>
+</target>
+
+<target name="createwar">
+<echo message="Creating war file"/>
+<jar destfile="${destdir}\jlcapp.war" basedir="${appdir}"/>
+</target>
+
+<target name="deploywar">
+<echo message="Deploying into Server"/>
+<copy todir="${deploydir}">
+<fileset dir="${destdir}"/>
+</copy>
+</target>
+
+<target name="start" depends="cleanup,create,copy,compile,createwar,deploywar">
+<echo message="Building Application is Completed"/>
+</target>
+</project>

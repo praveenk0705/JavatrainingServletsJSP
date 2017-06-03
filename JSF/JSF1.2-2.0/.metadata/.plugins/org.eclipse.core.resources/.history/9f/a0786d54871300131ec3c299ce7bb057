@@ -1,0 +1,12 @@
+package com.shubham.servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class LoadOnStartup extends HttpServlet {
+
+
+    public LoadOnStartup() {
+    	System.out.println("======LoadOnStartup 0-args=======");
+    }
+
+}

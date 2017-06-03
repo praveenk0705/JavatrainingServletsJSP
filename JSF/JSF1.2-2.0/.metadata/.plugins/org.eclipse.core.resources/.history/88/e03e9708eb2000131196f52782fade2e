@@ -1,0 +1,6 @@
+javax.faces.component.UIInput.REQUIRED={0} Required
+
+javax.faces.validator.LengthValidator.MINIMUM={1} can have minimum of {0} characters
+javax.faces.validator.LengthValidator.MAXIMUM={1} can have minimum of {0} characters
+
+javax.faces.validator.LongRangeValidator.NOT_IN_RANGE={2} length must be between {0} and {1}

@@ -1,0 +1,9 @@
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+
+<f:view>
+<html><body><center>
+<meta http-equiv="Refresh" Content="3;url=register.shu"/>
+</center></body></html>
+
+</f:view>

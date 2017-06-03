@@ -1,0 +1,13 @@
+package com.shubham.servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class LoadOnStartup extends HttpServlet {
+
+
+    public LoadOnStartup() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+}

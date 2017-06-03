@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config>
+<application>
+<message-bundle>com.shubham.jsf1.messages</message-bundle>
+</application>
+</faces-config>

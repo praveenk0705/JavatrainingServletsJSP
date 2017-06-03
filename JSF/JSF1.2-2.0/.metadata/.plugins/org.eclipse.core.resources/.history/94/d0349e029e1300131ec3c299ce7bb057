@@ -1,0 +1,10 @@
+<html>
+<body>
+<h2>This is Login Page</h2>
+
+<form action="/login.jlc">
+Username<input type="text" name="uname"/>
+
+</form>
+</body>
+</html>

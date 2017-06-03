@@ -1,0 +1,13 @@
+INDEX VERSION 1.126
+C:\test\Indigo\servlets2.x\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4218546187.index
+\Lab9\src
+C:\test\Indigo\servlets2.x\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1575730349.index
+\Lab11\src
+C:\test\Indigo\servlets2.x\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3327062210.index
+\Lab10\src
+C:\test\Indigo\servlets2.x\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\712339037.index
+\Lab12\src
+C:\test\Indigo\servlets2.x\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3000375629.index
+\Lab17\src
+C:\test\Indigo\servlets2.x\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1541917267.index
+\Lab19\src

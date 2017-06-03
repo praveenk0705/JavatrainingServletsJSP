@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>6.11.5.  &lt; rich:fileUpload &gt; available since 3.2.0</title><link rel="stylesheet" href="css/html.css" type="text/css"/><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"/><meta xmlns="" http-equiv="content-type" content="text/html; charset=UTF-8"/><link xmlns="" rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/><link rel="start" href="index.html" title="RichFaces Developer Guide"/><link rel="up" href="richInput.html" title="6.11. Rich Input"/><link rel="prev" href="rich_editor.html" title="6.11.4.  &lt; rich:editor &gt; available since 3.3.0"/><link rel="next" href="rich_inplaceInput.html" title="6.11.6.  &lt; rich:inplaceInput &gt; available since 3.2.0"/><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.cookie.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/toggle.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script></head><body><div xmlns="" id="overlay"> </div><div xmlns="" class="time_out_div" id="timeOutDiv"> </div><div xmlns="" id="feedback-maincontainer"><h3 id="feedback-header">
+			Create new RichFaces Documentation Jira issue
+			<a href="javascript:void(0);" onclick="hidePopup('feedback-maincontainer', 'feedback-mailform', 'feedback-iFrame','feedback-submit', 'feedback-maincontainer');" id="feedback-close"><img src="images/close_org.png" class="feedback-images"/></a></h3><iframe id="feedback-iFrame" name="feedback-iFrame"> </iframe><form onsubmit="return validate_form()" id="feedback-mailform" method="post" action="https://jira.jboss.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310341&amp;issuetype=3" target="feedback-iFrame"><input type="hidden" id="priority" name="priority" value="3"/><input type="hidden" id="components" name="components" value="12311170"/><input type="hidden" id="versions" name="versions" value="12312451"/><input type="hidden" id="customfield_12310031" name="customfield_12310031" value="Documentation (Ref Guide, User Guide, etc.)"/><label for="summary">Summary</label><input type="text" id="feedback-summary" name="feedback-summary" title="Summarize the subject of the issue in a few words" maxlength="255" onKeyDown="countLeft('feedback-summary', 'left', 255);" onKeyUp="countLeft('feedback-summary', 'left', 255);"/><div id="summary-helper-left" class="feedback-helper"><span id="left">255</span> characters left
+			</div><div class="clear"> </div><label for="feedback-description">Description</label><textarea id="feedback-description" name="feedback-description" title="Provide more details about the issue" onKeyDown="countLeft('feedback-description', 'none', 500);" onKeyUp="countLeft('feedback-description', 'none', 500);"> </textarea><div class="clear"> </div><label for="feedback-environment">Environment</label><textarea id="feedback-environment" name="feedback-environment" title="Describe your environment"> </textarea></form><div id="guide_words">This will launch the RichFaces Jira page - to complete your feedback please login if needed, and submit the Jira.</div><input type="button" id="feedback-submit" value="Proceed to Jira" name="submit" class="feedback-formbutton" title="Proceed to create new issue" onclick="fillForm('feedback-mailform'); submitForm('feedback-mailform', 'feedback-iFrame', 'feedback-submit', 'feedback-maincontainer');"/></div><div xmlns="" id="feedback-wrapper"><a id="feedback-link" onclick="showPopup('feedback-maincontainer');"><img src="images/feedback_logo.png" class="feedback-images" onload="init('feedback-summary', 'feedback-description');"/></a></div><p id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="rich_editor.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="rich_inplaceInput.html"><strong>Next</strong></a></li></ul><div class="section" lang="en-US"><div class="titlepage"><div><div><h3 class="title"><a id="rich_fileUpload"/>6.11.5. 
+				&lt;
+				rich:fileUpload
+				&gt;
+				<span class="since">
+         <sup> available since <span class="version">3.2.0</span>
+         </sup>
+      </span>
+   </h3></div></div></div><a xmlns="" href="javascript:void(0);" id="expand_collapse">expand all</a><div xmlns="" class="toc"><dl xmlns="http://www.w3.org/1999/xhtml"><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_fileUpload.html#d0e33114">6.11.5.1. Description</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_fileUpload.html#d0e33137">6.11.5.2. Key Features</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_fileUpload.html#d0e33171">6.11.5.3. Details of Usage</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_fileUpload.html#d0e33806">6.11.5.4. Reference Data</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_fileUpload.html#d0e34306">6.11.5.5. Relevant Resources Links</a></span></dt></dl></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e33114"/>6.11.5.1. Description</h4></div></div></div><p>The <span class="bold"><strong>
+            <span class="property">&lt;rich:fileUpload&gt;</span>
+         </strong></span> component is designed to perform Ajax-ed files upload to server.
+     </p><div class="figure"><a id="d0e33125"/><div class="figure-contents"><div class="mediaobject"><img src="images/fileUpload_init.png" alt="&lt;rich:fileUpload&gt; component"/></div></div><p class="title"><b>Figure 6.135. 
+            <span class="bold">
+               <span class="property">&lt;rich:fileUpload&gt;</span>
+            </span> component</b></p></div><br class="figure-break"/></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e33137"/>6.11.5.2. Key Features</h4></div></div></div><div class="itemizedlist"><ul><li><p>ProgressBar shows the status of downloads</p></li><li><p>Restriction on File type, file size and number of files to be uploaded</p></li><li><p>Multiple files upload support</p></li><li><p>Embedded Flash module</p></li><li><p>Possibility to cancel the request</p></li><li><p>One request for every upload</p></li><li><p>Automatic uploads</p></li><li><p>Supports standard JSF internationalization</p></li><li><p>Highly customizable look and feel</p></li><li><p>Disablement support</p></li></ul></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e33171"/>6.11.5.3. Details of Usage</h4></div></div></div><p>The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component consists of two parts:</p><div class="itemizedlist"><ul><li><p>
+                        <span class="property">List of files</span> which contains the list of currently
+                        chosen files to upload with possibility to manage every file </p></li><li><p>
+                        <span class="property">Component controls</span> - the bar with controls for managing
+                        the whole component </p></li></ul></div><p>
+        </p><p> There are two places where the uploaded files are stored: </p><div class="itemizedlist"><ul><li><p> In the temporary folder (depends on OS) if the value of the
+                        <code class="code">createTempFile</code> parameter in <span class="property">Ajax4jsf
+                        Filter</span> (in web.xml) section is "true" (by Default) </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">init-param</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">param-name</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">createTempFiles</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">param-name</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">param-value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">true</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">param-value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">init-param</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre></li><li><p> In the RAM if the value of the <code class="code">createTempFile</code> parameter in
+                        <span class="property">Ajax4jsf Filter</span> section is "false".
+                    This is a better way for storing small-sized files. </p></li></ul></div><p> The <span class="emphasis"><em>
+                <span class="property">"uploadData"</span>
+            </em></span> attribute defines the collection of files uploaded. See the example below. </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">uploadData</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.data}&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>The <span class="emphasis"><em>
+                <span class="property">"fileUploadedListener"</span>
+            </em></span> is called at server side after every file uploaded and used for the saving
+            files from temporary folder or RAM. </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">uploadData</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.data}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">fileUploadListener</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.listener}&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;...</span><br />
+</pre><p> The following methods for processing the uploaded files are available: </p><div class="itemizedlist"><ul><li><p>
+                    <code class="code">isMultiUpload()</code>. It returns "true" if several
+                    files have been uploaded </p></li><li><p>
+                    <code class="code">getUploadItems()</code>. It returns the list of the uploaded files. If one
+                    file was uploaded, the <code class="code">getUploadItems()</code> method will return the list
+                    consisting of one file </p></li><li><p>
+                    <code class="code">getUploadItem()</code>. It returns the whole list in case of uploading one
+                    file only. If several files were uploaded, the <code class="code">getUploadItem()</code>
+                    method will return the first element of the uploaded files list. </p></li></ul></div><p> Automatically files uploading could be performed by means of the <span class="emphasis"><em>
+                <span class="property"> "immediateUpload"</span>
+            </em></span> attribute. If the value of this attribute is "true" files
+            are uploaded automatically once they have been added into the list. All next files in
+            the list are uploaded automatically one by one. If you cancel uploading process next
+            files aren't started to upload till you press the "Upload"
+            button or clear the list. </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">uploadData</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.data}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">fileUploadListener</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.listener}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">immediateUpload</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;...</span><br />
+</pre><p> The <span class="emphasis"><em>
+                <span class="property"> "autoclear"</span>
+            </em></span> attribute is used to remove automatically files from the list after upload
+            completed. See the simple example below. </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">uploadData</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.data}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">autoclear</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p> Each file in list waiting for upload has link "Cancel" opposite its name. 
+            Clicking this link invokes JS API <code class="code">remove()</code> function, which gets <code class="code">$('id').component.entries[i]</code> as a parameter 
+            and removes the particular file from list and from the queue for upload. 
+            After a file has been uploaded the link "Cancel" changes to "Clear".
+            Clicking "Clear" invokes <code class="code">clear()</code> JS API function, which also gets ID of the particular entry and removes it from the list. 
+            Uploaded to server file itself is kept untouched.
+        </p><p> The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component provides following restrictions: </p><div class="itemizedlist"><ul><li><p> On <span class="property"> file types</span>, use <span class="emphasis"><em>
+                        <span class="property"> "acceptedTypes"</span>
+                    </em></span> attribute to define file types accepted by component. In the example
+                    below only files with "html" and "jpg"
+                    extensions are accepted to upload. </p><p>
+                    <span class="bold"><strong>Example:</strong></span>
+                </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">acceptedTypes</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;html,&nbsp;jpg&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre></li><li><p> On <span class="property"> file size</span>, use the <code class="code">maxRequestSize</code>
+                    parameter(value in bytes) inside <span class="property">Ajax4jsf Filter</span> section in
+                        <span class="property">web.xml</span>: </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">init-param</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">param-name</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">maxRequestSize</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">param-name</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">param-value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">1000000</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">param-value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">init-param</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre></li><li><p> On <span class="property">max files quantity</span>, use the <span class="emphasis"><em>
+                        <span class="property"> "maxFilesQuantity"</span>
+                    </em></span> attribute to define max number of files allowed to be uploaded.
+                    After a number of files in the list equals to the value of this attribute
+                    "Add" button is disabled and nothing could be uploaded even if
+                    you clear the whole list. In order to upload files again you should rerender the
+                    component. As it could be seen in the example below, only 2 files are accepted
+                    for uploading. </p><p>
+                    <span class="bold"><strong>Example:</strong></span>
+                </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">maxFilesQuantity</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;2&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p> This is the result: </p><div class="figure"><a id="d0e33384"/><div class="figure-contents"><div class="mediaobject"><img src="images/fileUpload2.png" alt="&lt;rich:fileUpload&gt; with &#34;maxFilesQuantity&#34; attribute"/></div></div><p class="title"><b>Figure 6.136. 
+                  <span class="bold">
+                            <span class="property">&lt;rich:fileUpload&gt;</span>
+                        </span>with <span class="emphasis"><em>
+                            <span class="property"> "maxFilesQuantity"</span>
+                        </em></span> attribute</b></p></div><br class="figure-break"/></li></ul></div><p><a id="fileUploadEventAttributes"/>The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component provides a number of specific event attributes: </p><div class="itemizedlist"><ul><li><p> The <span class="emphasis"><em>
+                        <span class="property"> "onadd"</span>
+                    </em></span> event handler called on an add file operation </p></li><li><p> The <span class="emphasis"><em>
+                        <span class="property"> "onupload"</span>
+                    </em></span> which gives you a possibility to cancel the upload at client side
+                </p></li><li><p> The <span class="emphasis"><em>
+                        <span class="property"> "onuploadcomplete"</span>
+                    </em></span> which is called after all files from the list are uploaded </p></li><li><p> The <span class="emphasis"><em>
+                        <span class="property"> "onuploadcanceled"</span>
+                    </em></span> which is called after upload has been canceled via cancel control
+                </p></li><li><p> The <span class="emphasis"><em>
+                        <span class="property"> "onerror"</span>
+                    </em></span> which is called if the file upload was interrupted according to any
+                    errors </p></li></ul></div><p> The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component has an embedded Flash module that adds extra functionality to the
+            component. The module is enabled with <span class="emphasis"><em>
+                <span class="property"> "allowFlash"</span>
+            </em></span> attribute set to "true". </p><p>These are the additional features that the Flash module provides:</p><div class="itemizedlist"><ul><li><p>Multiple files choosing;</p></li><li><p>Permitted file types are specified in the "Open File" dialog
+                    window;</p></li><li><p>A number of additional entry object properties are also available, which can
+                    be found <a href="rich_fileUpload.html#objectProperties" title="Table 6.180. Client-side object properties">RichFaces Developer Guide section on object properties</a>. </p></li></ul></div><p>Apart from uploading files to the sever without using Ajax, the Flash module provides
+            a number of useful API functions that can be used to obtain information about the
+            uploaded file. </p><p>There are 2 ways to obtain the data stored in the FileUploadEntry object. </p><div class="itemizedlist"><ul><li><p>By means of JavaScript on the client side. Use the following syntax for that
+                        <code class="code">entries[i].propertyName</code>. For example
+                        <code class="code">entries[0].state</code> will return the state of the file that is being
+                    processed or has just been processed.</p></li><li><p>The properties of <code class="code">FileUploadEntry</code> object can be retrieved using
+                    the <code class="code">entry.propertyName</code> expression in the specific event attributes.
+                    For example,
+                        <code class="code">onupload="alert(event.memo.entry.fileName);" </code>
+                    will display a message with the name of the file at the very moment when upload
+                    operation starts. A full list of properties can be found in <a href="rich_fileUpload.html#objectPropertiesWithAttributes" title="Table 6.181. Client-side object properties available with specific event attributes">RichFaces Developer Guide section on properties and their attributes</a>.</p></li></ul></div><p>The given bellow code sample demonstrates how the properties can be used. Please study
+            it carefully. </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">head</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">script</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;_onaddHandler&nbsp;(e)&nbsp;{</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;i&nbsp;=&nbsp;0;</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(;&nbsp;i&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">e.memo.entries.lenght</span><span class="xml_plain">;&nbsp;</span><span class="xml_attribute_name">i</span><span class="xml_plain">++)&nbsp;{</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">alert</span><span class="xml_plain">(</span><span class="xml_attribute_name">e.memo.entries</span><span class="xml_plain">[</span><span class="xml_attribute_name">i</span><span class="xml_plain">].</span><span class="xml_attribute_name">creator</span><span class="xml_plain">);&nbsp;&nbsp;//</span><span class="xml_attribute_name">Shows</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">creators</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">of</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">the</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">added</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">files</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br />
+<span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">function</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">_onerrorhandle</span><span class="xml_plain">(</span><span class="xml_attribute_name">e</span><span class="xml_plain">)&nbsp;{</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">alert</span><span class="xml_plain">(</span><span class="xml_attribute_name">e.memo.entry.fileName</span><span class="xml_plain">&nbsp;+&nbsp;</span><span class="xml_attribute_value">&quot;file&nbsp;was&nbsp;not&nbsp;uploaded&nbsp;due&nbsp;&nbsp;transfer&nbsp;error&quot;</span><span class="xml_plain">);</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span class="xml_attribute_name">script</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">head</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;...</span><br />
+</pre><p> Moreover, embedded Flash module provides a smoother representation of progress bar
+            during the uploading process: the polling is performed is not by Ajax, but by means of
+            the flash module. </p><div class="figure"><a id="d0e33521"/><div class="figure-contents"><div class="mediaobject"><img src="images/flash_fileUpload.png" alt="Uploading using Flash module &lt;rich:fileUpload&gt;"/></div></div><p class="title"><b>Figure 6.137.  Uploading using Flash module <span class="bold">
+                    <span class="property">&lt;rich:fileUpload&gt;</span>
+                </span>
+            </b></p></div><br class="figure-break"/><p>However, the Flash module doesn't perform any visual representation of the
+            component.</p><p> In order to customize the information regarding the ongoing process you could use <span class="emphasis"><em>
+                <span class="property">"label"</span>
+            </em></span> facet with the following macrosubstitution: </p><div class="itemizedlist"><ul><li><p>
+                        <code class="code"> {B}</code>, <code class="code">{KB}</code>, <code class="code">{MB}</code> contains the size of
+                        file uploaded in bytes, kilobytes, megabytes respectively </p></li><li><p>
+                        <code class="code">{_B}</code>, <code class="code">{_KB}</code>, <code class="code">{_MB}</code> contains the
+                        remain file size to upload in bytes, kilobytes, megabytes respectively
+                    </p></li><li><p>
+                        <code class="code">{ss}</code>, <code class="code">{mm}</code>, <code class="code">{hh}</code> contains elapsed
+                        time in seconds, minutes and hours respectively </p></li></ul></div><p>
+        </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">uploadData</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.data}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">fileUploadListener</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.listener}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:facet</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;label&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{_KB}KB&nbsp;from&nbsp;{KB}KB&nbsp;uploaded&nbsp;---&nbsp;{mm}:{ss}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:facet</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>This is the result:</p><div class="figure"><a id="d0e33592"/><div class="figure-contents"><div class="mediaobject"><img src="images/fileUpload3.png" alt="&lt;rich:fileUpload&gt; with &#34;label&#34; facet"/></div></div><p class="title"><b>Figure 6.138. 
+                <span class="bold">
+                    <span class="property">&lt;rich:fileUpload&gt;</span>
+                </span> with <span class="emphasis"><em>
+                    <span class="property"> "label"</span>
+                </em></span> facet </b></p></div><br class="figure-break"/><p>You could define labels of the <span class="property">component controls</span> with the help
+            of <span class="emphasis"><em>
+                <span class="property"> "addControlLabel"</span>
+            </em></span>, <span class="emphasis"><em>
+                <span class="property"> "clearAllControlLabel"</span>
+            </em></span>, <span class="emphasis"><em>
+                <span class="property"> "clearControlLabel"</span>
+            </em></span>, <span class="emphasis"><em>
+                <span class="property"> "stopEntryControlLabel"</span>
+            </em></span>, <span class="emphasis"><em>
+                <span class="property"> "uploadControlLabel"</span>
+            </em></span> attributes. See the following example. </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">addControlLabel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Add&nbsp;file...&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">clearAllControlLabel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Clear&nbsp;all&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">clearControlLabel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Clear&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">stopEntryControlLabel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Stop&nbsp;process&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">uploadControlLabel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Upload&nbsp;file&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p> This is the result: </p><div class="figure"><a id="d0e33654"/><div class="figure-contents"><div class="mediaobject"><img src="images/fileUpload4.png" alt="&lt;rich:fileUpload&gt; with labels"/></div></div><p class="title"><b>Figure 6.139. 
+                <span class="bold">
+                    <span class="property">&lt;rich:fileUpload&gt;</span>
+                </span> with labels </b></p></div><br class="figure-break"/><p> The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component allows to use sizes attributes: </p><div class="itemizedlist"><ul><li><p>
+                    <span class="emphasis"><em>
+                        <span class="property"> "listHeight"</span>
+                    </em></span> attribute specifies a height for list of files in pixels </p></li><li><p>
+                    <span class="emphasis"><em>
+                        <span class="property"> "listWidth"</span>
+                    </em></span> attribute specifies a width for list of files in pixels </p></li></ul></div><p> In order to disable the whole component you could use the <span class="emphasis"><em>
+                <span class="property"> "disabled"</span>
+            </em></span> attribute. See the following example. </p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">disabled</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>This is the result:</p><div class="figure"><a id="d0e33710"/><div class="figure-contents"><div class="mediaobject"><img src="images/fileUpload5.png" alt="&lt;rich:fileUpload&gt; with &#34;disabled&#34; attribute"/></div></div><p class="title"><b>Figure 6.140. 
+                <span class="bold">
+                    <span class="property">&lt;rich:fileUpload&gt;</span>
+                </span>with <span class="emphasis"><em>
+                    <span class="property"> "disabled"</span>
+                </em></span> attribute </b></p></div><br class="figure-break"/><p>It's possible to handle events for fileUpload using JavaScript code. A
+        	simplest example of JavaScript API usage is placed below:</p><p>
+            <span class="bold"><strong>Example:</strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;upload&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">disabled</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;false&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:commandButton</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">onclick</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;${rich:component('upload')}.disable();&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Disable&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>
+            The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component also provides a number of JavaScript properties, that can be used to
+            process uploaded files, file states etc. The given below example illustrates how the
+                <code class="code">entries[0].state</code> property can be used to get access to the file state.
+            Full list of JavaScript properties can be found <a href="rich_fileUpload.html#objectProperties" title="Table 6.180. Client-side object properties">below</a>. </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">fileUploadListener</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{fileUploadBean.listener}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">maxFilesQuantity</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{fileUploadBean.uploadsAvailable}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;upload&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">immediateUpload</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{fileUploadBean.autoUpload}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">acceptedTypes</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;jpg,&nbsp;gif,&nbsp;png,&nbsp;bmp&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onuploadcomplete&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">reRender</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;info&quot;</span><span class="xml_plain">&nbsp;&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:fileUpload</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:commandButton</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">onclick</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;if($('j_id232:upload').component.entries[0].state&nbsp;==&nbsp;FileUploadEntry.UPLOAD_SUCCESS)&nbsp;alert&nbsp;('DONE');&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Check&nbsp;file&nbsp;state&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>The <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> component allows to use internationalization method to redefine and localize
+            the labels. You could use application resource bundle and define
+                <code class="code">RICH_FILE_UPLOAD_CANCEL_LABEL</code>,
+            <code class="code">RICH_FILE_UPLOAD_STOP_LABEL</code>, <code class="code">RICH_FILE_UPLOAD_ADD_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_UPLOAD_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_CLEAR_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_CLEAR_ALL_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_PROGRESS_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_SIZE_ERROR_LABLE</code>,
+                <code class="code">RICH_FILE_UPLOAD_TRANSFER_ERROR_LABLE</code>,
+                <code class="code">RICH_FILE_UPLOAD_ENTRY_STOP_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_ENTRY_CLEAR_LABEL</code>,
+                <code class="code">RICH_FILE_UPLOAD_ENTRY_CANCEL_LABEL</code> there. </p><p>To make <span class="property">&lt;rich:fileUpload&gt;</span> component work properly
+            with MyFaces extensions, the order in which filters are defined and mapped in web.xml
+            is important. See <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.jboss.org/community/docs/DOC-13537">corresponding FAQ chapter</a>. </p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e33806"/>6.11.5.4. Reference Data</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../tlddoc/index.htmlrich/fileUpload.html">Table of 
+							&lt;rich:fileUpload&gt; 
+							 attributes</a>.
+						</p><div class="table"><a id="d0e33814"/><p class="title"><b>Table 6.178. Component Identification Parameters</b></p><div class="table-contents"><table summary="Component Identification Parameters" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>component-type</td><td>org.richfaces.component.FileUpload</td></tr><tr><td>component-class</td><td>org.richfaces.component.html.HtmlFileUpload</td></tr><tr><td>component-family</td><td>org.richfaces.component.FileUpload</td></tr><tr><td>renderer-type</td><td>org.richfaces.renderkit.html.FileUploadRenderer</td></tr><tr><td>tag-class</td><td>org.richfaces.taglib.FileUploadTag</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e33850"/><p class="title"><b>Table 6.179. JavaScript API</b></p><div class="table-contents"><table summary="JavaScript API" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>beforeSubmit()</td><td>Sets up necessary request parameters for file uploading and submits
+                            form to server by command button. This method should be used together
+                            with commands. </td></tr><tr><td>clear()</td><td>Removes all files from the list. The function can also get the <code class="code">$('id').component.entries[i]</code> as a parameter to remove a particular file.</td></tr><tr><td>disable()</td><td>Disables the component</td></tr><tr><td>enable()</td><td>Enables the component</td></tr><tr><td>remove()</td><td>Cancels the request for uploading a file by removing this file from
+                              upload list and upload queue. Gets <code class="code">$('id').component.entries[i]</code> as a parameter.</td></tr><tr><td>stop()</td><td>Stops the uploading process</td></tr><tr><td>submitForm()</td><td>Submits form to server. All added files will be put to model and
+                            event.</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="objectProperties"/><p class="title"><b>Table 6.180. Client-side object properties</b></p><div class="table-contents"><table summary="Client-side object properties" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody><tr><td>entries</td><td>Returns a array of all files in the list </td></tr><tr><td>entries.length</td><td>Returns the number of files in the list </td></tr><tr><td>entries[i].fileName</td><td>Returns the file name, that is retrieved by the array index </td></tr><tr><td>entries[i].state </td><td>Returns the file state. Possible states are <div class="itemizedlist"><ul><li><p>"initialized" - the file is added,
+                                        corresponds to FileUploadEntry.INITIALIZED constant </p></li><li><p>"progress" - the file is being uploaded,
+                                        corresponds to FileUploadEntry.UPLOAD_IN_PROGRESS
+                                        constant</p></li><li><p>"ready" - uploading is in process,
+                                        corresponds to FileUploadEntry.READY constant The file will
+                                        be uploaded on queue order.</p></li><li><p>"canceled" - uploading of the file is
+                                        canceled, corresponds to FileUploadEntry.UPLOAD_CANCELED
+                                        constant </p></li><li><p>"done" - the file is uploaded
+                                        successfully, corresponds to FileUploadEntry.UPLOAD_SUCCESS
+                                        constant</p></li><li><p>"transfer_error" - a file transfer error
+                                        occurred, corresponds to
+                                        FileUploadEntry.UPLOAD_TRANSFER_ERROR constant </p></li><li><p>"size_error" - the file exceeded maximum
+                                        size, corresponds to FileUploadEntry.UPLOAD_SIZE_ERROR
+                                        constant</p></li></ul></div>
+                        </td></tr><tr><td>entries[i].size</td><td> Returns the size of the file. Available in flash enabled version
+                            only</td></tr><tr><td>entries[i].Type</td><td>Returns the mime type of the file. Available in flash enabled version
+                            only</td></tr><tr><td>entries[i].creator </td><td>Returns the name of the author of the file. Available in flash
+                            enabled version only</td></tr><tr><td>entries[i].creationDate</td><td>Returns the date when the file was created. Available in flash
+                            enabled version only</td></tr><tr><td>entries[i].modificationDate</td><td>Returns the date of the last file modification. Available in flash
+                            enabled version only</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="objectPropertiesWithAttributes"/><p class="title"><b>Table 6.181. Client-side object properties available with specific <a href="rich_fileUpload.html#fileUploadEventAttributes"> event attributes</a>
+         </b></p><div class="table-contents"><table summary="Client-side object properties available with specific  event attributes&#xA;         " border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody><tr><td>entry.state </td><td>Returns the file state. Possible states are <div class="itemizedlist"><ul><li><p>"initialized" - the file is added,
+                                        corresponds to FileUploadEntry.INITIALIZED constant </p></li><li><p>"progress" - the file is being uploaded,
+                                        corresponds to FileUploadEntry.UPLOAD_IN_PROGRESS
+                                        constant</p></li><li><p>"ready" - uploading is in process,
+                                        corresponds to FileUploadEntry.READY constant The file will
+                                        be uploaded on queue order.</p></li><li><p>"canceled" - uploading of the file is
+                                        canceled, corresponds to FileUploadEntry.UPLOAD_CANCELED
+                                        constant </p></li><li><p>"done" - the file is uploaded
+                                        successfully, corresponds to FileUploadEntry.UPLOAD_SUCCESS
+                                        constant</p></li><li><p>"transfer_error" - a file transfer error
+                                        occurred, corresponds to
+                                        FileUploadEntry.UPLOAD_TRANSFER_ERROR constant </p></li><li><p>"size_error" - the file exceeded maximum
+                                        size, corresponds to FileUploadEntry.UPLOAD_SIZE_ERROR
+                                        constant</p></li></ul></div>
+                        </td></tr><tr><td>entry.fileName </td><td>Returns the file's name. This property works with all event
+                            handlers except for "onadd". </td></tr><tr><td>entry.size</td><td> Returns the size of the file. Available in flash enabled version
+                            only</td></tr><tr><td>entry.Type</td><td>Returns the mime type of the file. Available in flash enabled version
+                            only</td></tr><tr><td>entry.creator </td><td>Returns the name of the author of the file. Available in flash
+                            enabled version only</td></tr><tr><td>entry.creationDate</td><td>Returns the date when the file was created. Available in flash
+                            enabled version only</td></tr><tr><td>entry.modificationDate</td><td>Returns the date of the last file modification. Available in flash
+                            enabled version only</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e34053"/><p class="title"><b>Table 6.182. Facets</b></p><div class="table-contents"><table summary="Facets" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Facet name</th><th>Description</th></tr></thead><tbody><tr><td>label</td><td>Defines the information regarding the ongoing process</td></tr><tr><td>progress</td><td>Defines the information regarding the uploading process</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e34074"/><p class="title"><b>Table 6.183. Style classes (selectors) with the corresponding skin parameters</b></p><div class="table-contents"><table summary="Style classes (selectors) with the corresponding skin parameters" border="1"><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th>Class (selector) name</th><th>Description</th><th>Skin Parameter</th><th>CSS properties mapped</th></tr></thead><tbody><tr><td rowspan="2">.rich-fileupload-font</td><td rowspan="2">Defines styles for a font of buttons and items</td><td>generalFamilyFont</td><td>font-family</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>.rich-fileupload-table-td</td><td>Defines styles for the &lt;td&gt; elements of the added item</td><td>tableBorderColor</td><td>border-bottom-color</td></tr><tr><td rowspan="2">.rich-fileupload-list-decor</td><td rowspan="2">Defines styles for a wrapper &lt;div&gt; element of a fileUpload</td><td>tableBorderColor</td><td>border-color</td></tr><tr><td>tableBackgroundColor</td><td>background-color</td></tr><tr><td>.rich-fileupload-anc</td><td>Defines styles for the "Cancel", "Stop", "Clear" links</td><td>generalLinkColor</td><td>color</td></tr><tr><td rowspan="3">.rich-fileupload-toolbar-decor</td><td rowspan="3">Defines styles for a toolbar</td><td>additionalBackgroundColor</td><td>background-color</td></tr><tr><td>tableBorderColor</td><td>border-bottom-color</td></tr><tr><td>tableBackgroundColor</td><td>border-top-color, border-left-color</td></tr><tr><td>.rich-fileupload-button-border</td><td>Defines styles for a border of buttons</td><td>tableBorderColor</td><td>border-color</td></tr><tr><td>.rich-fileupload-enrty-dis</td><td>Defines styles for a disabled entry</td><td>trimColor</td><td>background-color</td></tr><tr><td>.rich-fileupload-button-content</td><td>Defines styles for the buttons content</td><td>generalTextColor</td><td>color</td></tr><tr><td>.rich-fileupload-button</td><td>Defines styles for a buttons</td><td>trimColor</td><td>background-color</td></tr><tr><td rowspan="2">.rich-fileupload-button-light</td><td rowspan="2">Defines styles for a highlight of button</td><td>trimColor</td><td>background-color</td></tr><tr><td>selectControlColor</td><td>border-color</td></tr><tr><td rowspan="2">.rich-fileupload-button-press</td><td rowspan="2">Defines styles for a pressed button</td><td>selectControlColor</td><td>border-color</td></tr><tr><td>additionalBackgroundColor</td><td>background-color</td></tr><tr><td>.rich-fileupload-ico-add-dis</td><td>Defines styles for a disabled "Add" button icon</td><td>tableBorderColor</td><td>color</td></tr><tr><td>.rich-fileupload-ico-start-dis</td><td>Defines styles for a disabled "Upload" button icon</td><td>tableBorderColor</td><td>color</td></tr><tr><td>.rich-fileupload-ico-clear-dis</td><td>Defines styles for a disabled "Clear" button icon</td><td>tableBorderColor</td><td>color</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e34245"/><p class="title"><b>Table 6.184. Style classes (selectors) without skin parameters</b></p><div class="table-contents"><table summary="Style classes (selectors) without skin parameters" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Class name</th><th>Description</th></tr></thead><tbody><tr><td> rich-fileupload-list-overflow</td><td>Defines styles for a list of files</td></tr><tr><td>rich-fileupload-button-dis</td><td>Defines styles for a disabled button</td></tr><tr><td>rich-fileupload-button-selection</td><td>Defines styles for "Upload", "Clean" buttons</td></tr><tr><td>rich-fileupload-ico</td><td>Defines styles for an icon</td></tr><tr><td>rich-fileupload-ico-add</td><td>Defines styles for a "Add" button icon</td></tr><tr><td>rich-fileupload-ico-start</td><td>Defines styles for a "Upload" button icon</td></tr><tr><td>rich-fileupload-ico-stop</td><td>Defines styles for a "Stop" button icon</td></tr><tr><td>rich-fileupload-ico-clear</td><td>Defines styles for a "Clear" button icon</td></tr><tr><td>rich-fileupload-table-td</td><td>Defines styles for a wrapper &lt;td&gt; element of a list
+   						items</td></tr></tbody></table></div></div><br class="table-break"/><p>You can find all necessary information about style classes redefinition in 
+						<a href="ArchitectureOverview.html#customstyles" title="5.12. Definition of Custom Style Classes">Definition of Custom Style Classes</a> 
+							section.</p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e34306"/>6.11.5.5. Relevant Resources Links</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://livedemo.exadel.com/richfaces-demo/richfaces/fileUpload.jsf?c=fileUpload">On RichFaces LiveDemo page </a> you can see an example of <span class="bold"><strong>
+                <span class="property">&lt;rich:fileUpload&gt;</span>
+            </strong></span> usage and sources for the given example. </p><p>
+            <a xmlns:xlink="http://www.w3.org/1999/xlink" href="">&lt;rich:fileUpload&gt; with MyFaces</a> article describes how to avoid problems with <span class="bold"><strong><span class="property">&lt;rich:fileUpload&gt;</span></strong></span> compenent caused by wrong application configuration.
+            </p></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="rich_editor.html"><strong>Prev</strong>6.11.4. 
+				&lt;
+				rich:editor
+				&gt;
+				
+       ...</a></li><li class="up"><a accesskey="u" href="#"><strong>Top of page</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Front page</strong></a></li><li class="next"><a accesskey="n" href="rich_inplaceInput.html"><strong>Next</strong>6.11.6. 
+				&lt;
+				rich:inplaceInput
+				&gt;
+				
+ ...</a></li></ul></body></html>

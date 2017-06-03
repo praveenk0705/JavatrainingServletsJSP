@@ -1,0 +1,12 @@
+package com.shubham.servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class B extends HttpServlet {
+
+
+    public B() {
+      
+    }
+
+}

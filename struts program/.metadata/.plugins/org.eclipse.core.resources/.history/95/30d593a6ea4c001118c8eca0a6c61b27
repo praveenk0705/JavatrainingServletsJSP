@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+<form-beans>
+<form-bean name="loginForm" type="com.sk.struts.SearchActionForm"/>
+</form-beans>
+<action-mappings>
+<action path="/SearchSubmit" name="loginForm" type="com.sk.struts.SearchAction" validate="true" scope="session" input="/searchsid.jsp">
+
+<exception key="error.not.found" type="com.sk.struts.StudentNotFoundException" path="/searchsid.jsp"/> 
+<forward name="success" path="/searchsid.jsp"/>
+
+</action>
+</action-mappings>
+
+<message-resources parameter="/com.sk.struts.message"/>
+</struts-config>
+

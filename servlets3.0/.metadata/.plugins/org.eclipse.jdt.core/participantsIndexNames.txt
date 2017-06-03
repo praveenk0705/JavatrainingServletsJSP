@@ -1,0 +1,11 @@
+INDEX VERSION 1.126
+C:\test\Indigo\servlets3.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1061085119.index
+\MiniProject\src
+C:\test\Indigo\servlets3.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2545877651.index
+\Lab22\src
+C:\test\Indigo\servlets3.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3225585212.index
+\Lab18\src
+C:\test\Indigo\servlets3.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2072288268.index
+\Lab20\src
+C:\test\Indigo\servlets3.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3031790220.index
+\HaiApp\src

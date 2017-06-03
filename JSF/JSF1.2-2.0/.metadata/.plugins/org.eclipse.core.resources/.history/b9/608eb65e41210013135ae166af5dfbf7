@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+<application>
+<message-bundle>com.shubham.jsf1.messages</message-bundle>
+</application>
+
+<validator>
+<validator-id>shuemail</validator-id>
+<validator-class>com.shubham.jsf1.EmailValidator</validator-class>
+</validator>
+<validator>
+<validator-id>shuun</validator-id>
+</validator>
+<managed-bean>
+<managed-bean-name>studentBean </managed-bean-name>
+<managed-bean-class>com.shubham.jsf1.StudentBean</managed-bean-class>
+<managed-bean-scope>session</managed-bean-scope>
+</managed-bean>
+
+<navigation-rule>
+<from-view-id>/test.jsp</from-view-id>
+<navigation-case>
+<from-outcome>show</from-outcome>
+<to-view-id>/show.jsp</to-view-id>
+</navigation-case>
+</navigation-rule>
+</faces-config>

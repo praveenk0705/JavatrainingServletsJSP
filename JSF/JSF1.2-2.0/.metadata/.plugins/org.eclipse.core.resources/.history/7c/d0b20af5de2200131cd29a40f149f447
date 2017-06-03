@@ -1,0 +1,15 @@
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<f:view>
+
+<html><body><center>
+<h2>Shuham Learning Center</h2>
+
+<h:panelGrid id="studentFeeInfo" columns="2" border="1" bgcolor="pink">
+<h:outputText value="Batch Id"/>
+<h:outputText value="#{studentBean.bid}"/>
+</h:panelGrid>
+</center></body></html>
+
+
+</f:view>

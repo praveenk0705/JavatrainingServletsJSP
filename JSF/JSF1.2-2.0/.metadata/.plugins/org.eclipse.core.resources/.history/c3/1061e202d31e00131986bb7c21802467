@@ -1,0 +1,53 @@
+package com.shubham.jsf1;
+
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class ECDemoBean {
+	static {
+		System.out.println("-----ECDemoBean S.B.------");
+	}
+
+	String str = "Shubham Learning Center";
+
+	public ECDemoBean() {
+		System.out.println("=======ECDemoBean 0-args=======");
+
+		FacesContext fc = FacesContext.getCurrentInstance();
+		ExternalContext ec = fc.getExternalContext();
+
+		ServletContext sc = (ServletContext) ec.getContext();
+		sc.setAttribute("Country1", "HINDUSTAN");
+		sc.setAttribute("Country1", "BHARAT");
+
+		HttpSession session = (HttpSession) ec.getSession(true);
+		session.setAttribute("STATA1", "KARNATAKA");
+		session.setAttribute("STATA2", "MAHARASHTRA");
+
+		HttpServletRequest req = (HttpServletRequest) ec.getRequest();
+		req.setAttribute("CITY1", "BANGALORE");
+		req.setAttribute("CITY2", "MUMBAI");
+
+		System.out.println("Data is stored sussessfully");
+	}
+
+	public String show() {
+		System.out.println("\n******show() Started");
+		
+		
+		System.out.println("\n******show() Completed");
+		return "show";
+	}
+
+	public String getStr() {
+		System.out.println("\ngetStr()");
+		return str;
+	}
+
+	public void setStr(String str) {
+		System.out.println("setStr()");
+		this.str = str;
+	}
+}

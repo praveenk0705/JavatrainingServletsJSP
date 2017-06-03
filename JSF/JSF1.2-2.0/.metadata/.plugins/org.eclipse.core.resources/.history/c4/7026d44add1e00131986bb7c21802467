@@ -1,0 +1,13 @@
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+<<f:view>
+<html>
+<body><center>
+<br>
+<h2>Shubham Learning Center</h2>
+<h:panelGrid columns="3">
+<h:outputText value="Ok Ok"/>
+</h:panelGrid>
+</center></body>
+</html>
+</f:view>

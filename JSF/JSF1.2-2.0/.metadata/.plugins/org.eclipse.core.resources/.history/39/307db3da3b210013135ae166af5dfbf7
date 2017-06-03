@@ -1,0 +1,29 @@
+package com.shubham.jsf1;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.Validator;
+import javax.faces.validator.ValidatorException;
+
+public class EmailValidator implements Validator {
+
+	static {
+		System.out.println("\n------EmailValidator S.B.-----");
+	}
+
+	public EmailValidator() {
+		System.out.println("======EmailValidator 0-args=====");
+	}
+
+	public void validate(FacesContext fc, UIComponent uc, Object values)
+			throws ValidatorException {
+		System.out.println("*******validate() started******");
+		System.out.println("Values :" + values);
+
+		String em = values.toString();
+
+		System.out.println("*******validate() completed******");
+
+	}
+
+}

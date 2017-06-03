@@ -1,0 +1,7 @@
+<html>
+<body>
+<form action="/login.jlc">
+<h2>This is Login Page</h2>
+</form>
+</body>
+</html>

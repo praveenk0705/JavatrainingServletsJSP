@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 9 element(s) from project &apos;Lab7&apos;&#x0D;&#x0A;- Original project: &apos;Lab7&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     lib&#x0D;&#x0A;     struts-bean.tld&#x0D;&#x0A;     struts-config.xml&#x0D;&#x0A;     struts-html.tld&#x0D;&#x0A;     struts-logic.tld&#x0D;&#x0A;     struts-nested.tld&#x0D;&#x0A;     struts-template.tld&#x0D;&#x0A;     struts-tiles.tld&#x0D;&#x0A;     web.xml" description="Delete elements" element1="WebContent/WEB-INF/lib" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1328110650031" subPackages="false" version="1.0"/>
+</session>

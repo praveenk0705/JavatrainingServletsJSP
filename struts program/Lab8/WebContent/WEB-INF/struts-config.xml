@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+<form-beans>
+<form-bean name="contactform" type="com.jlcindia.struts1.ContactForm"/>
+<form-bean name="searchContactForm" type="com.jlcindia.struts1.SearchContactForm"/>
+<form-bean name="tempForm" type="org.apache.struts.action.DynaActionForm"/>
+</form-beans>
+<global-forwards>
+<forward name="addcontact" path="/addcontact.jsp"/>
+<forward name="searchcontact" path="/searchcontact.jsp"/>
+<forward name="addcontactstatus" path="/addcontactstatus.jsp"/>
+<forward name="searchcontactresults" path="/searchcontactresults.jsp"/>
+<forward name="updatecontactstatus" path="/updatecontactstatus.jsp"/>
+</global-forwards>
+<action-mappings>
+<action path="/AddContactSubmit" name="contactform" 
+type="com.jlcindia.struts1.AddContactAction" input="/addcontact.jsp"/>
+<action path="/SearchContactSubmit" name="searchContactForm" 
+type="com.jlcindia.struts1.SearchContactAction" input="/searchcontact.jsp"/>
+<action path="/EditContactSubmit" name="tempForm" 
+type="com.jlcindia.struts1.EditContactAction" />
+<action path="/UpdateContactSubmit" name="contactform" 
+type="com.jlcindia.struts1.UpdateContactAction" input="/searchcontactresults.jsp"/>
+</action-mappings> 
+<message-resources parameter="com.jlcindia.struts1.ApplicationResources"/>
+<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+ <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/myvalidations.xml"/>
+</plug-in>
+</struts-config>
+

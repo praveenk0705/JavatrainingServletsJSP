@@ -1,0 +1,14 @@
+package com.shubham.jsf1;
+
+public class EmailValidator {
+	int sid = 10;
+
+	final EmailValidator s1 = new EmailValidator();
+	EmailValidator s2 = new EmailValidator();
+
+	void m1() {
+		s2 = s1;
+		s.sid = 123;
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.sk.struts;
+
+interface K {
+
+	void display();
+}
+
+class B implements K {
+    public void display(String s){
+    	
+    }
+	public void display() {
+		System.out.println("class B");
+	}
+
+}
+
+public class C {
+	public static void main(String args[]) {
+		K k = new B();
+		k.display();
+
+	}
+}

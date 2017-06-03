@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;A.java&apos; to &apos;Core Java/src&apos;&#x0D;&#x0A;- Original project: &apos;Lab1&apos;&#x0D;&#x0A;- Destination element: &apos;Core Java/src&apos;&#x0D;&#x0A;- Original element: &apos;com.sk.struts.A.java&apos;" description="Copy compilation unit" destination="=Core Java/src" element1="/src&lt;com.sk.struts{A.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1375892152796" units="1" version="1.0"/>
+</session>

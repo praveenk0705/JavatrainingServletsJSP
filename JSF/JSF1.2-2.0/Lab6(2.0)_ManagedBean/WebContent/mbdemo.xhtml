@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view contentType="text/html"/>	  
+<body><center>
+<h2>Shubham Learning Center</h2>
+
+<h:form>
+<h:panelGrid columns="3" id="helloPanel" border="1">
+<h:outputText value="Name"/>
+<h:inputText id="name" value="#{hello.name}" required="true"/>
+<h:message for="name"/>
+<h:outputText value="Email"/>
+<h:inputText id="email" value="#{hello.email}" required="true"/>
+<h:message for="email"/>
+<h:commandButton value="Show" action="#{hello.show}"/>
+</h:panelGrid>
+</h:form>
+</center></body>
+</html>

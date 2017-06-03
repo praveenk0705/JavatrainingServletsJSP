@@ -1,0 +1,18 @@
+INDEX VERSION 1.122+C:\test\Indigo\servlets3.0\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1424850202.index
+1897655395.index
+2992867515.index
+1980554741.index
+3580456661.index
+1007340512.index
+996610041.index
+524960211.index
+1902804548.index
+808656746.index
+2527314276.index
+343694564.index
+2024644680.index
+1918340411.index
+1424832402.index
+3135461054.index
+3491726249.index

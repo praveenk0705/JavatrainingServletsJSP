@@ -1,0 +1,33 @@
+<html xmlns="www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view contentType="text/html" />
+<body><center>
+<h2>Shubham Learing Center</h2>
+<h:panelGrid id="hellPanel" columns="2" border="1">
+<h:outputText value="Name"/>
+<h:outputText value="#{hello.name}"/>
+<h:outputText value="Email"/>
+<h:outputText value="#{hello.email}"/>
+
+<h:outputText value="Phone"/>
+<h:outputText value="#{hello.phone}"/>
+
+<h:outputText value="DOB"/>
+<h:outputText value="#{hello.dob}"/>
+<h:outputText value="Qualification"/>
+<h:outputText value="#{hello.qualification}"/>
+
+<h:outputText value="Courses"/>
+<h:dataTable var="cou" value="#{hello.courses}" border="1" bgcolor="#ddcc00">
+<h:column>
+<h:outputText value="#{cou}"/>
+</h:column>
+</h:dataTable>
+<h:outputText value="Refs"/>
+<h:outputText value="#{hello.refs}"/>
+
+</h:panelGrid>
+</center></body>
+</html>

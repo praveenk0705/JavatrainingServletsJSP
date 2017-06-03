@@ -1,0 +1,95 @@
+package com.shubham.jsf1;
+
+import java.util.*;
+
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+public class ECDemoBean {
+	static {
+		System.out.println("-----ECDemoBean S.B.------");
+	}
+
+	String str = "Shubham Learning Center";
+
+	public ECDemoBean() {
+		System.out.println("=======ECDemoBean 0-args=======");
+		System.out.println(this);
+		FacesContext fc = FacesContext.getCurrentInstance();
+		ExternalContext ec = fc.getExternalContext();
+
+		ServletContext sc = (ServletContext) ec.getContext();
+		sc.setAttribute("Country1", "HINDUSTAN");
+		sc.setAttribute("Country2", "BHARAT");
+
+		HttpSession session = (HttpSession) ec.getSession(true);
+		session.setAttribute("STATE1", "KARNATAKA");
+		session.setAttribute("STATE2", "MAHARASHTRA");
+
+		HttpServletRequest req = (HttpServletRequest) ec.getRequest();
+		req.setAttribute("CITY1", "BANGALORE");
+		req.setAttribute("CITY2", "MUMBAI");
+
+		System.out.println("Data is stored sussessfully");
+	}
+
+	public String show() {
+		System.out.println("\n******show() Started");
+
+		FacesContext fc = FacesContext.getCurrentInstance();
+		ExternalContext ec = fc.getExternalContext();
+
+		System.out.println("+++++Context Data+++++");
+		ServletContext sc = (ServletContext) ec.getContext();
+		System.out.println(sc.getAttribute("Country1"));
+		System.out.println(sc.getAttribute("Country2"));
+
+		System.out.println("+++++Session Data+++++");
+		HttpSession session = (HttpSession) ec.getSession(true);
+		System.out.println(session.getAttribute("STATE1"));
+		System.out.println(session.getAttribute("STATE2"));
+
+		System.out.println("+++++Request Data+++++");
+		HttpServletRequest req = (HttpServletRequest) ec.getRequest();
+		System.out.println(req.getAttribute("CITY1"));
+		System.out.println(req.getAttribute("CITY2"));
+
+		System.out.println("---------Application Map-------------");
+		Map<String, Object> ctxMap = ec.getApplicationMap();
+		ctxMap.put("SID", "999");
+		displayMap2(ctxMap);
+
+		System.out.println("\n-----------Session Map----------------");
+		Map<String, Object> sesMap = ec.getSessionMap();
+		sesMap.put("BID", "B-47");
+		displayMap2(sesMap);
+
+		System.out.println("\n-----------Request Map----------------");
+		Map<String, Object> reqMap = ec.getRequestMap();
+		reqMap.put("ROLL NO", "9");
+		displayMap2(reqMap);
+
+		System.out.println("\n-----------Request Map----------------");
+		return "show";
+	}
+
+	public String getStr() {
+		System.out.println("\ngetStr()");
+		return str;
+	}
+
+	private void displayMap2(Map<String, Object> map) {
+		for (Map.Entry<String, Object> me : map.entrySet()) {
+			System.out.println(me.getKey() + "---" + me.getValue());
+		}
+
+	}
+
+	public void setStr(String str) {
+		System.out.println("setStr()");
+		this.str = str;
+	}
+}

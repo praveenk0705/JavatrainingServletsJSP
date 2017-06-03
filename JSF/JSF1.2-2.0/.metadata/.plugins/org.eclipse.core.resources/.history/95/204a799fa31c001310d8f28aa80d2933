@@ -1,0 +1,7 @@
+package com.shubham.jsf1;
+
+public class ECDemoBean {
+	static {
+		System.out.println("-----ECDemoBean S.B.------");
+	}
+}

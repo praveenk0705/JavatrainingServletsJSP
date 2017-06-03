@@ -1,0 +1,205 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+.FirstLinestyle1 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+}
+.SecondLinestyle1 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+}
+.Namestyle1 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 7pt;
+}
+.Addressstyle1 {
+	font-family: Arial;
+	font-size: 10px;
+}
+.FatherStyle {
+	font-family: Arial;
+	font-size: 12px;
+	margin-top: 3px;
+}
+.CentreStyle {
+	font-size: 12px
+}
+.ExaminationTimestyle {
+	font-family: Arial;
+	font-size: 11px;
+	margin-top: 3px;
+}
+.Subjectstyle {
+	font-family: Arial;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.RollNostyle {
+	font-size: 16px;
+	font-weight:bold;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.Categorystyle {
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.style3 {
+	font-size: 14;
+	font-weight: bold;
+	margin-top: 5px;
+	text-align:center;
+}
+.style4 {
+	font-family: Arial;
+	font-size: 12px;
+	text-align:center;
+	margin-top: 10px;
+}
+.style5 {
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {font-size: 11px}
+.style11 {
+	font-size: 12px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+
+
+<div id="Layer1" style="position:absolute; left:51px; top:7px; width:650px; height:348px; z-index:2; border: Solid 1px; border-color: #000000;">
+	<div id="Layer2" style="position:absolute; left:0px; top:0px; width:650px; height:56px; z-index:2; border-bottom: Solid 1Px; border-color: #000000;">
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="5">
+	    <tr>
+		  <td width="10%" rowspan="2"><img name="Logo" src="IMAGE/logojceceb.jpg" width="54" height="50" alt=""></td>
+			<td width="90%"><div align="center" class="FirstLinestyle1">jharkhand combined entrance Examination Board</div></td>
+	    </tr>
+	    <tr>
+		  <td><div align="center" class="SecondLinestyle1">Admit Card </div></td>
+	    </tr>
+	  </table>
+	</div>
+	<div id="Layer3" style="position:absolute; left:0px; top:61px; width:299px; height:38px; z-index:2; border-right: Solid 1Px; border-bottom: Solid 1Px; border-color: #000000;">
+	  <div class="Namestyle1">&nbsp;&nbsp;Name of Candidate : <%=request.getAttribute("name") %></div>
+  </div>
+	<div id="Layer4" style="position:absolute; left:0px; top:100px; width:299px; height:22px; z-index:2; border-right: Solid 1Px; border-bottom: Solid 1Px; border-color: #000000;">
+	  <div class="FatherStyle">&nbsp;&nbsp;Father's Name : <%=request.getAttribute("fname") %></div>
+  </div>
+    <div id="Layer5" style="position:absolute; left:0px; top:121px; width:299px; height:128px; z-index:2; border-right: Solid 1Px; border-bottom: Solid 1Px;">
+      <div class="Addressstyle1">&nbsp;&nbsp;Mailing Address : </div>
+	  <div align="center" class="Subjectstyle"><%=request.getAttribute("address") %></div>
+	  <div>&nbsp;
+	    <div id="Layer8" style="position:absolute; left:300px; top:-23px; width:174px; height:72px; z-index:2; border-right: Solid 1Px; border-bottom: Solid 1Px; border-color: #000000;">
+          <div align="center" class="Subjectstyle"><strong>Paper</strong> : </div>
+          <br>
+          <div align="center" class="Subjectstyle"><%=request.getAttribute("subject") %></div>
+        </div>
+	  </div>
+  </div>
+	<div id="Layer6" style="position:absolute; left:0px; top:250px; width:299px; height:99px; z-index:2; border-right: Solid 1Px;">
+	  <div class="CentreStyle">&nbsp;&nbsp;<span class="style6">Venue of Examination :</span> </div>
+	  <div class="CentreStyle">&nbsp;&nbsp;<%=request.getAttribute("venue") %></div>
+  </div>
+	<div id="Layer7" style="position:absolute; left:300px; top:61px; width:350px; height:38px; z-index:2; border-bottom: Solid 1Px;">
+	  <div class="ExaminationTimestyle">&nbsp;&nbsp;<span class="style10"><strong>Time of &nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper (<strong>Supervisor</strong>) : <span class="style11">10:00 AM. - 1:00 PM.</span></span></div>
+	  <div class="ExaminationTimestyle">&nbsp;<strong>&nbsp;Examination</strong> : Paper (<strong>Officer</strong>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span class="CentreStyle"><strong>2:00 PM. - 5:00 PM.</strong></span> </div>
+  </div>
+	<div id="Layer8" style="position:absolute; left:300px; top:121px; width:173px; height:50px; z-index:2; border-right: Solid 1Px; border-bottom: Solid 1Px; border-color: #000000; font-weight: bold;">
+	  <div align="center" class="Subjectstyle"> </div>
+		 <br>
+		<div align="center" class="Subjectstyle"></div>
+  </div>
+	<div id="Layer9" style="position:absolute; left:302px; top:176px; width:172px; height:174px; z-index:2; border-right: Solid 1Px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img name="Photograph" src="IMAGE/<%=request.getAttribute("photo") %>.jpg" width="139" height="169" alt="">
+	</div>
+	<div id="Layer10" style="position:absolute; left:474px; top:100px; width:176px; height:72px; z-index:2; border-bottom: Solid 1Px;">
+	  <div class="RollNostyle">
+	    <p>Roll No. :<%=request.getAttribute("rollno") %></p>
+      </div>
+	  <div class="Categorystyle">Date of Birth :<%=request.getAttribute("dob") %></div>
+  </div>
+	<div id="Layer11" style="position:absolute; left:475px; top:176px; width:174px; height:54px; z-index:2; border-bottom: Solid 1Px;">
+	  <div class="style3">Date of Examination :</div>
+	  <div class="style3">28/09/2011</div>
+  </div>
+	<div id="Layer12" style="position:absolute; left:475px; top:231px; width:175px; height:112px; z-index:2;">
+	  <div class="style4">Issuing Authority</div>
+	  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img name="" src="IMAGE/sing.jpg" width="58" height="50"></div>
+	  <div class="style4">Controller of Examinations</div>
+  </div>
+</div>
+
+<div id="Layer13" style="position:absolute; left:50px; top:367px; width:651px; height:264px; z-index:1; border: Solid 1Px;">
+    <div align="center" class="style5">INSTRUCTIONS</div>
+	<div class="FatherStyle CentreStyle"> 
+	  <div align="justify">
+	   
+	      <li>The admit card has been issued based on the information given by the candidate in the application form. In case it is found misleading or erroneous during scrutiny at any stage, his/her candidature will be&nbsp;liable for cancellation. The candidature of the candidate is provisional and mere appearance at the examination does not entitle him/her to any claim for the post </li>
+	  </div>
+	</div>
+	<div class="FatherStyle">
+	  <div align="justify">
+	
+	      <li>Candidates are not allowed at the examination venue before 20 minutes prior to the commencement of the examination and 15 minutes after the commencement of the examination </li>
+	  </div>
+	</div>
+	<div class="FatherStyle">
+      <div align="justify">
+        
+          <li>Candidates are not allowed to leave the examination hall without handing over the answer sheet to the invigilator concerned. </li>
+      </div>
+  </div> 
+	<div class="FatherStyle">
+      
+        <li>Candidates must retain the admit card for future reference also. </li>
+	</div> 
+	<div class="FatherStyle"> 
+	  <div align="justify">
+	    
+	      <li>Adopting any unfair means during the course of examination may lead to cancellation of candidature for the examination and the candidate can also be debarred from other examination of the commission for certain year as may be decided by the commission. Cell phone and other electronic gadgets are prohibited in the examination hall. </li>
+	  </div>
+	</div> 
+	<div class="FatherStyle">
+      <div align="justify">
+       
+          <li>For any discrepancy in the admit card, candidates are advised to contact JPSC at least seven (7) days prior to the respective date of examination. </li>
+      </div>
+  </div> 
+	
+</div>	
+</body>
+
+
+
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionErrors"/>
+<fullyQualifiedTypeName name="org.apache.commons.validator.ValidatorAction"/>
+<fullyQualifiedTypeName name="org.apache.commons.validator.Field"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionMapping"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionForward"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionForm"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionError"/>
+<fullyQualifiedTypeName name="org.apache.struts.validator.ValidatorForm"/>
+<fullyQualifiedTypeName name="org.apache.struts.validator.DynaValidatorForm"/>
+<fullyQualifiedTypeName name="org.apache.struts.actions.DispatchAction"/>
+<fullyQualifiedTypeName name="com.jlcindia.struts1.LocaleAction"/>
+<fullyQualifiedTypeName name="com.jlcindia.struts1.LocaleAction1"/>
+<fullyQualifiedTypeName name="org.apache.struts.actions.LocaleAction"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.Action"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="org.apache.commons.beanutils.PropertyUtils"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.apache.struts.upload.FormFile"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="sun.jkernel.DownloadManager"/>
+<fullyQualifiedTypeName name="com.jlcindia.struts1.Dowload"/>
+<fullyQualifiedTypeName name="com.jlcindia.struts1.ContactTO"/>
+<fullyQualifiedTypeName name="com.jlcindia.struts1.JDBCUtil"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.DynaActionForm"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

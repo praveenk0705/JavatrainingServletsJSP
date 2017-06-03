@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+<form-beans>
+<form-bean name="loginForm" type="com.jlc.beans.LoginForm"/>
+<form-bean name="registerForm" type="com.jlc.beans.RegisterForm"/>
+<form-bean name="tempForm" type="org.apache.struts.action.DynaActionForm"/>
+<form-bean name="dloadForm" type="org.apache.struts.action.DynaActionForm">
+	<form-property name="dname" type="java.lang.String"></form-property>
+</form-bean>
+<form-bean name="uploadForm" type="org.apache.struts.action.DynaActionForm">
+   <form-property name="theFile" type="org.apache.struts.upload.FormFile"/>
+</form-bean>
+<form-bean name="updateForm" type="com.jlc.beans.UpdateForm"/>
+</form-beans>
+
+<global-forwards>
+<forward name="download" path="/studenthome.jsp"></forward>
+<forward name="studenthome" path="/showDownload.do?method=showDownload"></forward>
+<forward name="adminhome" path="/adminhome.jsp"></forward>
+<forward name="success" path="/success.jsp"></forward>
+<forward name="alldownload" path="/AllDownload.do?method=getAllDownload"></forward>
+<forward name="showalldownload" path="/showalldownlod.jsp"></forward>
+<forward name="updatedload" path="/UpdateDownload.do?method=updateShow"></forward>
+<forward name="register" path="/register.jsp"></forward>
+<forward name="default" path="/index.jsp"></forward>
+</global-forwards>
+
+<action-mappings>
+<action path="/LoginSubmit" name="loginForm" 
+		type="com.jlc.actions.DMAction" 
+ 		input="/index.jsp" parameter="method" >
+</action>
+<action path="/showDownload" name="tempForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/index.jsp" parameter="method" >
+</action>
+<action path="/Download" name="dloadForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/download.jsp" parameter="method" >
+</action>
+<action path="/Upload" name="uploadForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/adminhome.jsp" parameter="method" >
+</action>
+<action path="/AllDownload" name="tempForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/adminhome.jsp" parameter="method" >
+</action>
+<action path="/UpdateDownload" name="tempForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/adminhome.jsp" parameter="method" >
+</action>
+<action path="/UpdateDownloadSubmit" name="updateForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/adminhome.jsp" parameter="method" >
+</action>
+<action path="/RegisterSubmit" name="registerForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/register.jsp" parameter="method" >
+</action>
+</action-mappings>
+<message-resources parameter="com.jlc.struts.application"></message-resources>
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+  <set-property property="definitions-config" value="/WEB-INF/tiles.xml"/>
+  </plug-in>
+</struts-config>
+

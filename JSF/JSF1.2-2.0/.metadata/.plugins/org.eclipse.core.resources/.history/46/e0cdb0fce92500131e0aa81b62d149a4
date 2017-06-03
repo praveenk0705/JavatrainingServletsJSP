@@ -1,0 +1,2 @@
+<%@taglib uri="http://sun.java.com/jsf/core prefix="f"%>
+<%@taglib uri="http://sun.java.com/jsf/html" prefix="h"%>

@@ -1,0 +1,8 @@
+package com.jlcindia.struts1;
+
+public class Snippet {
+	public static void main(String[] args) {
+		com.jlcindia.struts1
+	}
+}
+

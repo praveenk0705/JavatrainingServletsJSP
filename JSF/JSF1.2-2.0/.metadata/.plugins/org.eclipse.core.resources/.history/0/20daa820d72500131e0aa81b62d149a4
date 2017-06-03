@@ -1,0 +1,47 @@
+package com.shubham.jsf1;
+
+import javax.faces.event.ActionEvent;
+
+public class StudentBean {
+	private boolean showMyGrid1 = true;
+	private boolean showMyGrid2 = false;
+	private boolean showMyGrid3 = false;
+
+	public StudentBean() {
+		System.out.println("\n======StudentBean 0-args=======");
+	}
+
+	public void registerPart1(ActionEvent event) {
+		System.out.println("\n********registerPart1() Started********");
+		showMyGrid1 = false;
+		showMyGrid2 = true;
+		System.out.println("********registerPart1() Completed********");
+	}
+
+	public boolean isShowMyGrid1() {
+		System.out.println("setter isShowMyGrid1() :"+showMyGrid1);
+		return showMyGrid1;
+	}
+
+	public void setShowMyGrid1(boolean showMyGrid1) {
+		System.out.println("getter isShowMyGrid1()");
+		this.showMyGrid1 = showMyGrid1;
+	}
+
+	public boolean isShowMyGrid2() {
+		return showMyGrid2;
+	}
+
+	public void setShowMyGrid2(boolean showMyGrid2) {
+		this.showMyGrid2 = showMyGrid2;
+	}
+
+	public boolean isShowMyGrid3() {
+		return showMyGrid3;
+	}
+
+	public void setShowMyGrid3(boolean showMyGrid3) {
+		this.showMyGrid3 = showMyGrid3;
+	}
+
+}

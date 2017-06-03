@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>6.11.1.  &lt; rich:calendar &gt; available since 3.1.0</title><link rel="stylesheet" href="css/html.css" type="text/css"/><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"/><meta xmlns="" http-equiv="content-type" content="text/html; charset=UTF-8"/><link xmlns="" rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/><link rel="start" href="index.html" title="RichFaces Developer Guide"/><link rel="up" href="richInput.html" title="6.11. Rich Input"/><link rel="prev" href="richInput.html" title="6.11. Rich Input"/><link rel="next" href="rich_colorPicker.html" title="6.11.2.  &lt; rich:colorPicker &gt; available since 3.3.1"/><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.cookie.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/toggle.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script></head><body><div xmlns="" id="overlay"> </div><div xmlns="" class="time_out_div" id="timeOutDiv"> </div><div xmlns="" id="feedback-maincontainer"><h3 id="feedback-header">
+			Create new RichFaces Documentation Jira issue
+			<a href="javascript:void(0);" onclick="hidePopup('feedback-maincontainer', 'feedback-mailform', 'feedback-iFrame','feedback-submit', 'feedback-maincontainer');" id="feedback-close"><img src="images/close_org.png" class="feedback-images"/></a></h3><iframe id="feedback-iFrame" name="feedback-iFrame"> </iframe><form onsubmit="return validate_form()" id="feedback-mailform" method="post" action="https://jira.jboss.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310341&amp;issuetype=3" target="feedback-iFrame"><input type="hidden" id="priority" name="priority" value="3"/><input type="hidden" id="components" name="components" value="12311170"/><input type="hidden" id="versions" name="versions" value="12312451"/><input type="hidden" id="customfield_12310031" name="customfield_12310031" value="Documentation (Ref Guide, User Guide, etc.)"/><label for="summary">Summary</label><input type="text" id="feedback-summary" name="feedback-summary" title="Summarize the subject of the issue in a few words" maxlength="255" onKeyDown="countLeft('feedback-summary', 'left', 255);" onKeyUp="countLeft('feedback-summary', 'left', 255);"/><div id="summary-helper-left" class="feedback-helper"><span id="left">255</span> characters left
+			</div><div class="clear"> </div><label for="feedback-description">Description</label><textarea id="feedback-description" name="feedback-description" title="Provide more details about the issue" onKeyDown="countLeft('feedback-description', 'none', 500);" onKeyUp="countLeft('feedback-description', 'none', 500);"> </textarea><div class="clear"> </div><label for="feedback-environment">Environment</label><textarea id="feedback-environment" name="feedback-environment" title="Describe your environment"> </textarea></form><div id="guide_words">This will launch the RichFaces Jira page - to complete your feedback please login if needed, and submit the Jira.</div><input type="button" id="feedback-submit" value="Proceed to Jira" name="submit" class="feedback-formbutton" title="Proceed to create new issue" onclick="fillForm('feedback-mailform'); submitForm('feedback-mailform', 'feedback-iFrame', 'feedback-submit', 'feedback-maincontainer');"/></div><div xmlns="" id="feedback-wrapper"><a id="feedback-link" onclick="showPopup('feedback-maincontainer');"><img src="images/feedback_logo.png" class="feedback-images" onload="init('feedback-summary', 'feedback-description');"/></a></div><p id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="richInput.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="rich_colorPicker.html"><strong>Next</strong></a></li></ul><div class="section" lang="en-US"><div class="titlepage"><div><div><h3 class="title"><a id="rich_calendar"/>6.11.1. 
+				&lt;
+				rich:calendar
+				&gt;
+				<span class="since">
+         <sup> available since <span class="version">3.1.0</span>
+         </sup>
+      </span>
+   </h3></div></div></div><a xmlns="" href="javascript:void(0);" id="expand_collapse">expand all</a><div xmlns="" class="toc"><dl xmlns="http://www.w3.org/1999/xhtml"><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_calendar.html#d0e29254">6.11.1.1. Description</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_calendar.html#d0e29277">6.11.1.2. Key Features</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_calendar.html#d0e29299">6.11.1.3. Details of Usage</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_calendar.html#d0e29993">6.11.1.4. Reference Data</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_calendar.html#d0e30907">6.11.1.5. Relevant Resources Links</a></span></dt></dl></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e29254"/>6.11.1.1. Description</h4></div></div></div><p>
+              The <span class="bold"><strong>
+            <span class="property">&lt;rich:calendar&gt;</span>
+         </strong></span> component is used to create inputs for date and time and enter them inline or using pup-up calendar that allows to navigate through months and years.
+        </p><div class="figure"><a id="d0e29265"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar_init.png" alt="&lt;rich:calendar&gt; component"/></div></div><p class="title"><b>Figure 6.116. 
+            <span class="bold"> 
+               <span class="property">&lt;rich:calendar&gt;</span>
+            </span> component</b></p></div><br class="figure-break"/></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e29277"/>6.11.1.2. Key Features</h4></div></div></div><div class="itemizedlist"><ul><li><p>Highly customizable look and feel</p></li><li><p>Popup representation</p></li><li><p>Disablement support</p></li><li><p>Smart and user-defined positioning</p></li><li><p>Cells customization</p></li><li><p>Macro substitution based on tool bars customization</p></li></ul></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e29299"/>6.11.1.3. Details of Usage</h4></div></div></div><p>
+                      The <span class="bold"><strong>
+            <span class="property">&lt;rich:calendar&gt;</span>
+         </strong></span> component can work properly in two ways of data loading
+                      defined by the <span class="emphasis"><em>
+            <span class="property">"mode"</span>
+         </em></span> attribute. 
+                      The attribute has two possible values:
+                </p><div class="itemizedlist"><ul><li><p>
+                                  <code class="code">client</code> — the default mode. 
+                                  In this mode calendar loads an initial portion of data within a definite date range. 
+                                  The range is specified with the help of <span class="emphasis"><em>
+                  <span class="property">"preloadDateRangeBegin"</span>
+               </em></span> and <span class="emphasis"><em>
+                  <span class="property">"preloadDateRangeEnd"</span>
+               </em></span> attributes 
+                                  that are designed for this mode only! 
+                                  Additional data requests are not sent.
+                            </p></li></ul></div><div class="itemizedlist"><ul><li><p>
+                                  <code class="code">ajax</code> — in this mode the <span class="bold"><strong>
+                  <span class="property">&lt;rich:calendar&gt;</span>
+               </strong></span> requests portions of data for element rendering from special Data Model.
+                                      The default calendar Data Model could be redefined with the help of <span class="emphasis"><em>
+                  <span class="property">dataModel</span>
+               </em></span> attribute that points to the object that implements <code class="code">
+                  <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../apidoc_framework/index.htmlorg/richfaces/model/CalendarDataModel.html">CalendarDataModel</a>
+               </code> interface. 
+                                  If <span class="emphasis"><em>
+                  <span class="property">"dataModel"</span>
+               </em></span> attribute has <span class="emphasis"><em>
+                  <span class="property">"null"</span>
+               </em></span> value, data requests are not sent. 
+                                  In this case the "<code class="code">ajax</code>" mode is equal to the "<code class="code">client</code>". 
+                            </p></li></ul></div><p>
+                      The <span class="bold"><strong>
+            <span class="property">&lt;rich:calendar&gt;</span>
+         </strong></span> could be represented on a page in two ways (a) the calendar itself without input field and button and 
+                      (b) date input with button and popping-up calendar. 
+                      This is defined with <span class="emphasis"><em>
+            <span class="property">"popup" </span>
+         </em></span> attribute, which is <span class="emphasis"><em>
+            <span class="property">"true"</span>
+         </em></span> by default. 
+                      For popup rendering a "lazy" loading is implemented: a client side script method builds the popup after request is completed. 
+                      Such improvement speeds up page loading time.
+                </p><div class="figure"><a id="d0e29398"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar7.png" alt="The &lt;rich:calendar&gt; with popup=&#34;false&#34; (a) and default representation (b)"/></div></div><p class="title"><b>Figure 6.117. The <span class="bold">
+               <span class="property">&lt;rich:calendar&gt;</span>
+            </span> with <span class="emphasis"><em>
+               <span class="property">popup="false"</span>
+            </em></span> (a) and default representation (b)</b></p></div><br class="figure-break"/><p>
+                      By default the <span class="bold"><strong>
+            <span class="property">&lt;rich:calendar&gt;</span>
+         </strong></span> is rendered as input filed with a button and calendar hidden in a pop-up. 
+                      The button is represented with calendar pictogramm. 
+                      This pictogramm could be easily changed with the help of <span class="emphasis"><em>
+            <span class="property">"buttonIcon"</span>
+         </em></span> 
+                      and <span class="emphasis"><em>
+            <span class="property">"buttonIconDisabled"</span>
+         </em></span> attributes, which specify the icon for button enabled and disabled states respectively. 
+                      To change the button appearance from icon to usual button define the value for the <span class="emphasis"><em>
+            <span class="property">"buttonLabel"</span>
+         </em></span> attribute. 
+                      In this case <span class="emphasis"><em>
+            <span class="property">"buttonIcon"</span>
+         </em></span> and <span class="emphasis"><em>
+            <span class="property">"buttonIconDisabled"</span>
+         </em></span> attributes are ignored.
+                </p><div class="figure"><a id="d0e29454"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar8.png" alt="The &lt;rich:calendar&gt; with buttonLabel=&#34;Open calendar&#34; attribute"/></div></div><p class="title"><b>Figure 6.118. The <span class="bold">
+               <span class="property">&lt;rich:calendar&gt;</span>
+            </span> with <span class="emphasis"><em>
+               <span class="property">buttonLabel="Open calendar"</span>
+            </em></span> attribute</b></p></div><br class="figure-break"/><p>
+                       There are two attributes that specify the place where the popup calendar is rendered relative to the input field and icon: 
+                       <span class="emphasis"><em>
+            <span class="property">"jointPoint"</span>
+         </em></span> and <span class="emphasis"><em>
+            <span class="property">"direction"</span>
+         </em></span> attributes.  
+                       By default the pop-up calendar appears under input and aligned with it left border (see Fig. 6.211, b).  
+                       Speaking in terms of RichFaces it means that <span class="bold"><strong>
+            <span class="property">&lt;rich:calendar&gt;</span>
+         </strong></span> 
+         <span class="emphasis"><em>
+            <span class="property">jointPoint="bottom-left"</span>
+         </em></span> 
+                       and <span class="emphasis"><em>
+            <span class="property">direction="bottom-right".</span>
+         </em></span> 
+                       There are four possible joint-points and four possible directions for each joint-point. 
+                       Besides that, the values of <span class="emphasis"><em>
+            <span class="property">"jointPoint"</span>
+         </em></span> and <span class="emphasis"><em>
+            <span class="property">"direction"</span>
+         </em></span> could be set to 
+                       <span class="emphasis"><em>
+            <span class="property">"auto"</span>
+         </em></span> that activates smart pop-up positioning.
+                  </p><div class="figure"><a id="d0e29522"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar9.png" alt="Four possible positions of joint-points (red) and four possible directions (black) shown for bottom-left joint-point."/></div></div><p class="title"><b>Figure 6.119. Four possible positions of joint-points (red) and four possible directions (black) shown for bottom-left joint-point.</b></p></div><br class="figure-break"/><p>Usage <span class="emphasis"><em>
+                                        <span class="property">"currentDate"</span>
+                    </em></span> attribute isn't available in the popup mode.</p><p>With help of the <span class="emphasis"><em>
+                              <span class="property">"currentDate"</span>
+                    </em></span> attribute you can define month and year which will be
+                              displayed currently.</p><p>The <span class="emphasis"><em>
+                                        <span class="property">"value"</span>
+                              </em></span> attribute stores selected date currently.</p><p>The difference between the value and currentDate attributes  </p><p> The <span class="emphasis"><em>
+                                        <span class="property">"todayControlMode"</span>
+                              </em></span> attribute defines the mode for "today"
+                              control. Possible values are: </p><div class="itemizedlist"><ul><li><p>"hidden" - in this mode
+                                                  "Today" button will not be
+                                                  displayed</p></li><li><p>"select" - (default) in this state
+                                                  "Today" button activation will
+                                                  scroll the calendar to the current date and it
+                                                  become selected date</p></li><li><p>"scroll" - in this mode
+                                                  "Today" activation will simply
+                                                  scroll the calendar to current month without
+                                                  changing selected day.</p></li></ul></div><p>
+                              With the help of the
+	<span class="emphasis"><em>
+	          <span class="property">"readonly"</span>
+	        </em></span>
+                              attribute you can make date, time and input field unavailable, but you can look through the next/previous month or the next/previous year.
+                    </p><p>
+                              In order to disable the component, use the <span class="emphasis"><em>
+	           <span class="property">"disabled"</span>
+                              </em></span> attribute. With its help both controls are disabled in the 
+                              <span class="emphasis"><em>
+                                        <span class="property">"popup"</span>
+                              </em></span>
+                                                  mode.
+                    </p><div class="figure"><a id="d0e29594"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar6.png" alt="Using the &#34;disabled&#34; attribute."/></div></div><p class="title"><b>Figure 6.120. Using the <span class="emphasis"><em>
+                                        <span class="property">"disabled"</span>
+                              </em></span> attribute.</b></p></div><br class="figure-break"/><p>
+                              The <span class="emphasis"><em><span class="property">"onchanged"</span>
+                              </em></span> attribute is used to define an event that is triggered
+                              from date selection, as shown in the example below:</p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:calendar</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;date&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.dateTest}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onchanged&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">reRender</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;mainTable&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:calendar</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>
+                              The <span class="emphasis"><em><span class="property">"ondateselect"</span>
+                              </em></span> attribute is used to define an event that is triggered
+                              before date selection. It could be used for possibility of date selection canceling.
+                              See an example below:</p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:calendar</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;date&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.dateTest}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">ondateselect</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;if&nbsp;(!confirm('Are&nbsp;you&nbsp;sure&nbsp;to&nbsp;change&nbsp;date?')){return&nbsp;false;}&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>
+                              The <span class="emphasis"><em><span class="property">"ondateselected"</span>
+                              </em></span> attribute is used to define an event that is triggered
+                              after date selection. </p><p>
+                              <span class="emphasis"><em>
+                                        <span class="property">"oncurrentdateselected"</span>
+                              </em></span> event is fired when the "next/previous month" or
+                              "next/previous year" button is pressed, and the value is applied. </p><p>
+                              <span class="emphasis"><em>
+                                        <span class="property">"oncurrentdateselect"</span>
+                              </em></span> event is fired when the "next/previous month" or
+                              "next/previous year" button is pressed, but the value is not applied
+                              yet (you can change the logic of applying the value). Also this event
+                              could be used for possibility of "next/previous month" or
+                              "next/previous year" selection canceling. See an example below: </p><p>
+                              <span class="bold"><strong>Example:</strong></span>
+                    </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:calendar</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;date&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.dateTest}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">oncurrentdateselect</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;if&nbsp;(!confirm('Are&nbsp;you&nbsp;sure&nbsp;to&nbsp;change&nbsp;month(year)?')){return&nbsp;false;}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">oncurrentdateselected</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;alert('month(year)&nbsp;select:'+event.rich.date.toString());&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>How to use these attributes see also on the <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.jboss.com/index.html?module=bb&amp;op=viewtopic&amp;p=4092275#4092275">RichFaces Users Forum</a>.</p><p> Information about the <span class="emphasis"><em>
+                                        <span class="property">"process"</span>
+                              </em></span> attribute usage you can find <a href="ArchitectureOverview.html#process" title="5.7.4. Decide what to process">in the corresponding section </a>. </p><p> The <span class="emphasis"><em>
+                                        <span class="property">"label"</span>
+                              </em></span> attribute is a generic attribute. The <span class="emphasis"><em>
+                                        <span class="property">"label"</span>
+                              </em></span> attribute provides an association between a component, and
+                              the message that the component (indirectly) produced. This attribute
+                              defines the parameters of localized error and informational messages
+                              that occur as a result of conversion, validation, or other application
+                              actions during the request processing lifecycle. With the help of this
+                              attribute you can replace the last parameter substitution token shown
+                              in the messages. For example, {1} for
+                                        <code class="code">"DoubleRangeValidator.MAXIMUM"</code>,
+                              {2} for <code class="code">"ShortConverter.SHORT"</code>. </p><p>The <span class="emphasis"><em>
+                                        <span class="property">"defaultTime"</span>
+                              </em></span> attribute to set the default time value for the current
+                              date in two cases:</p><div class="itemizedlist"><ul><li><p> If time is not set </p></li><li><p> If another date is selected and the value of the <span class="emphasis"><em>
+                                                  <span class="property">"resetTimeOnDateSelect"</span>
+                                                  </em></span> attribute is set to
+                                                  "true" </p></li></ul></div><p> The <span class="emphasis"><em>
+                                        <span class="property"> "enableManualInput" </span>
+                              </em></span> attribute enables/disables input field, so when <code class="code">
+                                        enableManualInput = "false" </code>, user
+                              can only pick the date manually and has no possibility to type in the
+                              date (default value is "false"). </p><p>The <span class="bold"><strong>
+                                        <span class="property">&lt;rich:calendar&gt;</span>
+                              </strong></span> component allows to use <span class="emphasis"><em>
+                                        <span class="property">"header"</span>
+                              </em></span>, <span class="emphasis"><em>
+                                        <span class="property">"footer"</span>
+                              </em></span>, <span class="emphasis"><em>
+                                        <span class="property">"optionalHeader"</span>
+                              </em></span>, <span class="emphasis"><em>
+                                        <span class="property">"optionalFooter"</span>
+                              </em></span> facets. The following elements are available in these
+                              facets: <code class="code">{currentMonthControl}</code>,
+                              <code class="code">{nextMonthControl}</code>, <code class="code">{nextYearControl}</code>,
+                                        <code class="code">{previousYearControl}</code>,
+                                        <code class="code">{previousMonthControl}</code>,
+                              <code class="code">{todayControl}</code>, <code class="code">{selectedDateControl}</code>. These
+                              elements could be used for labels output.</p><p>Also you can use <span class="emphasis"><em>
+                                        <span class="property">"weekNumber"</span>
+                              </em></span> facet with available <code class="code">{weekNumber}</code>,
+                                        <code class="code">{elementId}</code> elements and <span class="emphasis"><em>
+                                        <span class="property">"weekDay"</span>
+                              </em></span> facet with <code class="code">{weekDayLabel}</code>,
+                                        <code class="code">{weekDayLabelShort}</code>,
+                              <code class="code">{weekDayNumber}</code>, <code class="code">{isWeekend}</code>,
+                                        <code class="code">{elementId}</code> elements.
+                              <code class="code">{weekNumber}</code>, <code class="code">{weekDayLabel}</code>,
+                                        <code class="code">{weekDayLabelShort}</code>,
+                              <code class="code">{weekDayNumber}</code> elements could be used for labels output,
+                                        <code class="code">{isWeekend}</code>, <code class="code">{elementId}</code> - for
+                              additional processing in JavaScript code.</p><p>These elements are shown on the picture below.</p><div class="figure"><a id="d0e29830"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar3.png" alt="Available elements"/></div></div><p class="title"><b>Figure 6.121. Available elements</b></p></div><br class="figure-break"/><p>Simple example of usage is placed below.</p><p>
+                              <span class="bold"><strong>Example:</strong></span>
+                    </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="CSS"><!-- CSS : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="css_null">.</span><span class="css_null">.</span><span class="css_null">.</span><span class="css_normal"><br />
+</span><span class="css_comment">&lt;!--</span><span class="css_normal">&nbsp;</span><span class="css_selector">Styles</span><span class="css_selector">&nbsp;</span><span class="css_selector">for</span><span class="css_selector">&nbsp;</span><span class="css_selector">cells</span><span class="css_selector">&nbsp;</span><span class="css_comment">--&gt;</span><span class="css_normal"><br />
+</span><span class="css_null">&lt;</span><span class="css_selector">style</span><span class="css_selector">&gt;</span><span class="css_normal"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="css_selector">.width100</span><span class="css_curly_brace">{</span><span class="css_normal"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="css_property_name">width</span><span class="css_colon">:</span><span class="css_property_value">100%</span><span class="css_semi_colon">;</span><span class="css_normal"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="css_curly_brace">}</span><span class="css_normal"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="css_selector">.talign</span><span class="css_curly_brace">{</span><span class="css_normal"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="css_property_name">text-align</span><span class="css_colon">:</span><span class="css_property_value">center</span><span class="css_semi_colon">;</span><span class="css_normal"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="css_curly_brace">}</span><span class="css_normal"><br />
+</span><span class="css_null">&lt;</span><span class="css_null">/</span><span class="css_selector">style</span><span class="css_selector">&gt;</span><span class="css_normal"><br />
+</span><span class="css_null">.</span><span class="css_null">.</span><span class="css_null">.</span></pre><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:calendar</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;myCalendar&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">popup</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">locale</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{calendarBean.locale}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.date}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">preloadRangeBegin</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.date}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">preloadRangeEnd</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.date}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">cellWidth</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;40px&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">cellHeight</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;40px&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_comment">&lt;!--&nbsp;Customization&nbsp;with&nbsp;usage&nbsp;of&nbsp;facets&nbsp;and&nbsp;accessible&nbsp;elements&nbsp;--&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:facet</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;header&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">columns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;2&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">width</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;100%&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">columnClasses</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;width100,&nbsp;fake&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{selectedDateControl}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{todayControl}&quot;</span><span class="xml_plain">&nbsp;&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;font-weight:bold;&nbsp;text-align:left&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:facet</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:facet</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;weekDay&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:panelGroup</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;width:60px;&nbsp;overflow:hidden;&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">layout</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;block&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{weekDayLabelShort}&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:panelGroup</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:facet</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:facet</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;weekNumber&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:panelGroup</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{weekNumber}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;color:red&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:panelGroup</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:facet</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:facet</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;footer&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">columns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;3&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">width</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;100%&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">columnClasses</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;fake,&nbsp;width100&nbsp;talign&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{previousMonthControl}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;font-weight:bold;&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{currentMonthControl}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;font-weight:bold;&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{nextMonthControl}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;font-weight:bold;&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:panelGrid</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:facet</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:outputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;{day}&quot;</span><span class="xml_tag_symbols">&gt;&lt;/</span><span class="xml_tag_name">h:outputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:calendar</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>This is a result:</p><div class="figure"><a id="d0e29849"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar2.png" alt="Facets usage"/></div></div><p class="title"><b>Figure 6.122. Facets usage</b></p></div><br class="figure-break"/><p>As it's shown on the picture above
+                              <code class="code">{selectedDateControl}</code>, <code class="code">{todayControl}</code>
+                              elements are placed in the <span class="emphasis"><em>
+                                        <span class="property">"header"</span>
+                              </em></span> facet, <code class="code">{previousMonthControl}</code>,
+                                        <code class="code">{currentMonthControl}</code>,
+                              <code class="code">{nextMonthControl}</code> - in the <span class="emphasis"><em>
+                                        <span class="property">"footer"</span>
+                              </em></span> facet, <code class="code">{weekDayLabelShort}</code> - in the <span class="emphasis"><em>
+                                        <span class="property">"weekDay"</span>
+                              </em></span> facet, <code class="code">{nextYearControl}</code>,
+                                        <code class="code">{previousYearControl}</code> are absent. Numbers of
+                              weeks are red colored.</p><p> It is possible to show and manage date. Except scrolling controls you can
+                              use quick month and year selection feature. It's necessary to
+                              click on its field, i.e. current month control, and choose required
+                              month and year. </p><div class="figure"><a id="d0e29901"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar5.png" alt="Quick month and year selection"/></div></div><p class="title"><b>Figure 6.123. Quick month and year selection</b></p></div><br class="figure-break"/><p>Also the <span class="bold"><strong>
+                                        <span class="property">&lt;rich:calendar&gt;</span>
+                              </strong></span> component allows to show and manage time. It's
+                              necessary to define time in a pattern (for example, it could be
+                              defined as "<code class="code">d/M/yy HH:mm</code>"). Then after
+                              you choose some data in the calendar, it becomes possible to manage
+                              time for this date. For time editing it's necessary to click
+                              on its field (see a picture below). To clean the field click on the
+                              "Clean".</p><div class="figure"><a id="d0e29918"/><div class="figure-contents"><div class="mediaobject"><img src="images/calendar4.png" alt="Timing"/></div></div><p class="title"><b>Figure 6.124. Timing</b></p></div><br class="figure-break"/><p>It's possible to handle events for calendar from JavaScript code.
+                              A simplest example of usage JavaScript API is placed below:</p><p>
+                              <span class="bold"><strong>Example:</strong></span>
+                    </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:calendar</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{calendarBean.selectedDate}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;calendarID&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">locale</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{calendarBean.locale}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">popup</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{calendarBean.popup}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">datePattern</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{calendarBean.pattern}&quot;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">showApplyButton</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{calendarBean.showApply}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;width:200px&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:commandLink</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">onclick</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;$('formID:calendarID').component.doExpand(event)&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Expand&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>Also the discussion about this problem can be found on the <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.jboss.com/index.html?module=bb&amp;op=viewtopic&amp;p=4078301#4078301">RichFaces Users Forum</a>.</p><p> The <span class="bold"><strong>
+                                        <span class="property">&lt;rich:calendar&gt;</span>
+                              </strong></span> component provides the possibility to use
+                              internationalization method to redefine and localize the labels. You
+                              could use application resource bundle and define
+                                        <code class="code">RICH_CALENDAR_APPLY_LABEL</code>,
+                                        <code class="code">RICH_CALENDAR_TODAY_LABEL</code>,
+                                        <code class="code">RICH_CALENDAR_CLOSE_LABEL</code>,
+                                        <code class="code">RICH_CALENDAR_OK_LABEL</code>,
+                                        <code class="code">RICH_CALENDAR_CLEAN_LABEL</code>,
+                                        <code class="code">RICH_CALENDAR_CANCEL_LABEL </code> there. </p><p>You could also pack <code class="code">org.richfaces.renderkit.calendar</code>
+                              <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../apidoc/index.htmlorg/richfaces/renderkit/CalendarRendererBase.html#CALENDAR_BUNDLE">resource</a> bundle with your JARs defining the same
+                              properties. </p><div xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="note"><h2>Note:</h2><p>Only for Internet Explorer 6 and later. To make <span class="bold"><strong>
+                                                  <span class="property">&lt;rich:calendar&gt;</span>
+                                        </strong></span> inside <span class="bold"><strong>
+                                                  <span class="property">&lt;rich:modalPanel&gt;</span>
+                                        </strong></span> rendered properly, enable the
+                                        standards-compliant mode. Explore <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://msdn.microsoft.com/en-us/library/ms535242(VS.85).aspx">!DOCTYPE reference at MSDN</a> to find out
+                                        how to do this. </p></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e29993"/>6.11.1.4. Reference Data</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../tlddoc/index.htmlrich/calendar.html">Table of 
+							&lt;rich:calendar&gt; 
+							 attributes</a>.
+						</p><div class="table"><a id="d0e30001"/><p class="title"><b>Table 6.162. Component Identification Parameters</b></p><div class="table-contents"><table summary="Component Identification Parameters" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>component-type</td><td>org.richfaces.Calendar</td></tr><tr><td>component-class</td><td>org.richfaces.component.html.HtmlCalendar</td></tr><tr><td>component-family</td><td>org.richfaces.Calendar</td></tr><tr><td>renderer-type</td><td>org.richfaces.CalendarRenderer</td></tr><tr><td>tag-class</td><td>org.richfaces.taglib.CalendarTag</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e30037"/><p class="title"><b>Table 6.163. JavaScript API</b></p><div class="table-contents"><table summary="JavaScript API" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>selectDate(date)</td><td>Selects the date specified. If
+                                                  the date isn't in
+                                                  current month - performs
+                                                  request to select</td></tr><tr><td class="tbi">isDateEnabled(date)</td><td class="tbi">Checks if given date
+                                                  is selectable (to be
+                                                  implemented)</td></tr><tr><td class="tbi">enableDate(date)</td><td class="tbi">Enables date cell
+                                                  control on the calendar (to be
+                                                  implemented)</td></tr><tr><td class="tbi">disableDate(date)</td><td class="tbi">Disables date cell
+                                                  control on the calendar (to be
+                                                  implemented)</td></tr><tr><td class="tbi">enableDates(date[])</td><td class="tbi">Enables dates cell
+                                                  controls set on the calendar
+                                                  (to be implemented)</td></tr><tr><td class="tbi">disableDates(date[])</td><td class="tbi">Disables dates cell
+                                                  controls set on the calendar
+                                                  (to be implemented)</td></tr><tr><td>nextMonth()</td><td>Navigates to next month</td></tr><tr><td>nextYear()</td><td>Navigates to next year</td></tr><tr><td>prevMonth()</td><td>Navigates to previous month
+                                                  </td></tr><tr><td>prevYear()</td><td>Navigates to previous
+                                                  year</td></tr><tr><td>today()</td><td>Selects today date</td></tr><tr><td>getSelectedDate()</td><td>Returns currently selected
+                                                  date</td></tr><tr><td>Object getData()</td><td>Returns additional data for the
+                                                  date</td></tr><tr><td>getCurrentMonth()</td><td>Returns number of the month
+                                                  currently being viewed</td></tr><tr><td>getCurrentYear()</td><td>Returns number of the year
+                                                  currently being viewed</td></tr><tr><td>doCollapse()</td><td>Collapses calendar
+                                                  element</td></tr><tr><td>doExpand()</td><td>Expands calendar element</td></tr><tr><td>resetSelectedDate()</td><td>Clears a selected day
+                                                  value</td></tr><tr><td>doSwitch()</td><td>Inverts a state for the popup
+                                                  calendar</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e30144"/><p class="title"><b>Table 6.164. Facets</b></p><div class="table-contents"><table summary="Facets" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Facet</th><th>Description</th></tr></thead><tbody><tr><td>header</td><td>Redefines calendar header. Related attribute is "showHeader"</td></tr><tr><td>footer</td><td>Redefines calendar footer. Related attribute is "showFooter"</td></tr><tr><td>optionalHeader</td><td>Defines calendar's optional header</td></tr><tr><td>optionalFooter</td><td>Defines calendar's optional footer</td></tr><tr><td>weekNumber</td><td>Redefines week number</td></tr><tr><td>weekDay</td><td>Redefines names of the week days. Related attributes are "weekDayLabels" and "weekDayLabelsShort"</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e30185"/><p class="title"><b>Table 6.165. Style classes (selectors) with the corresponding skin parameters</b></p><div class="table-contents"><table summary="Style classes (selectors) with the corresponding skin parameters" border="1"><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th>Class (selector) name</th><th>Description</th><th>Skin Parameter</th><th>CSS properties mapped</th></tr></thead><tbody><tr><td>.rich-calendar-exterior</td><td>Defines styles for a popup element exterior</td><td>panelBorderColor</td><td>border-color</td></tr><tr><td rowspan="4">.rich-calendar-header-optional</td><td rowspan="4">Defines styles for a header</td><td>panelBorderColor</td><td>border-bottom-color</td></tr><tr><td>additionalBackgroundColor</td><td>background-color</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="4">.rich-calendar-header</td><td rowspan="4">Defines styles for an optional header</td><td>panelBorderColor</td><td>border-bottom-color</td></tr><tr><td>additionalBackgroundColor</td><td>background-color</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="4">.rich-calendar-cell</td><td rowspan="4">Defines styles for cells with days</td><td>panelBorderColor</td><td>border-bottom-color, border-right-color</td></tr><tr><td>tableBackgroundColor</td><td>background-color</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="5">.rich-calendar-tool</td><td rowspan="5">Defines styles for toolbars</td><td>headerBackgroundColor</td><td>background-color</td></tr><tr><td>headerSizeFont</td><td>font-size</td></tr><tr><td>headerFamilyFont</td><td>font-family</td></tr><tr><td>headerWeightFont</td><td>font-weight</td></tr><tr><td>headerTextColor</td><td>color</td></tr><tr><td rowspan="5">.rich-calendar-month</td><td rowspan="5">Defines styles for names of months</td><td>headerBackgroundColor</td><td>background-color</td></tr><tr><td>headerSizeFont</td><td>font-size</td></tr><tr><td>headerFamilyFont</td><td>font-family</td></tr><tr><td>headerWeightFont</td><td>font-weight</td></tr><tr><td>headerTextColor</td><td>color</td></tr><tr><td rowspan="4">.rich-calendar-days</td><td rowspan="4">Defines styles for names of working days in a header</td><td>panelBorderColor</td><td>border-bottom-color, border-right-color</td></tr><tr><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="5">.rich-calendar-week</td><td rowspan="5">Defines styles for weeks numbers</td><td>panelBorderColor</td><td>border-bottom-color, border-right-color</td></tr><tr><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>calendarWeekBackgroundColor</td><td>background-color</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="2">.rich-calendar-holly</td><td rowspan="2">Defines styles for holiday</td><td>calendarHolidaysBackgroundColor</td><td>background-color</td></tr><tr><td>calendarHolidaysTextColor</td><td>color</td></tr><tr><td rowspan="2">.rich-calendar-today</td><td rowspan="2">Defines styles for cell with a current date</td><td>calendarCurrentBackgroundColor</td><td>background-color</td></tr><tr><td>calendarCurrentTextColor</td><td>color</td></tr><tr><td rowspan="2">.rich-calendar-select</td><td rowspan="2">Defines styles for a selected day</td><td>headerBackgroundColor</td><td>background-color</td></tr><tr><td>headerTextColor</td><td>color</td></tr><tr><td rowspan="2">.rich-calendar-hover</td><td rowspan="2">Defines styles for a hovered day</td><td>calendarSpecBackgroundColor</td><td>background-color</td></tr><tr><td>calendarSpecTextColor</td><td>color</td></tr><tr><td rowspan="3">.rich-calendar-toolfooter</td><td rowspan="3">Defines styles for a tollbar items in the footer</td><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="4">.rich-calendar-tool-btn-hover</td><td rowspan="4">Defines styles for a toolbar button hovered</td><td>calendarWeekBackgroundColor</td><td>background-color</td></tr><tr><td>generalTextColor</td><td>color</td></tr><tr><td>tableBackgroundColor</td><td>border-color</td></tr><tr><td>panelBorderColor</td><td>border-right-color, border-bottom-color</td></tr><tr><td rowspan="2">.rich-calendar-tool-btn-press</td><td rowspan="2">Defines styles for a toolbar button pressed</td><td>panelBorderColor</td><td>border-color</td></tr><tr><td>tableBackgroundColor</td><td>border-right-color, border-bottom-color</td></tr><tr><td rowspan="4">.rich-calendar-footer</td><td rowspan="4">Defines styles for a footer</td><td>panelBorderColor</td><td>border-right-color, border-top-color</td></tr><tr><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="4">.rich-calendar-footer-optional</td><td rowspan="4">Defines styles for an optional footer</td><td>panelBorderColor</td><td>border-right-color, border-top-color</td></tr><tr><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td>.rich-calendar-editor-shadow</td><td>Defines styles for the calendar editor shadow</td><td>tableBackgroundColor</td><td>background</td></tr><tr><td rowspan="4">.rich-calendar-time-layout</td><td rowspan="4">Defines styles for a popup element during time selection</td><td>panelBorderColor</td><td>border-color</td></tr><tr><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="4">.rich-calendar-date-layout</td><td rowspan="4">Defines styles for a popup element during quick month/year selection</td><td>panelBorderColor</td><td>border-color</td></tr><tr><td>tableBackgroundColor</td><td>background</td></tr><tr><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="2">.rich-calendar-time-layout input</td><td rowspan="2">Defines styles for the input fields in the popup element during time selection</td><td>generalSizeFont</td><td>font-size</td></tr><tr><td>generalFamilyFont</td><td>font-family</td></tr><tr><td rowspan="2">.rich-calendar-date-layout-cancel</td><td rowspan="2">Defines styles for the "Cancel" button</td><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>panelBorderColor</td><td>border-top-color</td></tr><tr><td rowspan="2">.rich-calendar-date-layout-ok</td><td rowspan="2">Defines styles for the "Ok" button</td><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>panelBorderColor</td><td>border-top-color</td></tr><tr><td>.rich-calendar-date-layout-split</td><td>Defines styles for a wrapper &lt;td&gt; element for month items near split line</td><td>panelBorderColor</td><td>border-right-color</td></tr><tr><td rowspan="2">.rich-calendar-time-btn</td><td rowspan="2">Defines styles for a button in the popup element for time section</td><td>tableBackgroundColor</td><td>border-color</td></tr><tr><td>panelBorderColor</td><td>border-right-color, border-bottom-color</td></tr><tr><td rowspan="3">.rich-calendar-time-btn-press</td><td rowspan="3">Defines styles for a pressed button in the popup element for time section</td><td>tableBackgroundColor</td><td>border-right-color, border-bottom-color</td></tr><tr><td>panelBorderColor</td><td>border-color</td></tr><tr><td>calendarWeekBackgroundColor</td><td>background-color</td></tr><tr><td>.rich-calendar-spinner-buttons</td><td>Defines styles for a wrapper &lt;td&gt; element for spinner buttons in the popup element for time selection</td><td>headerBackgroundColor</td><td>background-color, border-color</td></tr><tr><td rowspan="3">.rich-calendar-spinner-input-container</td><td rowspan="3">Defines styles for a wrapper &lt;td&gt; element of a spinner input field in the popup element for time selection</td><td>controlBackgroundColor</td><td>background-color</td></tr><tr><td>panelBorderColor</td><td>border-color</td></tr><tr><td>subBorderColor</td><td>border-right-color, border-bottom-color</td></tr><tr><td rowspan="2">.rich-calendar-spinner-input</td><td rowspan="2">Defines styles for a spinner input field in the popup element for time section</td><td>buttonSizeFont</td><td>font-size</td></tr><tr><td>buttonFamilyFont</td><td>font-family</td></tr><tr><td>.rich-calendar-editor-layout-shadow</td><td>Defines styles for the layout shadow of the calendar editor</td><td>shadowBackgroundColor</td><td>background-color</td></tr><tr><td rowspan="2">.rich-calendar-editor-btn-over</td><td rowspan="2">Defines styles for the calendar editor button when the pointer is moved
+   						onto</td><td>panelBorderColor</td><td>border-color</td></tr><tr><td>calendarSpecBackgroundColor</td><td>background</td></tr><tr><td rowspan="2">.rich-calendar-editor-btn-selected</td><td rowspan="2">Defines styles for the calendar editor button selected</td><td>calendarCurrentBackgroundColor</td><td>background-color</td></tr><tr><td>calendarCurrentTextColor</td><td>color</td></tr><tr><td rowspan="3">.rich-calendar-editor-tool-over</td><td rowspan="3">Defines styles for a hovered toolbar items in the calendar editor</td><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>tableBackgroundColor</td><td>border-color</td></tr><tr><td>panelBorderColor</td><td>border-right-color, border-bottom-color</td></tr><tr><td rowspan="3">.rich-calendar-editor-tool-press</td><td rowspan="3">Defines styles for a pressed toolbar items in the calendar editor</td><td>additionalBackgroundColor</td><td>background</td></tr><tr><td>panelBorderColor</td><td>border-color</td></tr><tr><td>tableBackgroundColor</td><td>border-right-color, border-bottom-color</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e30811"/><p class="title"><b>Table 6.166. Style classes (selectors) without skin parameters</b></p><div class="table-contents"><table summary="Style classes (selectors) without skin parameters" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Class name</th><th>Description</th></tr></thead><tbody><tr><td>.rich-calendar-input </td><td>Defines styles for an input field</td></tr><tr><td>.rich-calendar-button</td><td>Defines styles for a popup button</td></tr><tr><td>.rich-calendar-weekends</td><td>Defines styles for names of weekend in a header</td></tr><tr><td>.rich-calendar-popup</td><td>Defines styles for a popup element</td></tr><tr><td>.rich-calendar-tool-btn</td><td>Defines styles for a toolbar buttons</td></tr><tr><td>.rich-calendar-tool-btn-disabled</td><td>Defines styles for a toolbar buttons disabled</td></tr><tr><td>.rich-calendar-tool-close</td><td>Defines styles for a toolbar "Close" button</td></tr><tr><td>.rich-calendar-boundary-dates</td><td>Defines styles for an active boundary button</td></tr><tr><td>.rich-calendar-btn</td><td>Defines styles for a date button</td></tr><tr><td>.rich-calendar-editor-btn</td><td>Defines styles for a button in the calendar editor</td></tr><tr><td>.rich-calendar-time-layout-fields</td><td>Defines styles for a wrapper &lt;td&gt; element for input fields and
+   						buttons</td></tr><tr><td>.rich-calendar-spinner-up</td><td>Defines styles for the "Up" spinner button in the popup element for time section</td></tr><tr><td>.rich-calendar-spinner-down</td><td>Defines styles for the "Down" spinner button in the popup element for time section</td></tr><tr><td>.rich-calendar-spinner-pressed</td><td>Defines styles for a pressed spinner button in the popup element for time section</td></tr><tr><td>.rich-calendar-time-layout-ok</td><td>Defines styles for the "Ok" button in the popup element for time section</td></tr><tr><td>.rich-calendar-time-layout-cancel</td><td>Defines styles for the "Cancel" button in the popup element for time section</td></tr></tbody></table></div></div><br class="table-break"/><p>You can find all necessary information about style classes redefinition in 
+						<a href="ArchitectureOverview.html#customstyles" title="5.12. Definition of Custom Style Classes">Definition of Custom Style Classes</a> 
+							section.</p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e30907"/>6.11.1.5. Relevant Resources Links</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://livedemo.exadel.com/richfaces-demo/richfaces/calendar.jsf?c=calendar">On the component LiveDemo page</a> you can see the example of <span class="bold"><strong>
+                                        <span class="property">&lt;rich:calendar&gt;</span>
+                              </strong></span> usage and sources for the given example. </p><p>How to use JavaScript API see on the <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.jboss.com/index.html?module=bb&amp;op=viewtopic&amp;p=4078301#4078301">RichFaces Users Forum</a>.</p></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="richInput.html"><strong>Prev</strong>6.11. Rich Input</a></li><li class="up"><a accesskey="u" href="#"><strong>Top of page</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Front page</strong></a></li><li class="next"><a accesskey="n" href="rich_colorPicker.html"><strong>Next</strong>6.11.2. 
+				&lt;
+				rich:colorPicker
+				&gt;
+				
+  ...</a></li></ul></body></html>

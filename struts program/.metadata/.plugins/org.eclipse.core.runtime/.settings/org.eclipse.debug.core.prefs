@@ -1,0 +1,4 @@
+#Sat Nov 17 17:48:57 GMT+05:30 2012
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="String s;"/>\r\n</watchExpressions>\r\n
+eclipse.preferences.version=1
+org.eclipse.debug.core.USE_STEP_FILTERS=false

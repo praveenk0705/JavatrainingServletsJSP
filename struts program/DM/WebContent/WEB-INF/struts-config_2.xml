@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+<form-beans>
+<form-bean name="tempForm" type="org.apache.struts.action.DynaActionForm">
+<form-property name="cat" type="java.lang.String"/>
+</form-bean>
+<form-bean name="loginForm" type="com.jlc.beans.LoginForm"/>
+</form-beans>
+<global-forwards>
+<forward name="download" path="/download.jsp"></forward>
+<forward name="studenthome" path="/showDownload.do?method=showDownload"></forward>
+<forward name="adminhome" path="/adminhome.jsp"></forward>
+<forward name="default" path="/index.jsp"></forward>
+</global-forwards>
+<action-mappings>
+<action path="/LoginSubmit" name="loginForm" 
+		type="com.jlc.actions.DMAction" 
+ 		input="/index.jsp" parameter="method" >
+</action>
+<action path="/showDownload" name="tempForm" 
+ 		type="com.jlc.actions.DMAction" 
+ 		input="/studentbody.jsp" parameter="method" >
+</action>
+</action-mappings>
+<message-resources parameter="com.jlc.struts.application"></message-resources>
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+  <set-property property="definitions-config" value="/WEB-INF/tiles.xml"/>
+  </plug-in>
+</struts-config>
+

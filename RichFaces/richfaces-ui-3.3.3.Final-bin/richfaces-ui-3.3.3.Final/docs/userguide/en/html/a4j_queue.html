@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>6.1.11.  &lt; a4j:queue &gt; available since 3.3.0</title><link rel="stylesheet" href="css/html.css" type="text/css"/><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"/><meta xmlns="" http-equiv="content-type" content="text/html; charset=UTF-8"/><link xmlns="" rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/><link rel="start" href="index.html" title="RichFaces Developer Guide"/><link rel="up" href="ajaxSupport.html" title="6.1. Ajax Support"/><link rel="prev" href="a4j_push.html" title="6.1.10.  &lt; a4j:push &gt; available since 3.0.0"/><link rel="next" href="a4j_status.html" title="6.1.12.  &lt; a4j:status &gt; available since 3.0.0"/><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.cookie.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/toggle.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script></head><body><div xmlns="" id="overlay"> </div><div xmlns="" class="time_out_div" id="timeOutDiv"> </div><div xmlns="" id="feedback-maincontainer"><h3 id="feedback-header">
+			Create new RichFaces Documentation Jira issue
+			<a href="javascript:void(0);" onclick="hidePopup('feedback-maincontainer', 'feedback-mailform', 'feedback-iFrame','feedback-submit', 'feedback-maincontainer');" id="feedback-close"><img src="images/close_org.png" class="feedback-images"/></a></h3><iframe id="feedback-iFrame" name="feedback-iFrame"> </iframe><form onsubmit="return validate_form()" id="feedback-mailform" method="post" action="https://jira.jboss.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310341&amp;issuetype=3" target="feedback-iFrame"><input type="hidden" id="priority" name="priority" value="3"/><input type="hidden" id="components" name="components" value="12311170"/><input type="hidden" id="versions" name="versions" value="12312451"/><input type="hidden" id="customfield_12310031" name="customfield_12310031" value="Documentation (Ref Guide, User Guide, etc.)"/><label for="summary">Summary</label><input type="text" id="feedback-summary" name="feedback-summary" title="Summarize the subject of the issue in a few words" maxlength="255" onKeyDown="countLeft('feedback-summary', 'left', 255);" onKeyUp="countLeft('feedback-summary', 'left', 255);"/><div id="summary-helper-left" class="feedback-helper"><span id="left">255</span> characters left
+			</div><div class="clear"> </div><label for="feedback-description">Description</label><textarea id="feedback-description" name="feedback-description" title="Provide more details about the issue" onKeyDown="countLeft('feedback-description', 'none', 500);" onKeyUp="countLeft('feedback-description', 'none', 500);"> </textarea><div class="clear"> </div><label for="feedback-environment">Environment</label><textarea id="feedback-environment" name="feedback-environment" title="Describe your environment"> </textarea></form><div id="guide_words">This will launch the RichFaces Jira page - to complete your feedback please login if needed, and submit the Jira.</div><input type="button" id="feedback-submit" value="Proceed to Jira" name="submit" class="feedback-formbutton" title="Proceed to create new issue" onclick="fillForm('feedback-mailform'); submitForm('feedback-mailform', 'feedback-iFrame', 'feedback-submit', 'feedback-maincontainer');"/></div><div xmlns="" id="feedback-wrapper"><a id="feedback-link" onclick="showPopup('feedback-maincontainer');"><img src="images/feedback_logo.png" class="feedback-images" onload="init('feedback-summary', 'feedback-description');"/></a></div><p id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="a4j_push.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="a4j_status.html"><strong>Next</strong></a></li></ul><div class="section" lang="en-US"><div class="titlepage"><div><div><h3 class="title"><a id="a4j_queue"/>6.1.11. 
+				&lt;
+				a4j:queue
+				&gt;
+				<span class="since">
+         <sup> available since <span class="version">3.3.0</span>
+         </sup>
+      </span>
+   </h3></div></div></div><a xmlns="" href="javascript:void(0);" id="expand_collapse">expand all</a><div xmlns="" class="toc"><dl xmlns="http://www.w3.org/1999/xhtml"><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_queue.html#d0e8578">6.1.11.1. Description</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_queue.html#d0e8589">6.1.11.2. Details of Usage</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_queue.html#d0e8752">6.1.11.3. Reference Data</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="a4j_queue.html#d0e8813">6.1.11.4. Relevant Resources Links</a></span></dt></dl></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8578"/>6.1.11.1. Description</h4></div></div></div><p>
+                The <span class="bold"><strong>
+            <span class="property">&lt;a4j:queue&gt;</span>
+         </strong></span> component enqueues set of Ajax requests sent from client. 
+                The RichFaces components with built-in Ajax can reference the queue to optimize Ajax requests.
+          </p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8589"/>6.1.11.2. Details of Usage</h4></div></div></div><p>
+                  The RichFaces Queue has four different types: global default, view scoped default, view scoped named and form-based default queue (general Queue principles are good documented in the "<a href="ArchitectureOverview.html#QueuePrinciples" title="5.6.3. Queue Principles">Queue Principles</a>" section). 
+                  The current section will take closer to the form based queue. The usage of other types is similar.
+            </p><p>
+              In order to disable or enable the <span class="bold"><strong>
+            <span class="property">&lt;a4j:queue&gt;</span>
+         </strong></span> component on the page you can use the <span class="emphasis"><em>
+            <span class="property">"disabled"</span>
+         </em></span> attribute.
+        </p><p>
+                  The <span class="emphasis"><em>
+            <span class="property">"requestDelay"</span>
+         </em></span> attribute defines delay time for all the requests fired by the action components.
+            </p><p>
+                  The <span class="emphasis"><em>
+            <span class="property">"size"</span>
+         </em></span> attribute specifies the number of requests that can be stored in the queue at a time. 
+                  The attribute helps to prevent server overloading. 
+                  It is also possible to determine queue's behaviour when it's size is exceeded. 
+                  Use the <span class="emphasis"><em>
+            <span class="property">"sizeExceededBehavior"</span>
+         </em></span> for this purpose. 
+                  There are four possible strategies of exceeded queue's behavior: 
+            </p><div class="itemizedlist"><ul><li><p>"dropNext" drops next request that should be fired</p></li><li><p>"dropNew" drops the incoming request</p></li><li><p>"fireNext" immediately fires the next request in line to be fired</p></li><li><p>"fireNew" immediately fires the incoming request.</p></li></ul></div><p>
+            <span class="bold"><strong> Example: </strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:queue</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">size</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;2&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">requestDelay</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;500&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">sizeExceededBehavior</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;dropNext&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">onsizeexceeded</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;alert('The&nbsp;size&nbsp;of&nbsp;the&nbsp;queue&nbsp;is&nbsp;exceeded')&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:inputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.a}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onkeyup&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:inputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:inputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.b}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onblur&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:inputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:selectBooleanCheckbox</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.check}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;checkboxID&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;checkboxSupport&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onchange&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:selectBooleanCheckbox</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>
+            In this example if the queue has more than 2 requests waiting to be processed the next event will be dropped and a message (the <span class="emphasis"><em>
+            <span class="property">"onsizeexceeded"</span>
+         </em></span> attribute fires a JavaScript function) saying that the queues is exceeded will be displayed.
+        </p><p>
+            The <span class="emphasis"><em>
+            <span class="property">"ignoreDupResponses"</span>
+         </em></span> attribute that takes a boolean value can also help optimize your Ajax requests. 
+            If set to true, response processing for request will not occur if a similar request is already waiting in the queue. New request will be fired immediately when the response from the previous one returns.
+         
+        </p><p>
+            <span class="bold"><strong> Example: </strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:queue</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">requestDelay</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;500&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">ignoreDupResponses</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:inputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.a}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onkeyup&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:inputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>In this example, the requests are glued together and only the last one is submitted.</p><p>
+              Another key attribute that easies server load is <span class="emphasis"><em>
+            <span class="property">"timeout"</span>
+         </em></span>. 
+              The attribute specifies the  amount of time an item can be in the queue before the sent event is be aborted and dropped from the queue. 
+        </p><p>
+                  If the request is sent and response is not returned within the time frame defined in this attribute - the request is aborted, and the next one is sent. 
+            </p><p>
+                <span class="bold"><strong> Example: </strong></span>
+          </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:queue</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">timeout</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;1000&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:inputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.a}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onkeyup&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:inputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>
+            In this case if the sever doesn't respond within a second the request will be aborted.
+        </p><p>
+            As you can see the implementation of the queue provides some custom event handlers that you may use to call JavaScript functions.</p><p>
+              The <span class="emphasis"><em>
+            <span class="property">"oncomplete"</span>
+         </em></span>is fired after request completed. 
+              In this event handler request object is be passed as a parameter. 
+              Thus queue is be accessible using <code class="code">request.queue</code>. 
+              And the element which was a source of the request is available using <code class="code">this</code>.                    
+        </p><p>
+            <span class="bold"><strong> Example: </strong></span>
+        </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:queue</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">oncomplete</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;alert(request.queue.getSize())&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">requestDelay</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;1000&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:inputText</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.a}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onkeyup&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:inputText</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:selectBooleanCheckbox</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.check}&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:support</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">event</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;onchange&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:selectBooleanCheckbox</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>In this example you can see how the number of requests waiting  in the queue change. You will get a message with the number of the requests in the queue.</p><p>The <span class="emphasis"><em>
+            <span class="property">"onbeforedomupdate"</span>
+         </em></span> event handler called before
+        updating DOM on a client side.</p><p> The <span class="emphasis"><em>
+            <span class="property">"onrequestqueue"</span>
+         </em></span> event handler called after the new request has been added to queue.
+            And the <span class="emphasis"><em>
+            <span class="property">"onrequestdequeue"</span>
+         </em></span> event handler called after the request has been removed from queue. </p><p> The <span class="emphasis"><em>
+            <span class="property">"onsubmit"</span>
+         </em></span> event handler called
+            after request is completed. This attribute allows to invoke JavaScript code before an
+            Ajax request is sent. </p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8752"/>6.1.11.3. Reference Data</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../tlddoc/index.htmla4j/queue.html">Table of 
+							&lt;a4j:queue&gt; 
+							 attributes</a>.
+						</p><div class="table"><a id="d0e8760"/><p class="title"><b>Table 6.11. Component Identification Parameters </b></p><div class="table-contents"><table summary="Component Identification Parameters " border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>component-family</td><td>org.ajax4jsf.Queue</td></tr><tr><td>component-class</td><td>org.ajax4jsf.component.html.HtmlQueue</td></tr><tr><td>renderer-type</td><td>org.ajax4jsf.QueueRenderer</td></tr><tr><td>tag-class</td><td>org.ajax4jsf.taglib.html.jsp.QueueTag</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e8791"/><p class="title"><b>Table 6.12. JavaScript API</b></p><div class="table-contents"><table summary="JavaScript API" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>getSize()</td><td>Returns the current size to the queue</td></tr><tr><td>getMaximumSize()</td><td>Returns the maximum size to the queue, specified in the "size" attribute</td></tr></tbody></table></div></div><br class="table-break"/></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e8813"/>6.1.11.4. Relevant Resources Links</h4></div></div></div><p>
+              Visit the <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://livedemo.exadel.com/richfaces-demo/richfaces/queue.jsf?c=queue">Queue Page</a> at the RichFaces LiveDemo for examples of component usage and their sources. 
+        </p><p>
+              Useful articles:
+        </p><p>"<a href="ArchitectureOverview.html#QueuePrinciples" title="5.6.3. Queue Principles">Queue Principles</a>" section of the RichFaces developer guide describes general Queue principles.</p></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="a4j_push.html"><strong>Prev</strong>6.1.10. 
+				&lt;
+				a4j:push
+				&gt;
+				
+          ...</a></li><li class="up"><a accesskey="u" href="#"><strong>Top of page</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Front page</strong></a></li><li class="next"><a accesskey="n" href="a4j_status.html"><strong>Next</strong>6.1.12. 
+				&lt;
+				a4j:status
+				&gt;
+				
+        ...</a></li></ul></body></html>

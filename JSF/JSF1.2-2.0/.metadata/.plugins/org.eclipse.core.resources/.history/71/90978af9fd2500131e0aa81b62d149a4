@@ -1,0 +1,20 @@
+package com.shubham.jsf1;
+
+import javax.faces.event.PhaseEvent;
+import javax.faces.event.PhaseListener;
+
+public class MyPhaseListener implements PhaseListener {
+	
+	public void beforePhase(PhaseEvent event){
+		
+	}
+	
+	public void afterPhase(PhaseEvent event){
+		
+	}
+	
+	public PhaseId getPhaseId(){
+		
+	}
+
+}

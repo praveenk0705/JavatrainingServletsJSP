@@ -1,0 +1,25 @@
+package com.sk.struts;
+
+class  K {
+
+	public   void display(){
+		System.out.println("Class K");
+	}
+}
+
+class B extends  K {
+    
+	private void display() {
+		System.out.println("class B");
+	}
+
+}
+
+public class C {
+	public static void main(String args[]) {
+		K k = new B();
+		
+		
+
+	}
+}

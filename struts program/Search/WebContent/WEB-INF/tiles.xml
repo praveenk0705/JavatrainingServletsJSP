@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" >
+
+<tiles-definitions>
+<definition name="BaseDef" path="/DELLLayout.jsp">
+<put name="BODY" value=""/>
+<put name="FOOTER" value="footer.jsp"/>
+</definition>
+<definition name="UpdateContactDef" extends="BaseDef">
+<put name="BODY" value="updatecontact.jsp"/>
+</definition>
+<definition name="SearchContactDef" extends="BaseDef">
+<put name="BODY" value="searchcontact.jsp"/>
+</definition>
+</tiles-definitions>

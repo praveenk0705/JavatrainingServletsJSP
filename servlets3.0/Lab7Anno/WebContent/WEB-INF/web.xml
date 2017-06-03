@@ -1,0 +1,6 @@
+<web-app> 
+  <display-name>Lab7Anno</display-name>
+  <welcome-file-list>
+    <welcome-file>demo.html</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,6 @@
+<html>
+<head><meta http-equiv="refresh" content="3;url=register.shu"/></head>
+<body><center>
+<h2>Shubham Learning Center</h2>
+</center></body>
+</html>

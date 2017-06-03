@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hudson
+Build-Jdk: 1.6.0_24
+Specification-Title: RichFaces Archetypes: Simple Application
+Specification-Version: 4.0.0.Final
+Specification-Vendor: JBoss, a division of Red Hat, Inc.
+Implementation-Title: RichFaces Archetypes: Simple Application
+Implementation-Version: 4.0.0.Final
+Implementation-Vendor-Id: org.richfaces.archetypes
+Implementation-Vendor: JBoss, a division of Red Hat, Inc.
+Hudson-Build-Number: 7
+Hudson-Project: richfaces-4.0.0.Final-release
+Hudson-Version: 1.391 (private-01/13/2011 16:10-vjuranek)
+Implementation-URL: http://richfaces.org/richfaces-archetype-simpleapp
+

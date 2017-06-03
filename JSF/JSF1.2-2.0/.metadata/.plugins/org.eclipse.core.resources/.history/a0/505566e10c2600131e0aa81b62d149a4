@@ -1,0 +1,8 @@
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<f:view>
+
+<html><body><center>
+<h2>JSF I18N EXAMPLE</h2>
+</center></body></html>
+</f:view>

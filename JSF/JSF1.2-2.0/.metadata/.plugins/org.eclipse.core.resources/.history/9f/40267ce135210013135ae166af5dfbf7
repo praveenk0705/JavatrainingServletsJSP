@@ -1,0 +1,13 @@
+package com.shubham.jsf1;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.Validator;
+
+public class EmailValidator implements Validator {
+
+	public void validate(FacesContext fc, UIComponent uc, Object values)throws ValidatorException {
+
+	}
+
+}

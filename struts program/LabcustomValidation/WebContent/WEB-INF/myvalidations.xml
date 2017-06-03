@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0.1//EN" "validator_1_0_1.dtd" >
+<form-validation>
+<formset>
+   
+ <form name="loginForm">
+ <field
+          property="username"
+                depends="required,start">
+                    <arg0 key="username" resource="false"/>
+                    <arg1 key="username" resource="false"/>
+                    
+            </field>
+<field
+                property="password"
+                depends="required,minlength">
+                    <arg0 key="password" resource="false"/>
+                    <arg1 key="${var:minlength}" name="minlength" resource="false"/>
+                    <var>
+                        <var-name>minlength</var-name>
+                        <var-value>6</var-value>
+                    </var>
+            </field>
+            </form>
+</formset>
+</form-validation>

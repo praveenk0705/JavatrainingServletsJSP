@@ -1,0 +1,27 @@
+package com.shubham.jsf1;
+
+import javax.faces.component.UIViewRoot;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+
+public class StudentBean {
+	private String sid;
+
+	public String searchStudentBySid() {
+		System.out.println(sid);
+		return "search";
+	}
+
+	public String getSid() {
+		return sid;
+	}
+
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
+
+	public void change(String language) {
+		FacesContext fc = FacesContext.getCurrentInstance();
+		UIViewRoot root = new UIViewRoot();
+	}
+}

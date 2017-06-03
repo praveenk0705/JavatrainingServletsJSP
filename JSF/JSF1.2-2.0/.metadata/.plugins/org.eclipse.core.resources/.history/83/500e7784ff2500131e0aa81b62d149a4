@@ -1,0 +1,32 @@
+package com.shubham.jsf1;
+
+import javax.faces.event.PhaseEvent;
+import javax.faces.event.PhaseId;
+import javax.faces.event.PhaseListener;
+
+public class MyPhaseListener implements PhaseListener {
+	public MyPhaseListener() {
+		System.out.println("\n======MyPhaseListener 0-args=====");
+	}
+
+	public void beforePhase(PhaseEvent event) {
+		System.out.println("\n******beforePhase()******");
+		System.out.println(event.getPhaseId());
+		System.out.println("******beforePhase()******");
+
+	}
+
+	public void afterPhase(PhaseEvent event) {
+		System.out.println("\n******afterPhase()******");
+		System.out.println(event.getPhaseId());
+		System.out.println("******afterPhase()******");
+	}
+
+	public PhaseId getPhaseId() {
+		System.out.println("\n******getPhaseId()******");
+		System.out.println(PhaseId.ANY_PHASE);
+		System.out.println("\n******getPhaseId()******");
+		return PhaseId.ANY_PHASE;
+
+	}
+}

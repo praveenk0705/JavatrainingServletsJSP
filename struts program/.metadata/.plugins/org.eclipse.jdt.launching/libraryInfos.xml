@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files\Java\jre6" version="1.6.0_20">
+<bootpath>
+<entry path="C:\Program Files\Java\jre6\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre6\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre6\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre6\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\jre6" version="1.6.0_20">
+<bootpath>
+<entry path="D:\jre6\lib\resources.jar"/>
+<entry path="D:\jre6\lib\rt.jar"/>
+<entry path="D:\jre6\lib\sunrsasign.jar"/>
+<entry path="D:\jre6\lib\jsse.jar"/>
+<entry path="D:\jre6\lib\jce.jar"/>
+<entry path="D:\jre6\lib\charsets.jar"/>
+<entry path="D:\jre6\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\jre6\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\jre6\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\jre1.5.0_21" version="1.5.0_21">
+<bootpath>
+<entry path="D:\jre1.5.0_21\lib\rt.jar"/>
+<entry path="D:\jre1.5.0_21\lib\i18n.jar"/>
+<entry path="D:\jre1.5.0_21\lib\sunrsasign.jar"/>
+<entry path="D:\jre1.5.0_21\lib\jsse.jar"/>
+<entry path="D:\jre1.5.0_21\lib\jce.jar"/>
+<entry path="D:\jre1.5.0_21\lib\charsets.jar"/>
+<entry path="D:\jre1.5.0_21\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\jre1.5.0_21\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\jre1.5.0_21\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

@@ -1,0 +1,68 @@
+<html>		
+<head>		 
+
+<script language="javascript">
+function validate()
+{
+  if(document.frm.uname.value.length<1)
+  {
+   alert("Please enter username!");
+      return false;
+  }
+  if(document.frm.password.value.length<1)
+  {
+    alert("Please enter password!");
+    return false;
+  }
+  if(document.frm.password2.value.length<1)
+  {	 
+    alert("Please enter confirm password!");
+    return false;
+  }
+  if((document.frm.password.value.length)!=(document.frm.password2.value.length))
+  {	
+     alert("Password does not match");
+    return false;
+  }
+  if(document.frm.email.value.length<1)
+  {	alert("Please enter email!");
+    return false;
+  }
+  if(document.frm.phone.value.length<1)
+  {	 alert("Please enter phone!");
+    return false;
+  }	}
+</script>
+</head>		
+<body bgcolor="#ffffcc" text="green">	 <center>
+  <h1><center> Student Registration </center></h1>
+   <hr>
+    <form name="frm" action="x.do">
+      <table>
+       <tr>
+         <td align="right">User Name:<font color="red">*</font>&nbsp;&nbsp;</td>
+         <td><input type="text" name="uname" style="width:200px"/></td>
+       </tr>
+       <tr>
+         <td align="right">Password:<font color="red">*</font>&nbsp;&nbsp;</td>
+         <td><input type="password" name="password" style="width:200px"/></td>
+       </tr>
+       <tr>
+         <td align="right">Re-enter Password:<font color="red">*</font>&nbsp;&nbsp;</td>
+         <td><input type="password" name="password2" style="width:200px"/></td>
+       </tr>
+       <tr>
+         <td align="right">Email:<font color="red">*</font>&nbsp;&nbsp;</td>
+         <td><input type="text" name="email" style="width:200px"/></td>
+       </tr>
+       <tr>
+         <td align="right">Phone:<font color="red">*</font>&nbsp;&nbsp;</td>
+         <td><input type="text" name="phone" style="width:200px"/></td>
+       </tr>
+       <tr>
+         <td align="right"></td>
+         <td><input type="submit" value="Click Here" style="color:red" onClick="return validate()"/></td>
+       </tr>
+     </table>	
+</form>		</center>  	</body>		</html>
+

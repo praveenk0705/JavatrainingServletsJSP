@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>6.10.19.  &lt; rich:toolTip &gt; available since 3.1.0</title><link rel="stylesheet" href="css/html.css" type="text/css"/><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"/><meta xmlns="" http-equiv="content-type" content="text/html; charset=UTF-8"/><link xmlns="" rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/><link rel="start" href="index.html" title="RichFaces Developer Guide"/><link rel="up" href="richOutput.html" title="6.10. Rich Output"/><link rel="prev" href="rich_toolBarGroup.html" title="6.10.18.  &lt; rich:toolBarGroup &gt; available since 3.0.0"/><link rel="next" href="richInput.html" title="6.11. Rich Input"/><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/jquery.cookie.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script><script xmlns="http://www.w3.org/TR/xhtml1/transitional" type="text/javascript" src="script/toggle.js"><!--If you see this message, your web browser doesn't support JavaScript or JavaScript is disabled.--></script></head><body><div xmlns="" id="overlay"> </div><div xmlns="" class="time_out_div" id="timeOutDiv"> </div><div xmlns="" id="feedback-maincontainer"><h3 id="feedback-header">
+			Create new RichFaces Documentation Jira issue
+			<a href="javascript:void(0);" onclick="hidePopup('feedback-maincontainer', 'feedback-mailform', 'feedback-iFrame','feedback-submit', 'feedback-maincontainer');" id="feedback-close"><img src="images/close_org.png" class="feedback-images"/></a></h3><iframe id="feedback-iFrame" name="feedback-iFrame"> </iframe><form onsubmit="return validate_form()" id="feedback-mailform" method="post" action="https://jira.jboss.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310341&amp;issuetype=3" target="feedback-iFrame"><input type="hidden" id="priority" name="priority" value="3"/><input type="hidden" id="components" name="components" value="12311170"/><input type="hidden" id="versions" name="versions" value="12312451"/><input type="hidden" id="customfield_12310031" name="customfield_12310031" value="Documentation (Ref Guide, User Guide, etc.)"/><label for="summary">Summary</label><input type="text" id="feedback-summary" name="feedback-summary" title="Summarize the subject of the issue in a few words" maxlength="255" onKeyDown="countLeft('feedback-summary', 'left', 255);" onKeyUp="countLeft('feedback-summary', 'left', 255);"/><div id="summary-helper-left" class="feedback-helper"><span id="left">255</span> characters left
+			</div><div class="clear"> </div><label for="feedback-description">Description</label><textarea id="feedback-description" name="feedback-description" title="Provide more details about the issue" onKeyDown="countLeft('feedback-description', 'none', 500);" onKeyUp="countLeft('feedback-description', 'none', 500);"> </textarea><div class="clear"> </div><label for="feedback-environment">Environment</label><textarea id="feedback-environment" name="feedback-environment" title="Describe your environment"> </textarea></form><div id="guide_words">This will launch the RichFaces Jira page - to complete your feedback please login if needed, and submit the Jira.</div><input type="button" id="feedback-submit" value="Proceed to Jira" name="submit" class="feedback-formbutton" title="Proceed to create new issue" onclick="fillForm('feedback-mailform'); submitForm('feedback-mailform', 'feedback-iFrame', 'feedback-submit', 'feedback-maincontainer');"/></div><div xmlns="" id="feedback-wrapper"><a id="feedback-link" onclick="showPopup('feedback-maincontainer');"><img src="images/feedback_logo.png" class="feedback-images" onload="init('feedback-summary', 'feedback-description');"/></a></div><p id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="rich_toolBarGroup.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="richInput.html"><strong>Next</strong></a></li></ul><div class="section" lang="en-US"><div class="titlepage"><div><div><h3 class="title"><a id="rich_toolTip"/>6.10.19. 
+				&lt;
+				rich:toolTip
+				&gt;
+				<span class="since">
+         <sup> available since <span class="version">3.1.0</span>
+         </sup>
+      </span>
+   </h3></div></div></div><a xmlns="" href="javascript:void(0);" id="expand_collapse">expand all</a><div xmlns="" class="toc"><dl xmlns="http://www.w3.org/1999/xhtml"><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_toolTip.html#d0e28625">6.10.19.1. Description</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_toolTip.html#d0e28648">6.10.19.2. Key Features</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_toolTip.html#d0e28661">6.10.19.3. Details of Usage</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_toolTip.html#d0e29109">6.10.19.4. Reference Data</a></span></dt><dt xmlns="http://www.w3.org/TR/xhtml1/transitional"><span class="expand_collapse_toc" style="visibility:hidden;">  </span><span xmlns="" class="section"><a href="rich_toolTip.html#d0e29221">6.10.19.5. Relevant Resources Links</a></span></dt></dl></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e28625"/>6.10.19.1. Description</h4></div></div></div><p>The <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> component is used 
+        for creation of event-triggered non modal popup, that contains information regarding the page element, that event was applied to. 
+	</p><div class="figure"><a id="d0e28636"/><div class="figure-contents"><div class="mediaobject"><img src="images/toolTip_init.png" alt="&lt;rich:toolTip&gt; component"/></div></div><p class="title"><b>Figure 6.113. 
+            <span class="bold">
+               <span class="property">&lt;rich:toolTip&gt;</span>
+            </span> component</b></p></div><br class="figure-break"/></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e28648"/>6.10.19.2. Key Features</h4></div></div></div><div class="itemizedlist"><ul><li><p>Highly customizable look and feel </p></li><li><p>Different ways of data loading to toolTip</p></li><li><p>Disablement support</p></li></ul></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e28661"/>6.10.19.3. Details of Usage</h4></div></div></div><p>
+             Text information, labeled on the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span>, is specified with <span class="emphasis"><em>
+            <span class="property">"value"</span>
+         </em></span> attribute. 
+         Text that is put between tooltip start and end tags will also be rendered as tooltip content and could be marked with HTML tags. 
+         Images, links, buttons and other RichFaces components are also may be put and composed inside the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span>. 
+         The <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> borders are stretched automatically to enclose the contents.
+   </p><p>
+             There are three ways to attach the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> to a page element. 
+         The first and simplest one is when the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> is nested into a page element the tooltip is applied to. 
+         This way is shown on example in the <a href="">Creating the Component with a Page Tag</a> section. 
+         The <span class="emphasis"><em>
+            <span class="property">"attached"</span>
+         </em></span> attribute is "true" by default in this case,  
+         which means that the tolltip will be invoked automatically when the mouse cursor is hovered above the parent component.         
+   </p><p>
+         The second one uses <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> 
+         <span class="emphasis"><em>
+            <span class="property">"for"</span>
+         </em></span> attribute. 
+         In this case the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> is defined separately from a component it is applied to.
+   </p><p>
+                <span class="bold"><strong>Example:</strong></span>
+      </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:panel</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;panelId&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:panel</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;This&nbsp;is&nbsp;a&nbsp;tooltip.&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">for</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;panelId&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+</pre><p>These two ways are also applicable for HTML elements that are not presented in components tree built by facelets.  
+             Use <span class="emphasis"><em>
+            <span class="property">"for"</span>
+         </em></span> attribute to attach the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> in both cases.   
+       </p><p>
+         <span class="bold"><strong>Example:</strong></span>
+      </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_comment">&lt;!--&nbsp;The&nbsp;&lt;rich:toolTip&gt;&nbsp;is&nbsp;nested&nbsp;into&nbsp;the&nbsp;parent&nbsp;HTML&nbsp;element&nbsp;--&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">div</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;para1&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">p</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">This&nbsp;paragraph&nbsp;and&nbsp;tooltip&nbsp;are&nbsp;nested&nbsp;into&nbsp;the&nbsp;same&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">div</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&nbsp;element.</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">p</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">for</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;para1&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">This&nbsp;is&nbsp;a&nbsp;tooltip.</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">div</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain"></span><br />
+<span class="xml_comment">&lt;!--&nbsp;The&nbsp;&lt;rich:toolTip&gt;&nbsp;is&nbsp;defined&nbsp;separately&nbsp;--&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">div</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;para2&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">p</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">The&nbsp;tooltip&nbsp;for&nbsp;this&nbsp;paragraph&nbsp;is&nbsp;defined&nbsp;separately.</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">p</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">div</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">for</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;para2&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">This&nbsp;is&nbsp;a&nbsp;tooltip.</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><p>The third way to invoke the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> uses JS API function.
+     List of JS API functions available for <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> is listed <a href="">below</a>.
+     JS API functions are defined for a component the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> is applied to. 
+         The <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> 
+         <span class="emphasis"><em>
+            <span class="property">"attached"</span>
+         </em></span> attribute should be set to "false" in this case.         
+   </p><p>
+             <span class="bold"><strong>Example:</strong></span>
+       </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:panel</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;panelId&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">onclick</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{rich:component(&quot;</span><span class="xml_attribute_name">tooltipId</span><span class="xml_attribute_value">&quot;)}.show(event);&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">a4j:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;tooltipId&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">attached</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;false&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;This&nbsp;is&nbsp;a&nbsp;tooltip.&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">a4j:form</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+</pre><div xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="note"><h2>Notes:</h2><p>To provide <span class="bold"><strong>
+               <span class="property">&lt;rich:toolTip&gt;</span>
+            </strong></span> component proper work in complex cases do the following:
+                   </p><div class="itemizedlist"><ul><li><p>specify <span class="emphasis"><em>
+                        <span class="property">"id's"</span>
+                     </em></span> for both <span class="bold"><strong>
+                        <span class="property">&lt;rich:toolTip&gt;</span>
+                     </strong></span> and component it is applied to;</p></li><li><p>define the <span class="bold"><strong>
+                        <span class="property">&lt;rich:toolTip&gt;</span>
+                     </strong></span> as last child, when nesting it into the component the <span class="bold"><strong>
+                        <span class="property">&lt;rich:toolTip&gt;</span>
+                     </strong></span> is applied to;</p></li><li><p>put the <span class="bold"><strong>
+                        <span class="property">&lt;rich:toolTip&gt;</span>
+                     </strong></span> into <span class="bold"><strong>
+                        <span class="property">&lt;a4j:form&gt;</span>
+                     </strong></span> when invoking it with JS API function.</p></li></ul></div><p>
+             </p></div><p>
+     The <span class="emphasis"><em>
+            <span class="property">"mode"</span>
+         </em></span> attribute is provided you to control the way of data loading to <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span>.
+     The component works properly in client and Ajax modes.
+     In client mode <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> content is rendered once on the server and could be rerendered only via external submit. 
+     In Ajax mode <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> content is requested from server for every activation. 
+     For Ajax mode there is possibility to define a facet <span class="emphasis"><em>
+            <span class="property">"defaultContent"</span>
+         </em></span>, which provides default <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> content to be displayed, while main content is loading into the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> (see the example below).
+   </p><p>
+         <span class="bold"><strong>Example:</strong></span>
+      </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="XML"><!-- XML : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_plain">...</span><br />
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">h:commandLink</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Simple&nbsp;Link&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;link&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">followMouse</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;true&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">direction</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;top-right&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">mode</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;ajax&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;#{bean.toolTipContent}&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">horizontalOffset</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;5&quot;</span><span class="xml_plain">&nbsp;</span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_attribute_name">verticalOffset</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;5&quot;</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">layout</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;block&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:facet</span><span class="xml_plain">&nbsp;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;defaultContent&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">f:verbatim</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">DEFAULT&nbsp;TOOLTIP&nbsp;CONTENT</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:verbatim</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">f:facet</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">rich:toolTip</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">h:commandLink</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br />
+<span class="xml_plain">...</span><br />
+</pre><p>
+     This is the result:
+   </p><div class="figure"><a id="d0e28914"/><div class="figure-contents"><div class="mediaobject"><img src="images/toolTip2.png" alt="&lt;rich:toolTip&gt; component with default content"/></div></div><p class="title"><b>Figure 6.114. 
+            <span class="bold">
+               <span class="property">&lt;rich:toolTip&gt;</span>
+            </span> component with default content</b></p></div><br class="figure-break"/><p>
+     And after <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> loaded it is changed to next one:
+   </p><div class="figure"><a id="d0e28934"/><div class="figure-contents"><div class="mediaobject"><img src="images/toolTip3.png" alt="&lt;rich:toolTip&gt; component with loaded content"/></div></div><p class="title"><b>Figure 6.115. 
+            <span class="bold">
+               <span class="property">&lt;rich:toolTip&gt;</span>
+            </span> component with loaded content</b></p></div><br class="figure-break"/><p>
+         <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> appears attached to the corner 
+     dependent on the <span class="emphasis"><em>
+            <span class="property">"direction"</span>
+         </em></span> attribute. 
+     By default it is positioned bottom-right. 
+     <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> activation occurs after an event, 
+     defined on the parent component, takes into consideration the "delay" attribute 
+     or after calling JS API function <code class="code">show()</code>. 
+     <span class="emphasis"><em>
+            <span class="property">"hideEvent"</span>
+         </em></span> attribute defines the way 
+     how <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> disappears. 
+     It default value is "none", so the <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> does not disappears. 
+     Deactivation may be set for example on <span class="emphasis"><em>
+            <span class="property">mouseout</span>
+         </em></span> event on the parent component 
+     (excepting the situation when the mouse is hovered onto the 
+     <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> itself) 
+     or after calling JS API function <code class="code">hide()</code>. 
+     </p><p>
+     By default, <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> appears smart positioned. But as you can see from the previous example, you
+     can define an appearance direction via the corresponding attribute <span class="emphasis"><em>
+            <span class="property">"direction"</span>
+         </em></span>. 
+     And also it's possible to define vertical and horizontal offsets relatively to a mouse position. 
+   </p><p>
+     Disabled <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> is rendered to a page as usual but JS that responds for its activation is disabled until <code class="code">enable()</code> is called. 
+   </p><p>
+     Moreover, to add  some JavaScript effects, client events defined on it are used:
+   </p><p>
+     Standart:
+     </p><div class="itemizedlist"><ul><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"onclick"</span>
+                  </em></span>
+               </p></li><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"ondblclick"</span>
+                  </em></span>
+               </p></li><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"onmouseout"</span>
+                  </em></span>
+               </p></li><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"onmousemove"</span>
+                  </em></span>
+               </p></li><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"onmouseover"</span>
+                  </em></span>
+               </p></li></ul></div><p>
+      </p><p>
+     Special:
+     </p><div class="itemizedlist"><ul><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"onshow"</span>
+                  </em></span> - Called after the tooltip is called (some element hovered) but before its request</p></li><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"oncomplete"</span>
+                  </em></span> - Called just after the tooltip is shown</p></li><li><p>
+                  <span class="emphasis"><em>
+                     <span class="property">"onhide"</span>
+                  </em></span> - Called after the tooltip is hidden</p></li></ul></div><p>
+      </p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e29109"/>6.10.19.4. Reference Data</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="../../tlddoc/index.htmlrich/toolTip.html">Table of 
+							&lt;rich:toolTip&gt; 
+							 attributes</a>.
+						</p><div class="table"><a id="d0e29117"/><p class="title"><b>Table 6.158. Component Identification Parameters </b></p><div class="table-contents"><table summary="Component Identification Parameters " border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>component-type</td><td>org.richfaces.component.toolTip</td></tr><tr><td>component-class</td><td>org.richfaces.component.html.HtmlToolTip</td></tr><tr><td>component-family</td><td>org.richfaces.component.toolTip</td></tr><tr><td>renderer-type</td><td>org.richfaces.renderkit.html.toolTipRenderer</td></tr><tr><td>tag-class</td><td>org.richfaces.taglib.HtmlToolTipTag</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e29153"/><p class="title"><b>Table 6.159. JavaScript API</b></p><div class="table-contents"><table summary="JavaScript API" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>show()</td><td>Shows the corresponding toolTip</td></tr><tr><td>hide()</td><td>Hides the corresponding toolTip</td></tr><tr><td>enable()</td><td>Enables the corresponding toolTip</td></tr><tr><td>disable()</td><td>Disables the corresponding toolTip</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e29185"/><p class="title"><b>Table 6.160. Facets</b></p><div class="table-contents"><table summary="Facets" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Facet name</th><th>Description</th></tr></thead><tbody><tr><td>defaultContent</td><td>Defines the default content for toolTip. It is used only if mode = "ajax"</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="tab_cn6"/><p class="title"><b>Table 6.161. Classes names that define a component appearance</b></p><div class="table-contents"><table summary="Classes names that define a component appearance" border="1"><colgroup><col/><col/></colgroup><thead><tr><th>Class name</th><th>Description</th></tr></thead><tbody><tr><td>rich-tool-tip</td><td>Defines styles for a wrapper &lt;span&gt; or &lt;div&gt; element of a toolTip</td></tr></tbody></table></div></div><br class="table-break"/>
+							You can find all necessary information about style classes redefinition in 
+						<a href="ArchitectureOverview.html#customstyles" title="5.12. Definition of Custom Style Classes">Definition of Custom Style Classes</a> 
+							section.
+						</div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a id="d0e29221"/>6.10.19.5. Relevant Resources Links</h4></div></div></div><p>
+         <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://livedemo.exadel.com/richfaces-demo/richfaces/toolTip.jsf?c=toolTip">On the component LiveDemo page</a> you can see the example of <span class="bold"><strong>
+            <span class="property">&lt;rich:toolTip&gt;</span>
+         </strong></span> usage and sources for the given example. </p></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="rich_toolBarGroup.html"><strong>Prev</strong>6.10.18. 
+				&lt;
+				rich:toolBarGroup
+				&gt;
+				
+...</a></li><li class="up"><a accesskey="u" href="#"><strong>Top of page</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Front page</strong></a></li><li class="next"><a accesskey="n" href="richInput.html"><strong>Next</strong>6.11. Rich Input</a></li></ul></body></html>

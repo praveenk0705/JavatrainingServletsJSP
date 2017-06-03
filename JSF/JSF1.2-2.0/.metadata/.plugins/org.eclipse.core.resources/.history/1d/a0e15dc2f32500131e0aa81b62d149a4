@@ -1,0 +1,53 @@
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+
+<f:view>
+<html>
+<h:form>
+<body><center>
+<h2>Shubham Learning Center</h2>
+
+<h:panelGrid id="myGrid1" columns="1" border="2" rendered="#{studentBean.showMyGrid1}">
+<h:commandLink value="Student Registeration" 
+				actionListener="#{studentBean.registerPart1}" style="font-size:25"/>
+</h:panelGrid>
+
+<h:panelGrid id="myGrid2" columns="2" border="1" rendered="#{studentBean.showMyGrid2}">
+<h:outputText value="Please Select Batch" style="font-size:25"/>
+<h:selectOneMenu id="batch" value="#{studentBean.bid}"
+				 valueChangeListener="#{studentBean.registerPart2}" onchange="submit()">
+<f:selectItem itemLabel="---Select Batch---" itemValue=""/>
+<f:selectItem itemLabel="Batch-46" itemValue="A-46" value="#{studentBean.bid}"/>
+<f:selectItem itemLabel="Batch-47" itemValue="B-47" value="#{studentBean.bid}"/>
+<f:selectItem itemLabel="Batch-48" itemValue="C-48" value="#{studentBean.bid}"/>
+<f:selectItem itemLabel="Batch-49" itemValue="D-49" value="#{studentBean.bid}"/>
+<f:selectItem itemLabel="Batch-50" itemValue="E-50" value="#{studentBean.bid}"/>				 
+</h:selectOneMenu>
+</h:panelGrid>
+
+<h:panelGrid id="myGrid3" columns="2" border="1" rendered="#{studentBean.showMyGrid3}">
+<h:outputText value="Batch Id selected"/>
+
+<h:outputText id="batchId" value="#{studentBean.bid}"/>
+<h:inputHidden value="#{studentBean.bid}"/>
+
+
+<h:outputText value="Student ID"/>
+<h:inputText id="sid" value="#{studentBean.sid}"/>
+
+<h:outputText value="Student Name"/>
+<h:inputText value="#{studentBean.sname}"/>
+
+<h:outputText value="Email Id"/>
+<h:inputText id="email" value="#{studentBean.email}"/>
+
+<h:outputText value="Phone No"/>
+<h:inputText id="phone" value="#{studentBean.phone}"/>
+</h:panelGrid>
+<h:commandButton value="Register Now" rendered="#{studentBean.showMyGrid3 }" 
+				 action="#{studentBean.registerNow}"/>
+
+</center></body>
+</h:form>
+</html>
+</f:view>

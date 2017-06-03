@@ -1,0 +1,12 @@
+package com.shubham.servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class A extends HttpServlet {
+
+
+    public A() {
+    	System.out.println("======A 0-args=======");
+    }
+
+}

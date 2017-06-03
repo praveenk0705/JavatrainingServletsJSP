@@ -1,0 +1,91 @@
+package com.shubham.jsf1;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean(name = "studentBean")
+@SessionScoped
+public class StudentBean {
+	static {
+		System.out.println("\n-----StudentBean S.B.=====");
+	}
+
+	private String username = "Priyanka";
+	private String password;
+	private String firstName;
+	private String email;
+	private int age;
+	private double balance;
+
+	public StudentBean() {
+		System.out.println("=====StudentBean 0-args=====");
+	}
+
+	public String show() {
+		System.out.println("\n******show() Started******");
+
+		System.out.println("******show() Completed******");
+
+		return "show";
+	}
+
+	public String getUsername() {
+		System.out.println("getUsername()");
+		return username;
+	}
+
+	public void setUsername(String username) {
+		System.out.println("setUsername()");
+		this.username = username;
+	}
+
+	public String getPassword() {
+		System.out.println("getPassword()");
+		return password;
+	}
+
+	public void setPassword(String password) {
+		System.out.println("setPassword()");
+		this.password = password;
+	}
+
+	public String getFirstName() {
+		System.out.println("getFirstName()");
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		System.out.println("setFirstName()");
+		this.firstName = firstName;
+	}
+
+	public String getEmail() {
+		System.out.println("getEmail()");
+		return email;
+	}
+
+	public void setEmail(String email) {
+		System.out.println("setEmail()");
+		this.email = email;
+	}
+
+	public int getAge() {
+		System.out.println("getAge()");
+		return age;
+	}
+
+	public void setAge(int age) {
+		System.out.println("setAge()");
+		this.age = age;
+	}
+
+	public double getBalance() {
+		System.out.println("getBalance()");
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		System.out.println("setBalance()");
+		this.balance = balance;
+	}
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+<form-beans>
+<form-bean name="contactForm" type="org.apache.struts.validator.DynaValidatorForm">
+<form-property name="fname" type="java.lang.String"/>
+<form-property name="lname" type="java.lang.String"/>
+<form-property name="email" type="java.lang.String"/>
+<form-property name="phone" type="java.lang.String"/>
+</form-bean>
+<form-bean name="searchContactForm" type="org.apache.struts.validator.DynaValidatorForm">
+<form-property name="email" type="java.lang.String"/>
+</form-bean>
+<form-bean name="tempForm" type="org.apache.struts.validator.DynaValidatorForm"/>
+</form-beans>
+<global-forwards>
+<forward name="addcontact" path="/addcontact.jsp"/>
+<forward name="searchcontact" path="/searchcontact.jsp"/>
+<forward name="addcontactstatus" path="/addcontactstatus.jsp"/>
+<forward name="searchcontactresults" path="/searchcontactresults.jsp"/>
+<forward name="updatecontactstatus" path="/updatecontactstatus.jsp"/>
+</global-forwards>
+<action-mappings>
+<action path="/AddContactSubmit" name="contactForm" 
+type="com.jlcindia.struts1.ContactAction" input="/addcontact.jsp" parameter="method"/>
+<action path="/SearchContactSubmit" name="searchContactForm" 
+type="com.jlcindia.struts1.ContactAction" input="/searchcontact.jsp" parameter="method"/>
+<action path="/EditContactSubmit" name="tempForm" 
+type="com.jlcindia.struts1.ContactAction" parameter="method" />
+<action path="/UpdateContactSubmit" name="contactForm" 
+type="com.jlcindia.struts1.ContactAction" input="/searchcontactresults.jsp" parameter="method"/>
+</action-mappings> 
+<message-resources parameter="com.jlcindia.struts1.ApplicationResources"/>
+<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+ <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/myvalidations.xml"/>
+</plug-in>
+</struts-config>
+

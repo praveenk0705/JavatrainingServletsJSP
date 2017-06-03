@@ -1,0 +1,17 @@
+mysql> desc dellcontacts;
++-----------+----------+------+-----+
+| Field     | Type     | Null | Key |
++-----------+----------+------+-----+
+| contactId | char(7)  | NO   | PRI |
+| fname     | char(15) | YES  |     |
+| lname     | char(15) | YES  |     |
+| email     | char(35) | YES  |     |
+| phone     | char(10) | YES  |     |
+mysql> select * from dellcontacts;
++-----------+---------+--------+------------------+------------
+| contactId | fname   | lname  | email            | phone
++-----------+---------+--------+------------------+------------
+| C-00001   | ranjeet     | kumar    | ranjeet@dellteam.com      | 99999
+| C-00002   | santosh | kumar  | sa@gmail.com   | 98989898
+| C-00003   | ra     | kumar  | ra@gmail.com    | 989155
+| C-00004   | vishal  | kumar  | v@gmail.com      | 9898

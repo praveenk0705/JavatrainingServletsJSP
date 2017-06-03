@@ -1,0 +1,8 @@
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+<f:view>
+<html>
+<body>
+
+</body>
+</html>
+</f:view>

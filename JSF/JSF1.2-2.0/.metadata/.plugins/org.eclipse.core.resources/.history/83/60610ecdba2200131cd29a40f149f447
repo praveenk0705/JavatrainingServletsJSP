@@ -1,0 +1,7 @@
+package com.shubham.jsf1;
+
+public class StudentBean {
+	static {
+		System.out.println("\n------StudentBean < S.B > --------");
+	}
+}

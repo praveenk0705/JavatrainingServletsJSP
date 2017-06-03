@@ -1,0 +1,13 @@
+package com.shubham.jsf1;
+
+import javax.faces.validator.Validator;
+
+public class SIDValidator implements Validator {
+	static {
+		System.out.println("\n------SIDValidator < S.B >-------");
+	}
+
+	public SIDValidator() {
+		System.out.println("=======SIDValidtor 0-args======");
+	}
+}

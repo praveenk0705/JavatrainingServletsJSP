@@ -1,0 +1,20 @@
+package com.shubham.jsf1;
+
+import javax.faces.validator.Validator;
+
+public class UNValidator implements Validator {
+
+	static {
+		System.out.println("\n-----UNValidator S.B.-----");
+	}
+
+	public UNValidator() {
+		System.out.println("=====UNValidator 0-args======");
+	}
+
+	public void validate() {
+		System.out.println("*****valiadte() Started******");
+		System.out.println("*****valiadte() Completed******");
+	}
+
+}

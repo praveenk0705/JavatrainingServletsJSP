@@ -1,0 +1,56 @@
+package com.shubham.jsf1;
+
+import java.util.Locale;
+
+import javax.faces.component.UIViewRoot;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.faces.event.ActionEvent;
+
+import org.apache.tomcat.jni.Local;
+
+public class StudentBean {
+	private String sid;
+
+	public String searchStudentBySid() {
+		System.out.println(sid);
+		return "search";
+	}
+
+	public String getSid() {
+		return sid;
+	}
+
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
+
+	public void change(String language) {
+		FacesContext fc = FacesContext.getCurrentInstance();
+		UIViewRoot root = new UIViewRoot();
+
+		Locale en = new Locale(language);
+		root.setLocale(en);
+	}
+
+	public void changeToEnglish(ActionEvent ae) {
+		change("en");
+	}
+
+	public void changeToHindi(ActionEvent ae) {
+		change("hi");
+	}
+
+	public void changeToTelgu(ActionEvent ae) {
+		change("te");
+	}
+
+	public void changeToKannada(ActionEvent ae) {
+		change("kn");
+	}
+
+	public void changeToTamil(ActionEvent ae) {
+		change("ta");
+	}
+
+}

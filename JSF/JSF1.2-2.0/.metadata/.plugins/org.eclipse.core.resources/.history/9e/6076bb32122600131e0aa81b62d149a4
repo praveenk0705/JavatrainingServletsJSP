@@ -1,0 +1,19 @@
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<f:view>
+
+<html><body><center>
+<h2>JSF I18N EXAMPLE</h2>
+<h2><f:loadBundle basename="com.shubham.jsf1.messages" var="msgs"/></h2>
+<h2><i><h:outputText value="#{msgs['shu.header'] }"/></i></h2>
+
+<h:form>
+<h:outputText value="#{msgs.searchheader }"/>
+<h:panelGrid columns="1" border="1" bgcolor="pink">
+<h:outputText value="#{msgs['search.sid.label'] }"/>
+
+</h:panelGrid>
+
+</h:form>
+</center></body></html>
+</f:view>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+  "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+  <data-sources/>
+    
+
+  <form-beans>
+    <form-bean name="employeeForm"
+      type="com.wrox.EmployeeForm" />
+  </form-beans>
+
+  <global-forwards>
+    <forward name="employeelist" path="/EmployeeList"/>
+  </global-forwards>
+
+  <action-mappings>
+
+    <action path="/EmployeeList"
+      type="com.wrox.EmployeeListAction"
+      scope="request" >
+      <forward name="success" path="/employeelist.jsp"/>
+    </action>
+
+    <action path="/Add"
+      type="com.wrox.AddEmployeeAction"
+      name="employeeForm"
+      scope="request"
+      input="/addemployee.jsp"
+      validate="true" >
+      <forward name="success" path="/EmployeeList.do"/>
+      <forward name="error" path="/addemployee.jsp"/>
+    </action>
+
+    <action path="/Edit"
+      type="com.wrox.GetEmployeeAction"
+      name="employeeForm"
+      scope="request"
+      validate="false" >
+      <forward name="success" path="/editemployee.jsp"/>
+      <forward name="error" path="/EmployeeList.do"/>
+    </action>
+
+    <action path="/EditEmployee"
+      type="com.wrox.EditEmployeeAction"
+      name="employeeForm"
+      scope="request"
+      input="/editemployee.jsp"
+      validate="true" >
+      <forward name="success" path="/EmployeeList.do"/>
+      <forward name="error" path="/editemployee.jsp"/>
+    </action>
+
+    <action path="/Delete"
+      type="com.wrox.DeleteEmployeeAction"
+      scope="request"
+      validate="false" >
+      <forward name="success" path="/EmployeeList.do"/>
+    </action>
+
+  </action-mappings>
+<message-resources parameter="com.wrox.ApplicationResources"/>
+</struts-config>

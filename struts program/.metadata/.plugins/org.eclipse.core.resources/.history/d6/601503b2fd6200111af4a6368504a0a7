@@ -1,0 +1,6 @@
+errors.username.required=<font color="red" size="5">UserName is Required</font>
+errors.username.min=<font color="red" size="5">UserName Minlength:5</font>
+errors.username.max=<font color="red" size="5">UserName is Maxlength:10</font>
+errors.password.required=<font color="red" size="5">Password is Required</font>
+errors.password.min=<font color="red" size="5">Password Minlength:6</font>
+errors.password.max=<font color="red" size="5">Password is Maxlength:9</font>

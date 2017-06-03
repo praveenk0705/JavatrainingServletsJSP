@@ -1,0 +1,10 @@
+<%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+<%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+
+<html><body><center>
+<br/>
+<h2>This Is ExrenalContext Page</h2><br/>
+
+<h:outputText value="#{ecdemoBean.str}"/>
+
+</center></body></html>
